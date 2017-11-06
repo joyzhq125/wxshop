@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{163A7CC3-2F91-436C-8BBB-C04D199C61F7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Hidistro.SaleSystem.Vshop</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data" />
+    <Reference Include="Newtonsoft.Json" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\CategoryBrowser.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\DistributorsBrower.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\OrderException.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\GroupBuyBrowser.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\MemberProcessor.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\UserRedPagerBrower.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\ProductBrowser.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\OrderRedPagerBrower.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\ShoppingCartProcessor.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\ShoppingProcessor.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\VshopBrowser.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\DistributorGradeBrower.cs" />
+    <Compile Include="Hidistro\SaleSystem\Vshop\RedPagerActivityBrower.cs" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hidistro.Core\Hidistro.Core.csproj">
+      <Project>{c2f9053c-c4dd-467a-958e-28f27971f9af}</Project>
+      <Name>Hidistro.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Entities\Hidistro.Entities.csproj">
+      <Project>{b544c93d-c963-40f6-8702-8b75d2ddb8a7}</Project>
+      <Name>Hidistro.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Messages\Hidistro.Messages.csproj">
+      <Project>{f4c164e7-9f3b-43a2-a087-8295c6a0982a}</Project>
+      <Name>Hidistro.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.SqlDal\Hidistro.SqlDal.csproj">
+      <Project>{a0d0a688-a825-464d-b3dc-9e233f74bb68}</Project>
+      <Name>Hidistro.SqlDal</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

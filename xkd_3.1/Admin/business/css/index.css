@@ -1,0 +1,217 @@
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, button, input, select, textarea {
+    color: rgb(57, 57, 57);
+}
+
+body {
+    background: none repeat scroll 0% 0% rgb(245, 245, 245);
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfl{
+    clear: both;
+}
+
+.portals_container {
+    width: 94%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 3%;
+    font-family: "Microsoft YaHei","微软雅黑",SimSun,"宋体";
+}
+
+    .portals_container .portal {
+        width: 28%;
+        margin: 22px 10px;
+        float: left;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px rgb(207, 207, 207);
+        color: rgb(255, 255, 255);
+    }
+
+    .portal span {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .portals_container .style_0 { 
+        background: #1a88ef;
+        background: -moz-linear-gradient(center top, #58a9f3, #1a88ef) repeat scroll 0% 0% transparent;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #58a9f3), color-stop(1, #1a88ef)); /* Saf4+, Chrome */
+    }
+
+    .portals_container .style_1 { 
+        background: #ff7e15; 
+        background: -moz-linear-gradient(center top, #ffae5f, #ff7e15) repeat scroll 0% 0% transparent;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffae5f), color-stop(1, #ff7e15)); /* Saf4+, Chrome */
+    }
+
+    .portals_container .style_2 {
+        background: #56b0d8;
+        background: -moz-linear-gradient(center top, #7bc8ea, #56b0d8) repeat scroll 0% 0% transparent;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #7bc8ea), color-stop(1, #56b0d8)); /* Saf4+, Chrome */
+    }
+
+    .portals_container .style_3 { 
+        background: #70ba0f;
+        background: -moz-linear-gradient(center top, #99d552, #70ba0f) repeat scroll 0% 0% transparent;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #99d552), color-stop(1, #70ba0f)); /* Saf4+, Chrome */
+    }
+
+    .portals_container .style_4 { 
+        background: #b53627;
+        background: -moz-linear-gradient(center top, #e46c5c, #b53627) repeat scroll 0% 0% transparent;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e46c5c), color-stop(1, #b53627)); /* Saf4+, Chrome */
+    }
+    .portals_container .portal {
+        border-radius: 10px;
+    }
+.add{
+    height: auto;
+    padding:0.5% 0;
+    background: #d8dbdc;
+}
+.addimg{
+    width: 128px;
+    height: 128px;
+    margin:0 auto;
+    padding: 25px 0;
+    background:url(../imgs/add.png) center center no-repeat;
+}
+
+.right{
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    padding: 14px 0 0 19px;
+}
+.portal .ico{
+    padding: 8.2% 0 6% 5.5%;
+    display: inline-block;
+}
+.weixinid,.gzhid,.portal span{
+    width: 100%;
+    display: inline-block;
+    padding: 2% 0 0;
+
+}
+.portal span{
+    padding: 7% 0 2%;
+}
+.weixinid,.gzhid{
+    color: rgba(255,255,255,.75);  
+    font-size: 14px; 
+}
+.xiugai,.guanli{
+    width: 40%;
+    height: 50px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 7px 3px 10px;
+}
+.xiugai a,.guanli a{
+    color: rgba(255,255,255,.85); 
+    text-decoration: none;
+}
+.xiugai a:hover,.guanli a:hover{
+    color: rgba(230,230,230,.7); 
+    text-decoration: underline;
+}
+.portal .xiugai img{
+    margin-top: 4%;
+}
+.portal .xiugai strong,.portal .guanli strong{
+    position: relative;
+    bottom: 30%;
+    font-size: 16px;
+    font-weight: normal;
+}
+.portal .guanli strong{
+    bottom: 33%;
+}
+.guanli{
+    margin-top: 4px;
+}
+
+@media only screen and (min-width: 680px) {
+    .portal .ico{
+        padding: 10% 0 0 26%;
+    }
+    .right{
+        width: 80%;
+        padding-left: 18%;
+    } 
+    .portal .xiugai strong,.portal .guanli strong{
+        bottom: 14%;
+        left: 2%;
+    }
+    .portal .guanli strong{
+        bottom: 19%;
+        left: 4%;
+    }
+    .btn{
+        width: auto;
+        height: auto;
+        padding-top: 15px;
+    }
+    .add{
+        padding:5% 0;
+    }
+}
+
+@media only screen and (min-width: 1128px) {
+    .portal .ico{
+        padding: 8.2% 0 6% 5.5%;
+    }
+    .right{
+        width: 60%;
+        padding: 14px 0 0 19px;
+    }
+    .portal .xiugai strong,.portal .guanli strong{
+        bottom: 12%;
+    }
+    .portal .guanli strong{
+        bottom: 16%;
+    }
+    .btn{
+        width: auto;
+        height: auto;
+        padding-top: 15px;
+    }
+    .add{
+        padding:0.5% 0;
+    }
+}
+     
+@media only screen and (min-width: 1360px) {
+    .portal .ico{
+        padding: 8.2% 0 6% 5.5%;
+    }
+    .right{
+        width: 60%;
+        padding: 14px 0 0 19px;
+    }
+    .portal .xiugai strong,.portal .guanli strong{
+        bottom: 12%;
+    }
+    .portal .guanli strong{
+        bottom: 17%;
+    }
+    .btn{
+        width: auto;
+        height: auto;
+        padding-top: 3px;
+    }
+    .add{
+        padding:0.2% 0;
+    }
+}

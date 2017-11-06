@@ -1,0 +1,41 @@
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Hidistro.Core.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Hidistro.Core.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.ServiceLocation.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.Unity.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.Unity.Interception.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.Unity.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\bin\Release\Microsoft.Practices.Unity.Interception.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\obj\x86\Release\Hidistro.Core.csprojResolveAssemblyReference.cache
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\obj\x86\Release\Hidistro.Core.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Core\obj\x86\Release\Hidistro.Core.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Hidistro.Core.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Hidistro.Core.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.ServiceLocation.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.Unity.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.Unity.Interception.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.Unity.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\bin\Release\Microsoft.Practices.Unity.Interception.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\obj\x86\Release\Hidistro.Core.csprojResolveAssemblyReference.cache
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\obj\x86\Release\Hidistro.Core.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Core\obj\x86\Release\Hidistro.Core.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Core\bin\Release\Hidistro.Core.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Core\bin\Release\Hidistro.Core.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Core\bin\Release\Hidistro.Model.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Core\bin\Release\Hidistro.Model.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Core\obj\x86\Release\Hidistro.Core.csprojResolveAssemblyReference.cache
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Core\obj\x86\Release\Hidistro.Core.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Core\obj\x86\Release\Hidistro.Core.pdb

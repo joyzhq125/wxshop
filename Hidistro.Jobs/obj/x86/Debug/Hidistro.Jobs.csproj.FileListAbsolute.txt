@@ -1,0 +1,315 @@
+F:\练习项目\xkd3.1\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.csprojResolveAssemblyReference.cache
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.Core.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.Entities.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.Messages.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Newtonsoft.Json.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hishop.Plugins.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.Core.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.Entities.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hidistro.Messages.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hishop.Plugins.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+F:\练习项目\xkd3.1\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.dll
+F:\练习项目\xkd3.1\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.Core.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.Entities.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.Messages.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Newtonsoft.Json.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hishop.Plugins.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.Core.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.Entities.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hidistro.Messages.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hishop.Plugins.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.csprojResolveAssemblyReference.cache
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.dll
+F:\练习项目\xkd3.1 - 副本\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Core.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Entities.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Messages.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Newtonsoft.Json.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Plugins.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Core.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Entities.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Messages.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Plugins.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.csprojResolveAssemblyReference.cache
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.dll
+F:\练习项目\xkd3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Core.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Entities.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Messages.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Newtonsoft.Json.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Plugins.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Core.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Entities.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Messages.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Plugins.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.csprojResolveAssemblyReference.cache
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Core.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Entities.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Messages.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Newtonsoft.Json.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Plugins.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Core.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Entities.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Messages.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Plugins.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.csprojResolveAssemblyReference.cache
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Core.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Entities.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Messages.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Newtonsoft.Json.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Plugins.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Core.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Entities.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Messages.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Plugins.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.csprojResolveAssemblyReference.cache
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Core.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Entities.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Messages.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Plugins.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Core.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Entities.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hidistro.Messages.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Plugins.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Core.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Entities.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Messages.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Newtonsoft.Json.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Plugins.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Core.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Entities.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Messages.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Plugins.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.csprojResolveAssemblyReference.cache
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Core.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Entities.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Messages.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Newtonsoft.Json.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Plugins.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Core.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Entities.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Messages.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Plugins.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.csprojResolveAssemblyReference.cache
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Model.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Model.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Jobs.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Core.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Entities.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Model.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Messages.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Newtonsoft.Json.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Plugins.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Core.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Entities.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Model.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Components.Validation.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.SqlDal.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hidistro.Messages.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Plugins.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\bin\Debug\Hishop.Weixin.MP.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.csprojResolveAssemblyReference.cache
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Jobs\obj\x86\Debug\Hidistro.Jobs.pdb

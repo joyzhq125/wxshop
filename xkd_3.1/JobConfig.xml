@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Job>
+	<JobName>AutoCalOrder</JobName>
+	<JobGoup>AutoCalOrder_Daily</JobGoup>
+	<CronSchedule>0 58 23 * * ?</CronSchedule>
+</Job>
+
+<!--
+	<CronSchedule>0 58 23 * * ?</CronSchedule>  每天23：58
+	<CronSchedule>30 * * * * ?</CronSchedule>   每30秒1次
+-->
+

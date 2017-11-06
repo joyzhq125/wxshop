@@ -1,0 +1,150 @@
+﻿<hi:common_mybaseheader runat="server" />
+<link href="/style/egg.css" rel="stylesheet" />
+<script src="/script/vgame.js"></script>
+<div class="container" style="margin:0px;">
+    <div class="comeAgain">再来一次</div>
+    <div class="gameInt" style=" padding-bottom: 4.6%;">
+        <div class="inttext">
+            <div class="inttextList">
+                <div class="prizeTitle"><h3><span>游戏奖品</span></h3></div>
+                <div class="prizeList">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td class="50%" id="prizeItem0"></td>
+                                <td class="50%" id="prizeItem1"></td>
+                            </tr>
+                            <tr>
+                                <td class="50%" id="prizeItem2"></td>
+                                <td class="50%" id="prizeItem3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="inttextList">
+                <div class="prizeTitle"><h3><span>游戏说明</span></h3></div>
+                <p id="gameDescription"></p>
+            </div>
+            <div class="inttextList">
+                <div class="prizeTitle"><h3><span>活动时间</span></h3></div>
+                <p id="gameDateTime"></p>
+            </div>
+            <div class="startGame">
+                <div class="egg">
+                    <ul class="eggList">
+                        <p class="hammer" id="hammer" style="left: 584px;">锤子</p>
+                        <li><span>1</span><sup></sup><p class="resultTip" id="resultTip"><b id="result"></b></p></li>
+                        <li><span>2</span><sup></sup><p class="resultTip" id="resultTip"><b id="result"></b></p></li>
+                        <li><span>3</span><sup></sup><p class="resultTip" id="resultTip"><b id="result"></b></p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inttextList">
+                <div class="prizeTitle"><h3><span>中奖名单</span></h3></div>
+                <div class="winningList">
+                    <div class="nameListTop">
+                        <ul>
+                            <li>昵称</li>
+                            <li>奖品</li>
+                            <li>等级</li>
+                            <li>中奖时间</li>
+                        </ul>
+                    </div>
+                    <div class="nameList" id="userPrizeLists">
+                    </div>
+                </div>
+                <div class="myWinning">
+                    <a href="Vshop/MyPrizeList.aspx?ShowTab=1">点击查看我的奖品</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        var flag = true;
+        function setHeight() {
+            $('.prizeTitle h3').height($('.prizeTitle h3').width() * 0.303);
+            $('.startGame').height($('.startGame').width() * 0.696);
+            $('.eggList li').height($('.eggList li').width() * 1.183);
+            $('.eggList li sup').height($('.eggList li').width() * 1.183 * 0.725);
+            $('.hammer').height($('.hammer').width() * 1.175);
+            $('.myWinning a').height($('.myWinning a').width() * 0.22);
+        }
+        BindData();
+        $(".comeAgain").click(function () {
+            if (IsCanPlay()) {
+                flag = true;
+                ReLoadEgg();
+            }
+        });
+        setHeight();
+        $(window).resize(function () {
+            setHeight();
+        })
+        function eggClick(obj, prize) {
+            var _this = obj;
+       
+            $(".hammer").css({ "top": _this.position().top - 55, "left": _this.position().left + 185 });
+            $(".hammer").animate({
+                "top": _this.position().top - 25,
+                "left": _this.position().left + 125
+            }, 30, function () {
+                _this.addClass("curr"); //蛋碎效果
+                $(".hammer").hide();
+                _this.find('.resultTip').css({ display: 'block', top: '100%', left: 0, opacity: 0 }).animate({ top: '-30%', opacity: 1 }, 300, function () {
+                    _this.find('.resultTip').find("#result").html(prize);
+                   // alert_h(prize);
+                });
+            }
+            );
+        }
+        $(".eggList li").click(function () {
+            if (flag) {
+                var item = GetPrize();
+                //var item = 1;
+                if (item < 0) {
+                    return;
+                }
+                $(this).children("span").hide();
+                item = item - 1;
+                if (item > 4) item = item - 5;
+                var showMsg = '';
+                if (item != 4) {
+                    showMsg = '恭喜，您中得 ' + gameData.prizeLists[item].prizeName + '!';
+                } else {
+                    showMsg = gameData.prizeLists[item].prizeName;
+                }
+                eggClick($(this), showMsg);
+                flag = false;
+            }
+        });
+        $(".eggList li").hover(function () {
+            var posL = $(this).position().left + $(this).width();
+            $("#hammer").show().css('left', posL);
+        })
+
+    })
+
+
+    function ReLoadEgg()
+    {
+        $('.eggList li').removeClass('curr');
+        $('.resultTip').removeAttr('style');
+        $(".eggList li").children("span").show();
+    }
+
+    function BindData() {
+        InitInfo();
+        //绑定游戏奖品信息
+        for (var i = 0; i < 4; i++) {
+            $("#prizeItem" + i).html(gameData.prizeLists[i].prizeType + ":" + gameData.prizeLists[i].prizeName);
+        }
+        $("#gameDescription").html(gameData.Description);
+        $("#gameDateTime").html(gameData.BeginDate + " 至 " + gameData.EndDate);
+        UserPrizeLists();
+    }
+</script>

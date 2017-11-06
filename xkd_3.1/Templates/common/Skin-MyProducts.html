@@ -1,0 +1,262 @@
+﻿<hi:common_header runat="server" />
+<style>
+    .right {
+        text-align: center;
+        background: rgba(51, 51, 51, 0.5) none repeat scroll 0% 0%;
+        font-size: 40px;
+        display: none;
+        position: absolute;
+        top: 0px;
+        cursor: pointer;
+        color: #0F0;
+    }
+</style>
+<ul class="clearfix orders-title title_bg">
+        <li class="activenum"><a>我的商品</a></li>
+        <li><a href="ProductListAll.aspx">全部商品</a></li>
+</ul>
+<div class="pbox clearfix">
+<div class="clearfix class_goods">
+    <div class="dropdown">
+        <div class="dropdown-toggle search_img" id="dropdownMenu1" data-toggle="dropdown"><span class="glyphicon glyphicon-th"></span>
+        </div>
+        <div class="search_input">
+        
+            <input type="text" class="text" runat="server" id="keywords" placeholder="">
+            <span class="glyphicon glyphicon-search" onclick="Searchkeys()">
+            </span>
+        </div>
+        <label>
+            全选<input type="checkbox" name="DistributorCheckAll" /></label>
+        <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dropdownMenu1">
+            <hi:vshoptemplatedrepeater id="rpCategorys" templatefile="/Tags/skin-Common_SubCategory.ascx"
+                runat="server" />
+        </ul>
+    </div>
+</div>
+    <div id="empty" style="text-align: center;">
+        <img src="/Utility/pics/nonestore.gif" />
+    </div>
+
+    <div class="row myproduct" id="shops">
+        <hi:vshoptemplatedrepeater id="rpChooseProducts" templatefile="/Tags/skin-Common_DistributorProducts.ascx"
+            runat="server" />
+    </div>
+</div>
+<script>
+    var deleteProdcut = $.cookie("DeleteProcutId") == null ? {} : JSON.parse($.cookie("DeleteProcutId"));
+
+    var categoryId = "";
+
+    var keyWord = ""
+    var pgSize = "10";
+    var pgIndex = 2;
+    var isEnd = false;
+
+    function readmore() {
+
+        if (isEnd) {
+            return;
+        }
+
+        $.ajax({
+            url: "MyProducts.aspx",
+            type: 'POST', timeout: 10000,
+            data: { task: "next", categoryId: categoryId, keyWord: keyWord, pgSize: pgSize, pgIndex: pgIndex },
+            async: false,
+            success: function (resultData) {
+
+                pgIndex++;
+
+                try {
+
+                    var data = eval("(" + resultData + ")");
+                    if (data.length == 0) {
+                        $("#readNext").html("全部数据已加载完");
+                        $("#readNext").attr("disabled", "disabled");
+                        isEnd = true;
+                        return;
+                    }
+
+
+
+                    var addHtml = "";
+                    for (var i = 0; i < data.length; i++) {
+
+                        addHtml += "<div class='col-xs-6'><div class='index-content well'>";
+                        addHtml += "<img src='" + data[i]["ThumbnailUrl310"] + "' style='border-width:0px;' />";
+                        addHtml += "<div class='content-right'><div>";
+                        addHtml += "<a href='/ProductDetails.aspx?ProductId=" + data[i]["ProductId"] + "&wid=" + data[i]["wid"] + "'>" + data[i]["ProductName"] + "</a></div>";
+                        addHtml += "<div class='price text-danger'>¥" + data[i]["SalePrice"] + "<span class='text-muted'>已售" + data[i]["SaleCounts"] + "件</span></div>";
+                        addHtml += "</div></div><div class='right'>";
+                        addHtml += "<input type='checkbox' style='position: absolute; opacity: 0;' name='DistributorCheckGroup' id='CheckGroup" + data[i]["ProductId"] + "' value='" + data[i]["ProductId"] + "' />";
+                        addHtml += "</div></div>";
+
+                    }
+
+
+
+                    var $add = $(addHtml);
+
+
+
+                    $("#shops").append($add);
+
+
+                    $add.find("input[name='DistributorCheckGroup']").iCheck({
+                        checkboxClass: 'icheckbox_flat-red',
+                        radioClass: 'iradio_flat-red'
+                    });
+
+
+                    $add.find("input[name='DistributorCheckGroup']").on('ifChecked', function (event) {
+
+                        deleteProdcut["DistributorCheckGroup" + $(this).val()] = $(this).val();
+                        RemoveCookieProductId();
+
+                        var real_h;
+                        var right_H = $(this).parent().parent().prev().height();
+
+                        $(this).parent().parent().height(right_H);
+                        var right_W = $(this).parent().parent().prev().width();
+                        $(this).parent().parent().width(right_W);
+                        real_h = (right_H - $(this).parent().height()) * 0.5;
+                        $(this).parent().css({ position: 'absolute', top: real_h, left: right_W / 2 - 10 });
+                        $(this).parent("div").parent("div").css("display", "block");
+
+                    });
+                    $add.find("input[name='DistributorCheckGroup']").on('ifUnchecked', function (event) {
+
+                    
+                        $(this).parent("div").parent("div").css({ display: 'none' });
+                        $("input[type='checkbox'][name='DistributorCheckAll']:eq(0)").attr("checked", false);
+                        $("input[type='checkbox'][name='DistributorCheckAll']:eq(0)").parent("div").removeClass("checked");
+                        delete deleteProdcut["DistributorCheckGroup" + $(this).val()];
+                        RemoveCookieProductId();
+                    });
+
+                    $add.find(".right").click(function () {
+                        $(this).css("display", "none");
+                        $(this).find("input[name='DistributorCheckGroup']").iCheck('uncheck');
+                    });
+                    $add.find(".index-content").click(function () {
+                      
+                        $(this).next().find("input[name='DistributorCheckGroup']").iCheck('check');
+                    });
+
+                   
+
+                } catch (e) {
+                    alert_h("读取数据失败!");
+                }
+
+
+            }
+        });
+
+
+    }
+
+    $(function () {
+
+        $("input[type='checkbox']").iCheck({
+            checkboxClass: 'icheckbox_flat-red',
+            radioClass: 'iradio_flat-red'
+        });
+
+        if (!$.trim($('#shops').html())) {
+            $('#empty').css('display', '');
+        }
+        else {
+            $('#empty').css('display', 'none');
+        }
+
+        $("input[type='checkbox'][name='DistributorCheckAll']:eq(0)").on('ifChecked', function (a) {
+            $("input[name='DistributorCheckGroup']").iCheck('check');
+        });
+        $("input[type='checkbox'][name='DistributorCheckAll']:eq(0)").on('ifUnchecked', function (a) {
+            $("input[name='DistributorCheckGroup']").iCheck('uncheck');
+        });
+        $("input[name='DistributorCheckGroup']").on('ifChecked', function (event) {
+      
+            deleteProdcut["DistributorCheckGroup" + $(this).val()] = $(this).val();
+            RemoveCookieProductId();
+
+            var real_h;
+            var right_H = $(this).parent().parent().prev().height();
+
+            $(this).parent().parent().height(right_H);
+            var right_W = $(this).parent().parent().prev().width();
+            $(this).parent().parent().width(right_W);
+            real_h = (right_H - $(this).parent().height()) * 0.5;
+            $(this).parent().css({ position: 'absolute', top: real_h, left: right_W / 2 - 10 });
+            $(this).parent("div").parent("div").css("display", "block");
+           
+        });
+        $("input[name='DistributorCheckGroup']").on('ifUnchecked', function (event) {
+            $(this).parent("div").parent("div").css({ display: 'none' });
+            $("input[type='checkbox'][name='DistributorCheckAll']:eq(0)").attr("checked", false);
+            $("input[type='checkbox'][name='DistributorCheckAll']:eq(0)").parent("div").removeClass("checked");
+            delete deleteProdcut["DistributorCheckGroup" + $(this).val()];
+            RemoveCookieProductId();
+        });
+        
+        $(document).scroll(function () {
+            var scrollTop = $(document).scrollTop();
+
+            if (scrollTop >= $(document).height() - $(window).height()) {
+
+                readmore();
+            }
+        })
+
+
+    });
+
+    setTimeout("MyproductsShow()", 150);
+    function MyproductsShow() {
+        if (!jQuery.isEmptyObject(deleteProdcut)) {
+            $.each(deleteProdcut, function (index, items) {
+                console.log(items)
+                $("input[type='checkbox'][value='" + items + "']").iCheck('check');
+            });
+        }
+    }
+
+
+    function Searchkeys() {
+        var serachkey = $("#VMyProducts_keywords").val().replace(/\s/g, "");
+        location.href = "?keyWord=" + escape(serachkey);
+    }
+    function RemoveCookieProductId() {
+        var valstr = JSON.stringify(deleteProdcut);
+        $.cookie("DeleteProcutId", valstr);
+    }
+    function SaveDistributorProducts() {
+        if (jQuery.isEmptyObject(deleteProdcut)) {
+            alert_h('请先选择要下架的商品！');
+            return false;
+        }
+
+        $.ajax({
+            url: "/API/VshopProcess.ashx",
+            type: 'POST', dataType: 'json', timeout: 10000,
+            data: { action: "DeleteProducts", Params: JSON.stringify(deleteProdcut) },
+            async: false,
+            success: function (resultData) {
+                $.cookie("DeleteProcutId", null);
+                alert_h('下架成功', function () { location.href = 'DistributorCenter.aspx' });
+            }
+        });
+    }
+</script>
+<div class="nextstep pbox">
+    <a type="button" class="btn  btn-block btn-info" href="#" id="readNext" onclick="readmore()">加载更多商品</a>
+</div>
+
+<div class="nextstep pbox">
+    <a type="button" class="btn btn-danger btn-block" href="#" onclick="javascript:return SaveDistributorProducts()">
+        下架所选商品</a>
+</div>
+<div style="line-height:70px">　　</div>
+<hi:common_footer runat="server" />

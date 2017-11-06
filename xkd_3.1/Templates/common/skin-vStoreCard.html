@@ -1,0 +1,155 @@
+﻿<hi:common_header runat="server" />
+<hi:weixinset runat="server" id="weixin" />
+<style>
+    body {
+       background:#fff;
+    }
+    html, body {
+        min-height: 100%;
+    }
+
+    .container {
+        max-width: 640px;
+        min-height: 100%;
+        padding: 0;
+        padding-top: 7%;
+        background-color: #F5F5F5;
+    }
+
+    header {
+        margin-bottom: 7%;
+        background:none;
+    }
+
+        header img {
+            display: block;
+            width: 75px;
+            height: 75px;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-bottom: 4%;
+        }
+
+        header p {
+            text-align: center;
+            font-size: 14px;
+        }
+
+            header p em {
+                color: #CC3300;
+                margin: 0 2px;
+            }
+
+    .weChat {
+        background-color: #D14719;
+        padding: 5%;
+        color: #fff;
+    }
+
+    .wechatImg {
+        text-align: center;
+        margin: 3% 0;
+    }
+
+    .weChat p.center {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .weChat p.mb {
+        margin-bottom: 3%;
+    }
+
+    .wechatImg img {
+        width: 60%;
+    }
+</style>
+<div class="container">
+    <header>
+        <hi:hiimage runat="server" id="imgHead" cssclass="img-circle" width="150" height="150"
+                    imageurl="/images/user.png" />
+        <p>我是<em><asp:literal ID="RealName" runat="server" /></em></p>
+        <p>邀请您加入<em id="storeName"><asp:literal ID="StoreName" runat="server" /></em>分销团队</p>
+    </header>
+    <div class="weChat">
+        <p id="sdesc"><asp:literal ID="StroeDesc" runat="server" Text="店铺介绍信息，30字以内" /></p>
+        <div class="wechatImg">
+            <hi:hiimage runat="server" id="imgCode" width="60%" imageurl="http://s.jiathis.com/qrcode.php?url=null" />
+        </div>
+        <p class="center mb">长按此图 识别图中二维码</p>
+        <p class="center">消费变投资 开启属于你自己的创业团队</p>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+     
+    });
+
+    var title = "欢迎加入[" + $("#storeName").text() + "]分销团队";
+    var link =window.location.href;
+    var imgUrl =$("#vNameCard_imgCode").attr("src");
+    var Dec =title +"\r\n"+ $("#sdesc").text();
+
+    wx.ready(function () {
+        wx.error(function(res){
+            alert_h("公众号信息验证失败:"+res.errMsg);
+        });
+
+        initWx();
+    });
+
+    function initWx(){
+          
+        wx.onMenuShareTimeline({
+            title: Dec, // 分享标题
+            link: link, // 分享链接,将当前登录用户转为puid,以便于发展下线
+            desc:Dec,
+            imgUrl: imgUrl, // 分享图标
+            success: function () { 
+                // 用户确认分享后执行的回调函数
+                alert_h('分享成功');
+            },
+            cancel: function () { 
+                // 用户取消分享后执行的回调函数
+            }
+        });
+
+           
+        wx.onMenuShareAppMessage({
+            title: title,
+            desc: Dec,
+            link:link ,
+            imgUrl: imgUrl,
+            type: "",
+            dataUrl: "",
+            success: function () { },
+            cancel: function () { }
+        });
+
+        wx.onMenuShareQQ({
+            title: Dec, // 分享标题
+            desc: title, // 分享描述
+            link: link, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: function () {
+                // 用户确认分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+
+
+    }
+   
+
+</script>
+<script>
+    ////禁用右上角菜单
+    //document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    //    WeixinJSBridge.call('hideOptionMenu');
+    //});
+</script>
+<hi:common_footer runat="server" />

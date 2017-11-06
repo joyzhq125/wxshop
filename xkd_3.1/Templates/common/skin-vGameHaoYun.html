@@ -1,0 +1,137 @@
+﻿<hi:common_header runat="server" />
+<link href="/style/haoyunfanfankan.css" rel="stylesheet" />
+<div class="container">
+    <div class="comeAgain">再来一次</div>
+    <div class="innerbox">
+        <div class="titileImage"></div>
+        <div class="innerList">
+            <h3>游戏奖品：</h3>
+            <table width="100%" class="clear">
+                <tbody>
+                    <tr>
+                        <td id="prizeItem0"></td>
+                        <td id="prizeItem1"></td>
+                    </tr>
+                    <tr>
+                        <td id="prizeItem2"></td>
+                        <td id="prizeItem3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="innerList">
+            <h3>游戏说明：</h3>
+            <p class="clear" id="gameDescription">
+               
+            </p>
+        </div>
+        <div class="innerList" >
+            <h3>活动时间：</h3>
+            <p class="clear" id="gameDateTime"></p>
+        </div>
+    </div>
+    <div class="innerbox">
+        <div class="titileImage startGame"></div>
+        <ul class="clearfix prizeList">
+            <li>
+                <div class="pic1"><img src="/images/pai-1.png"></div>
+                <div class="pic2"><p></p></div>
+            </li>
+            <li>
+                <div class="pic1"><img src="/images/pai-2.png"></div>
+                <div class="pic2"><p></p></div>
+            </li>
+            <li>
+                <div class="pic1"><img src="/images/pai-3.png"></div>
+                <div class="pic2"><p></p></div>
+            </li>
+            <li>
+                <div class="pic1"><img src="/images/pai-4.png"></div>
+                <div class="pic2"><p></p></div>
+            </li>
+            <li>
+                <div class="pic1"><img src="/images/pai-5.png"></div>
+                <div class="pic2"><p></p></div>
+            </li>
+            <li>
+                <div class="pic1"><img src="/images/pai-6.png"></div>
+                <div class="pic2"><p></p></div>
+            </li>
+        </ul>
+    </div>
+    <div class="innerbox nobg">
+        <div class="titileImage prize"></div>
+        <div class="nameListTop">
+            <ul>
+                <li>昵称</li>
+                <li>奖品</li>
+                <li>等级</li>
+                <li>中奖时间</li>
+            </ul>
+        </div>
+        <div class="nameList" id="userPrizeLists">
+        </div>
+    </div>
+    <div class="myWinning">
+        <a href="Vshop/MyPrizeList.aspx?ShowTab=1" style="height: 68.86px;">点击查看我的奖品</a>
+    </div>
+</div>
+</body>
+</html>
+<script src="/script/vgame.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function setHeight() {
+            $('.titileImage').height($('.titileImage').width() * 0.3193);
+            $('.prizeList li').height($('.prizeList li').width() * 1.295);
+            $('.myWinning a').height($('.myWinning a').width() * 0.22);
+        }
+        setHeight();
+        $(window).resize(function () {
+            setHeight();
+        })
+        BindData();
+        $('.prizeList li').click(function () {
+            if (flag) {
+                var item = GetPrize();
+                // var item = 1;
+                if (item < 0) {
+                    return;
+                }
+                item = item - 1;
+                if (item > 4) item = item - 5;
+                var showMsg = '';
+                console.log(item);
+                if (item != 4) {
+                    showMsg = '恭喜，您中得 ' + gameData.prizeLists[item].prizeName + '!';
+                } else {
+                    showMsg = gameData.prizeLists[item].prizeName;
+                }
+                $(this).find('.pic2 p').text(showMsg);
+                //   alert_h(showMsg);
+                $(this).addClass('click');
+                flag = false;
+            }
+        });
+
+        $(".comeAgain").click(function () {
+            if (IsCanPlay()) {
+                $('.prizeList li').removeClass('click');
+                flag = true;
+            }
+        });
+    });
+
+    var flag = true;
+
+    function BindData() {
+        InitInfo();
+        //绑定游戏奖品信息
+        for (var i = 0; i < 4; i++) {
+            $("#prizeItem" + i).html(gameData.prizeLists[i].prizeType + "：" + gameData.prizeLists[i].prizeName);
+        }
+        $("#gameDescription").html(gameData.Description);
+        $("#gameDateTime").html(gameData.BeginDate + " 至 " + gameData.EndDate);
+        UserPrizeLists();
+    }
+</script>

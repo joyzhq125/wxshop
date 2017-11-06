@@ -1,0 +1,64 @@
+F:\练习项目\xkd3.1\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll
+F:\练习项目\xkd3.1\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.pdb
+F:\练习项目\xkd3.1\Hishop.Weixin.MP\bin\Debug\Newtonsoft.Json.dll
+F:\练习项目\xkd3.1\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
+F:\练习项目\xkd3.1\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb
+F:\练习项目\xkd3.1 - 副本\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll
+F:\练习项目\xkd3.1 - 副本\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.pdb
+F:\练习项目\xkd3.1 - 副本\Hishop.Weixin.MP\bin\Debug\Newtonsoft.Json.dll
+F:\练习项目\xkd3.1 - 副本\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.csprojResolveAssemblyReference.cache
+F:\练习项目\xkd3.1 - 副本\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
+F:\练习项目\xkd3.1 - 副本\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb
+F:\练习项目\xkd3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll
+F:\练习项目\xkd3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.pdb
+F:\练习项目\xkd3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Newtonsoft.Json.dll
+F:\练习项目\xkd3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.csprojResolveAssemblyReference.cache
+F:\练习项目\xkd3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
+F:\练习项目\xkd3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.pdb
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Newtonsoft.Json.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.csprojResolveAssemblyReference.cache
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
+E:\VSWorks\【比较好】源码\xkd3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.pdb
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Newtonsoft.Json.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
+E:\VSWorks\【比较好】源码\销客多3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.pdb
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Newtonsoft.Json.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.csprojResolveAssemblyReference.cache
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
+E:\VSWorks\微分销\销客多3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.pdb
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
+C:\Users\Administrator\Desktop\销客多3.1 - 修复版(沐雪)\销客多3.1 - 修复版\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.pdb
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.csprojResolveAssemblyReference.cache
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
+E:\XM\csdn\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.csprojResolveAssemblyReference.cache
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Core.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Model.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Core.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Model.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Core.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Model.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Core.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Model.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.csprojResolveAssemblyReference.cache
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb

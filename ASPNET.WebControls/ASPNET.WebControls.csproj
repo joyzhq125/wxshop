@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A7020D5-451B-4C0D-8AED-AB6F0E0E09DF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>ASPNET.WebControls</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="ASPNET\WebControls\Grid.cs" />
+    <Compile Include="ASPNET\WebControls\BindableLiteral.cs" />
+    <Compile Include="ASPNET\WebControls\CalendarType.cs" />
+    <Compile Include="ASPNET\WebControls\CalendarLanguage.cs" />
+    <Compile Include="ASPNET\WebControls\WebCalendar.cs" />
+    <Compile Include="ASPNET\WebControls\TemplatedList.cs" />
+    <Compile Include="ASPNET\WebControls\CheckBoxColumn.cs" />
+    <Compile Include="ASPNET\WebControls\CheckBoxField.cs" />
+    <Compile Include="ASPNET\WebControls\DropdownColumn.cs" />
+    <Compile Include="ASPNET\WebControls\GroupRadioButton.cs" />
+    <Compile Include="ASPNET\WebControls\SortImageColumn.cs" />
+    <Compile Include="ASPNET\WebControls\YesNoImageColumn.cs" />
+    <Compile Include="ASPNET\WebControls\GetableGrid.cs" />
+    <Compile Include="ASPNET\WebControls\BindableLabel.cs" />
+    <Compile Include="ASPNET\WebControls\BindableTextBox.cs" />
+    <Compile Include="ASPNET\WebControls\Pager.cs" />
+    <Compile Include="ASPNET\WebControls\PageSize.cs" />
+    <Compile Include="ASPNET\WebControls\Utils.cs" />
+    <EmbeddedResource Include="ASPNET.WebControls.Grid.Images.asc.gif" />
+    <EmbeddedResource Include="ASPNET.WebControls.Grid.Images.desc.gif" />
+    <EmbeddedResource Include="ASPNET.WebControls.Grid.Images.por_arrow_13.gif" />
+    <EmbeddedResource Include="ASPNET.WebControls.Grid.Images.down.gif" />
+    <EmbeddedResource Include="ASPNET.WebControls.Grid.Images.true.gif" />
+    <EmbeddedResource Include="ASPNET.WebControls.Grid.Images.false.gif" />
+    <EmbeddedResource Include="ASPNET.WebControls.Grid.Images.up.gif" />
+    <EmbeddedResource Include="ASPNET.WebControls.Calendar.calendar.js" />
+  </ItemGroup>
+</Project>

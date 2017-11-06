@@ -1,0 +1,162 @@
+﻿<hi:common_header runat="server"/>
+<link href="../templates/common/css/mycss.css" rel="stylesheet" type="text/css">
+<link href="../templates/common/css/public.css" rel="stylesheet" type="text/css">
+<div class="container">
+    <header>
+        <div class="username clearfix">
+            <div class="userimg" onclick="window.location.href = 'DistributorInfo.aspx'">
+                <asp:image runat="server" width="60" height="60" ImageUrl="../Utility/pics/headLogo.jpg"
+                           id="image"></asp:image>
+            </div>
+            <div class="userinfo" onclick="window.location.href = 'DistributorInfo.aspx'">
+                <p><asp:literal runat="server" id="litStroeName" />&nbsp;&nbsp;【<asp:literal runat="server" id="litrGradeName" />】</p>
+                <p>佣金余额：<span class='integral'>￥<asp:literal runat="server" id="litReferralBlance" /></span>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="navgation">
+            <ul class="clearfix" id="tab">
+                <li><a href="MemberCenter.aspx">会员中心</a></li>
+                <li class="active"><a>分销中心</a></li>
+            </ul>
+        </div>
+        <div class="tabList">
+            <div class="tabcontent" style="display:none">
+
+            </div>
+            <div class="tabcontent" style="display:block">
+                <div class="tabnav distribution">
+                    <ul class="clearfix">
+                        <li>
+                            <span>￥<Hi:FormatedMoneyLabel ID="saletotal" runat="server" NullToDisplay="0.00"></Hi:FormatedMoneyLabel></span>
+                            <p>销售额</p>
+                        </li>
+                        <li>
+                            <span>￥<Hi:FormatedMoneyLabel ID="refrraltotal" runat="server" NullToDisplay="0.00"></Hi:FormatedMoneyLabel></span>
+                            <p>今日佣金</p>
+                        </li>
+                        <li>
+                            <span><asp:Literal ID="litTodayOrdersNum" runat="server" Text="0"></asp:Literal></span>
+                            <p>今日订单</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navgtionList">
+                    <ul>
+                        <li>
+                            <a href="MyProducts.aspx">
+                                <span><img src="/images/iconfont-shangjiashangpin.png"></span>
+                                <strong>店铺商品</strong>
+                                <span class="number"><asp:Literal ID="litProtuctNum" runat="server"></asp:Literal></span>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                        <li>
+                            <a href="DistributorOrders.aspx">
+                                <span><img src="/images/iconfont-dingdan.png"></span>
+                                <strong>店铺订单</strong>
+                                <span class="number"><asp:Literal ID="litOrders" runat="server"></asp:Literal></span>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="ChirldrenDistributors.aspx">
+                                <span><img src="/images/iconfont-wodezhanghu.png"></span>
+                                <strong>我的下属</strong>
+                                <span class="number"><asp:Literal ID="litMysubStore" runat="server"></asp:Literal></span>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                        <li>
+                            <a href="ChirldrenDistributors.aspx?gradeId=2">
+                                <span></span>
+                                <strong>一级分店</strong>
+                                <span class="number"><asp:Literal ID="litMysubFirst" runat="server"></asp:Literal></span>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                        <li>
+                            <a href="ChirldrenDistributors.aspx?gradeId=3">
+                                <span></span>
+                                <strong>二级分店</strong>
+                                <span class="number"><asp:Literal ID="litMysubSecond" runat="server"></asp:Literal></span>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href='StorePromotion.aspx?UserID=<asp:Literal ID="litUserId" runat="server"></asp:Literal>'>
+                                <span><img src="/images/iconfont-tuiguang.png"></span>
+                                <strong>店铺推广</strong>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                        <li>
+                            <a href='StoreCard.aspx?ReferralId=<asp:Literal ID="litUserId1" runat="server" />'>
+                                <span><img src="/images/iconfont-haoyoumingpian.png"></span>
+                                <strong>掌柜名片</strong>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                        <li>
+                            <a href='FriendsCircle.aspx?UserID=<asp:Literal ID="lituserid2" runat="server" />'>
+                                <span><img src="/images/iconfont-pengyouquanyin.png"></span>
+                                <strong>朋友圈素材</strong>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="DistributorCommission.aspx">
+                                <span><img src="/images/iconfont-xiaoshounayongjin.png"></span>
+                                <strong>我的佣金</strong>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="MyRanking.aspx">
+                                <span><img src="/images/iconfont-shujutongji.png"></span>
+                                <strong>店铺排名</strong>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                        <li>
+                            <a href="DistributorDescription.aspx">
+                                <span><img src="/images/iconfont-explanation.png"></span>
+                                <strong>分销说明</strong>
+                            </a>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    </div>
+    <a class="signOut" href="/logout.aspx">退出</a>
+</div>
+
+
+<script>
+    //禁用右上角菜单
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        WeixinJSBridge.call('hideOptionMenu');
+    });
+    $(function () {
+        $('.tabList .tabcontent').eq(0).show();
+        $('#tab li').click(function () {
+            $('#tab li').removeClass('active');
+            $(this).addClass('active');
+            $('.tabList .tabcontent').hide();
+            $('.tabList .tabcontent').eq($(this).index()).show();
+        })
+    })
+ 
+</script>
+<Hi:Common_Footer runat="server" />

@@ -1,0 +1,12 @@
+F:\练习项目\xkd3.1 - 副本\Hishop.TransferManager\bin\Release\Hishop.TransferManager.dll
+F:\练习项目\xkd3.1 - 副本\Hishop.TransferManager\bin\Release\Hishop.TransferManager.pdb
+F:\练习项目\xkd3.1 - 副本\Hishop.TransferManager\obj\x86\Release\Hishop.TransferManager.dll
+F:\练习项目\xkd3.1 - 副本\Hishop.TransferManager\obj\x86\Release\Hishop.TransferManager.pdb
+F:\练习项目\xkd3.1 - 修复版\Hishop.TransferManager\bin\Release\Hishop.TransferManager.dll
+F:\练习项目\xkd3.1 - 修复版\Hishop.TransferManager\bin\Release\Hishop.TransferManager.pdb
+F:\练习项目\xkd3.1 - 修复版\Hishop.TransferManager\obj\x86\Release\Hishop.TransferManager.dll
+F:\练习项目\xkd3.1 - 修复版\Hishop.TransferManager\obj\x86\Release\Hishop.TransferManager.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.TransferManager\bin\Release\Hishop.TransferManager.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.TransferManager\bin\Release\Hishop.TransferManager.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.TransferManager\obj\x86\Release\Hishop.TransferManager.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.TransferManager\obj\x86\Release\Hishop.TransferManager.pdb

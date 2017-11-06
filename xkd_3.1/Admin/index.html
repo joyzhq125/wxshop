@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>top.location.href = '/admin/Default.aspx'</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title id="js-meta-title">Hishop销客多</title>
+    <link rel="icon" href="../images/hi.ico">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/headandleft.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../Utility/jquery.artDialog.js"></script>
+    <script src="js/Framenew.js"></script>
+
+
+
+    <link href="css/artdialog.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.artDialog.js?skin=artdialog"></script>
+    <script type="text/javascript" src="js/artDialog.iframeTools.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <script>
+        
+    </script>
+
+</head>
+
+<body class="theme theme--blue">
+    <header class="ui-header navbar-fixed-top">
+        <div class="ui-header-inner clearfix">
+            <h1 class="ui-header-logo">
+                <a href="#" title="Hishop销客多">
+                    <span class="version"><i>3.0</i></span>
+                </a>
+            </h1>
+            <nav class="ui-header-nav">
+                <ul class="clearfix">
+                    <li class="divide">|</li>
+                    <li class="active"><a onclick="ShowMenuLeft('店铺', null, null,this)">店铺</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('商品', null, null, this)">商品</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('订单', null, null, this)">订单</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li><a onclick="ShowMenuLeft('会员', null, null, this)">会员</a></li>
+                    <li><a onclick="ShowMenuLeft('分销', null, null, this)">分销</a></li>
+                    <li class="divide">|</li>
+
+                    <li class="js-weixin-notify ">
+                        <a onclick="ShowMenuLeft('微信', null, null, this)">微信</a>
+                    </li>
+                    <li class="js-weibo-notify">
+                        <a onclick="ShowMenuLeft('微博', null, null, this)">微博<sup class="notify-counter" style="visibility: hidden;"></sup></a>
+                    </li>
+                    <li class="divide">|</li>
+                    <li>
+                        <a onclick="ShowMenuLeft('营销', null, null, this)">营销</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li>
+                        <a onclick="ShowMenuLeft('设置', null, null, this)">设置</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('分析统计', null, null, this)">分析统计</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ui-header-user ">
+                <div class="customer-wrap">
+                </div>
+                <div class="dropdown hover dropdown-right">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="txt">
+                            <span class="ellipsis team_name" id="spTopSiteName">这里是店名</span><span class="dash"> - </span><span id="spTopUserName">admin</span>
+                        </span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)">关于</a></li>
+                        <li class="divide"></li>
+                        <li><a href="LoginExit.aspx">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="app">
+            <div class="app-inner clearfix" style="overflow-x:auto;">
+                <iframe id="frammain" name="frammain" class="framecontent" src="Default.aspx" frameborder="0" scrolling="auto" width="100%"></iframe>
+            </div>
+        </div>
+        <aside class="ui-sidebar sidebar" style="min-height: 533px;">
+            <nav class="well" style="width:140px;" id="menu_left">
+            </nav>
+        </aside>
+    </div>
+    <script type="text/javascript">
+        $(".active a").click();
+    </script>
+</body>
+</html>

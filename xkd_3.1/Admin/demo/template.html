@@ -1,0 +1,580 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>vshop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="icon" href="../images/hi.ico" />
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/Framenew.js"></script>
+    <script type="text/javascript" src="../js/Region.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="keywords" />
+    <meta name="description" />
+</head>
+<body class="theme theme--blue">
+    <header class="ui-header navbar-fixed-top">
+        <div class="ui-header-inner clearfix">
+            
+            <nav class="ui-header-nav">
+                <ul class="clearfix">
+                    <li class="divide">|</li>
+                    <li class="active">
+                        <a onclick="ShowMenuLeft('店铺', null, null,this)">店铺</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('商品', null, null, this)">商品</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('订单', null, null, this)">订单</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li><a onclick="ShowMenuLeft('会员', null, null, this)">会员</a></li>
+                    <li><a onclick="ShowMenuLeft('分销', null, null, this)">分销</a></li>
+                    <li class="divide">|</li>
+
+                    <li class="js-weixin-notify ">
+                        <a onclick="ShowMenuLeft('微信', null, null, this)">微信</a>
+                    </li>
+                    <li class="js-weibo-notify">
+                        <a onclick="ShowMenuLeft('微博', null, null, this)">微博<sup class="notify-counter" style="visibility: hidden;"></sup></a>
+                    </li>
+                    <li class="divide">|</li>
+                    <li>
+                        <a onclick="ShowMenuLeft('营销', null, null, this)">营销</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li>
+                        <a onclick="ShowMenuLeft('设置', null, null, this)">设置</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('分析统计', null, null, this)">分析统计</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ui-header-user ">
+                <div class="customer-wrap">
+                </div>
+                <div class="dropdown hover dropdown-right">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="txt">
+                            <span class="ellipsis team_name" id="spTopSiteName">这里是店名</span><span class="dash"> - </span><span id="spTopUserName">admin</span>
+                        </span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-user"></span>个人信息</a></li>
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-list-alt"></span>修改密码</a></li>
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-comment"></span>关于</a></li>
+                        <li class="divide"></li>
+                        <li><a href="LoginExit.aspx"><span class="glyphicon glyphicon-indent-right"></span>退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="app">
+            <div class="app-inner clearfix">
+                
+                <div class="page-header">
+                    <h2>新建运费模板</h2>
+                </div>
+                <div class="freight-template">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-xs-2 control-label">模板名称：</label>
+                            <div class="col-xs-3">
+                                <input type="Text" id="templateName" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-xs-2 control-label">计价方式：</label>
+                            <div class="col-xs-3 setradiowidth" id="valuationmethod">
+                                <span>
+                                    <input type="radio" value="1" name="pric" id="according" checked="checked">
+                                    <label for="according">按件数</label>
+                                </span>
+                                <span>
+                                    <input type="radio" value="2" name="pric" id="weigth">
+                                    <label for="weigth">按重量</label>
+                                </span>
+                                <span>
+                                    <input type="radio" value="3" name="pric" id="volume">
+                                    <label for="volume">按体积</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-xs-2 control-label">是否包邮：</label>
+                            <div class="col-xs-3 setradiowidth" id="whofreight">
+                                <span>
+                                    <input type="radio" value="false" name="free" id="myfree" checked="checked">
+                                    <label for="myfree">自定义运费</label>
+                                </span>
+                                <span>
+                                    <input type="radio" value="true" name="free" id="hefree">
+                                    <label for="hefree">卖家承担运费</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group clearm" id="shippertypeid">
+                            <label for="inputEmail3" class="col-xs-2 control-label">运送方式：</label>
+                            <div class="col-xs-10 setexit">
+                                <p>除指定地区外，其余地区的运费采用“默认运费”</p>
+                                <div class="select">
+                                    <p>
+                                        <input type="checkbox" name="ShippingType" key="快递" value="1" id="express">
+                                        <label for="express">快递</label>
+                                    </p>
+                                    <div class="freight-editor hidde"></div>
+                                </div>
+                                <div class="select">
+                                    <p>
+                                        <input type="checkbox" name="ShippingType" key="EMS" value="2" id="ems">
+                                        <label for="ems">EMS</label>
+                                    </p>
+                                    <div class="freight-editor hidde"></div>
+                                </div>
+                                <div class="select">
+                                    <p>
+                                        <input type="checkbox" name="ShippingType" key="顺丰" value="3" id="sf">
+                                        <label for="sf">顺丰</label>
+                                    </p>
+                                    <div class="freight-editor hidde"></div>
+                                </div>
+                                <div class="select">
+                                    <p>
+                                        <input type="checkbox" name="ShippingType" key="平邮" value="4" id="mail">
+                                        <label for="mail">平邮</label>
+                                    </p>
+                                    <div class="freight-editor hidde"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" id="freetypeid">
+                            <label class="col-xs-2 control-label"></label>
+                            <div class="col-xs-10">
+                                <div class="specified-condition">
+                                    <p>
+                                        <input type="checkbox" name="" value="快递" id="HasFree">
+                                        <label for="HasFree">是否指定包邮（选填）</label>
+                                    </p>
+                                    <div class="specified-dis"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-btn navbar-fixed-bottom">
+                    <button type="button" class="btn btn-primary" onclick="saveTemplates()">保存模板信息</button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <aside class="ui-sidebar sidebar" style="height:100%">
+            <nav class="well" id="menu_left">
+                <ul>
+                    <li class="active"><a href="weibo/setting.aspx" class="new" target="frammain">绑定微博账号</a></li>
+                </ul>
+                <em class="glyphicon glyphicon-scissors"></em>
+                <span>微博管理</span>
+                <ul>
+                    <li><a href="weibo/timeline.aspx" class="new" target="frammain">好友的微博</a></li>
+                    <li><a href="weibo/usertimeline.aspx" class="new" target="frammain">我的微博</a></li>
+                    <li><a href="weibo/message.aspx" class="new" target="frammain">微博消息</a></li>
+                    <li><a href="weibo/post.aspx" class="new" target="frammain">发布微博</a></li>
+                </ul>
+                <em class="glyphicon glyphicon-folder-open"></em>
+                <span>消息推送</span>
+                <ul>
+                    <li><a href="weibo/letter.aspx" class="new" target="frammain">群发私信</a></li>
+                    <li><a href="weibo/autoreply.aspx" class="new" target="frammain">自动回复</a></li>
+                </ul>
+                <ul>
+                    <li><a href="weibo/menu.aspx" class="new" target="frammain">自定义菜单</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <div class="footer-btn navbar-fixed-bottom">
+        <button type="button" class="btn btn-primary">保存</button>
+        <button type="button" class="btn btn-primary" id="preview">保存并预览</button>
+    </div>
+</body>
+<script type="text/javascript">
+
+   
+
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    $(function () {
+        var temlElement = $('.freight-editor');
+        str = '件',
+        options = '',
+        inputElement = '',
+        remove = '<div class="batch"><input type="checkbox" id="allselect">&nbsp;<label>全选</label><a href="javascript:void(0)">批量设置</a><a href="javascript:void(0)" id="removeradio">批量删除</a></div>',
+        tableElement = '<div class="tbl-except"><table class="table table-hover table-bordered"><thead><tr><th width="260">运送到</th><th>首件(件)</th><th>首费(元)</th><th>续件(件)</th><th>续费(元)</th><th>操作</th></tr></thead><tbody><tr class="RegionItem"><td><a href="javascript:void(0)" class="exit-area">编辑</a><div class="area-group"><p>未添加地区</p></div></td><td><input type="text" value="1" name="" data-field="start"></td><td><input type="text" value="1" name="" data-field="postage"></td><td><input type="text" value="1" name="" data-field="plus"></td><td><input type="text" value="1" name="" data-field="postageplus"></td><td><a class="delete" href="javascript:void(0)">删除</a></td></tr></tbody></table></div>';
+        //计价方式事件
+        $('#valuationmethod input').click(function () {
+            if (confirm('切换计价方式后，所设置当前模板的运输信息将被清空，确定继续么？')) {
+                switch ($('#valuationmethod input:checked').val()) {
+                    case '1':
+                        str = '件';
+                        break;
+                    case '2':
+                        str = 'kg';
+                        break;
+                    case '3':
+                        str = 'm<sup>3</sup>';
+                        break;
+                }
+                $('.freight-editor').addClass('hidde').children().remove();
+                $('.select p input').attr('checked', false);
+            } else {
+                return false;
+            }
+        })
+        //调整运费方式事件
+        $('#whofreight input').click(function () {
+            if ($(this).val() == 'false') {
+                HiTipsShow('您的运费设置将变为未设置状态，请设置运费', 'success');
+                $('#shippertypeid').show();
+                $('#freetypeid').show();
+            } else {
+                HiTipsShow('选择“卖家承担运费”后所有区域的运费将设置为0且原运费设置无法恢复，请保存原有运费设置。', 'success');
+                $('#shippertypeid').hide();
+                $('#freetypeid').hide();
+            }
+            $('.freight-editor').addClass('hidde').children().remove();
+            $('.select p input').attr('checked', false);
+        })
+        //复选框事件
+        temlElement.on('click', '.delete', function () {
+            if (confirm('您确定要删除当前地区的设置吗？')) {
+                $(this).parent().parent().remove();
+            } else {
+                return;
+            }
+        });
+        //删除全部选中的tr
+        temlElement.on('click', '#removeradio', function () {
+            if ($(this).parent().find('input').get(0).checked) {
+                $(this).parent().prevAll('.tbl-except').find('.area-group input').each(function () {
+                    if (this.checked) {
+                        $(this).parents('tr').remove();
+                    }
+                })
+                $(this).parent().nextAll('.tbl-attach').find('.batch-operation').remove();
+                $(this).parent().remove();
+                inputElement = "";
+            } else {
+                alert('请选择批量选择的地区');
+            }
+        });
+        //全选按钮事件
+        temlElement.on('change', '#allselect', function () {
+            if (this.checked) {
+                $(this).parent().prevAll('.tbl-except').find('.area-group input').prop('checked', true);
+            } else {
+                $(this).parent().prevAll('.tbl-except').find('.area-group input').prop('checked', false);
+            }
+        })
+        //批量操作按钮事件
+        temlElement.on('click', '.batch-operation', function () {
+            if (!$(this).parent().prevAll().hasClass('batch')) {
+                $(this).parent().before('<div class="batch clearfix"><input type="checkbox" id="allselect">&nbsp;<label  class="mr5">全选</label><a href="javascript:void(0)" class="mr5"><span id="template-y">批量设置</span><div class="downup"><div class="form-inline"><div class="form-group"><label for="defaultship">首件：</label><input type="text" class="form-control" data-field="start"><label>，' + str + '内</label></div><div class="form-group"><input type="txet" class="form-control" data-field="postage"><label>&nbsp;元</label></div><div class="form-group"><label>&nbsp;续件&nbsp;</label><input type="txet" class="form-control" data-field="plus"><label>&nbsp;' + str + '</label></div><div class="form-group"><label>&nbsp;续费&nbsp;</label><input type="txet" class="form-control" data-field="postageplus"><label>&nbsp;元</label></div></div><div class="temp-button"><button type="button" class="btn btn-success btn-sm modifytmpl sucmodify">确定</button><button type="button" class="btn btn-success btn-sm modifytmpl">取消</button></div></div></a><a href="javascript:void(0)" id="removeradio">批量删除</a></div>');
+                if (!$(this).parent().prevAll('.tbl-except').find('.area-group input').length) {
+                    $(this).parent().prevAll('.tbl-except').find('.area-group').prepend('<input type="checkbox" name="">');
+                }
+                inputElement = '<input type="checkbox" name="">';
+                $(this).text('取消批量');
+            } else {
+                $(this).text('批量操作');
+                inputElement = "";
+                $(this).parent().prev('.batch').remove();
+                $(this).parent().prevAll('.tbl-except').find('.area-group input').remove();
+            }
+        });
+        temlElement.on('click', '.sucmodify', function () {
+            var inputVal = {
+                start: $(this).parents('.downup').find('input[data-field="start"]').val(),
+                postage: $(this).parents('.downup').find('input[data-field="postage"]').val(),
+                plus: $(this).parents('.downup').find('input[data-field="plus"]').val(),
+                postageplus: $(this).parents('.downup').find('input[data-field="postageplus"]').val()
+            };
+            $(this).parents('.batch').prevAll('.tbl-except').find('input[type="text"]').each(function () {
+                switch ($(this).attr('data-field')) {
+                    case 'start':
+                        $(this).val(inputVal.start);
+                        break;
+                    case 'postage':
+                        $(this).val(inputVal.postage);
+                        break;
+                    case 'plus':
+                        $(this).val(inputVal.plus);
+                        break;
+                    case 'postageplus':
+                        $(this).val(inputVal.postageplus);
+                        break;
+                }
+            });
+        });
+        //批量设置按钮事件
+        temlElement.on('click', '.modifytmpl', function () {
+            $(this).parents('.downup').hide();
+        });
+        //批量设置事件
+        temlElement.on('click', '#template-y', function () {
+            $(this).next().show();
+        });
+        //添加表格与行事件
+        temlElement.on('click', '.designated-areas', function () {
+            if (!$(this).parent().prevAll().hasClass('tbl-except')) {
+                $(this).parent().before(tableElement);
+            } else {
+                $(this).parent().prevAll('.tbl-except').find('table tbody').append('<tr class="RegionItem"><td><a href="javascript:void(0)" class="exit-area">编辑</a><div class="area-group">' + inputElement + '<p>未添加地区</p></div></td><td><input type="text" value="1" data-field="start"></td><td><input type="text" value="1" name="" data-field="postage"></td><td><input type="text" value="1" name="" data-field="plus"></td><td><input type="text" value="1" name="" data-field="postageplus"></td><td><a class="delete" href="javascript:void(0)">删除</a></td></tr>');
+            }
+            if (!$(this).next().get(0)) {
+                $(this).parent().append('&nbsp;&nbsp;<a href="javascript:void(0)" class="batch-operation">批量操作</a>');
+            }
+        });
+        //快的等4个按钮的选中事件
+        $('.select p input').change(function () {
+            inputElement = "";
+            $('.select-express').empty();
+            $('.select p input').each(function () {
+                if ($(this)[0].checked) {
+                    $('.select-express').append('<option  value="' + $(this).val() + '">' + $(this).attr("key") + '</option>');
+                }
+            });
+            if ($('#whofreight input:checked').val() == 'false') {
+                if ($(this)[0].checked) {
+                    $(this).parent().next().removeClass('hidde');
+                    if (!$(this).parent().next().children().length) {
+                        $(this).parent().next().append('<div class="entity"><div class="default"><div class="form-inline"><div class="form-group"><label>默认运费：</label><input type="text" class="form-control"><label>，' + str + '内</label></div><div class="form-group"><input type="text" class="form-control"><label>&nbsp;元</label></div><div class="form-group"><label>&nbsp;每增加</label><input type="text" class="form-control"><label>&nbsp;' + str + '</label></div><div class="form-group"><label>&nbsp;增加运费</label><input type="text" class="form-control"><label>&nbsp;元</label></div></div></div><div class="tbl-attach"><a href="javascript:void(0)" class="designated-areas">为指定地区城市设置运费</a></div></div>');
+                    }
+                } else {
+                    $(this).parent().next().addClass('hidde');
+                }
+            }
+        });
+        function setStrOption() {
+            $('.select p input').each(function () {
+                if ($(this)[0].checked) {
+                    options += '<option value="' + $(this).val() + '">' + $(this).attr("key") + '</option>';
+                }
+            })
+        }
+        //是否包邮事件
+        $('.specified-condition > p input').change(function () {
+            if ($(this)[0].checked) {
+                setStrOption();
+                if (!$(this).parent().next().children().length) {
+                    $(this).parent().next().append('<table class="table table-hover table-bordered"><thead><tr><th width="30%">选择地区</th><th>选择运送方式</th><th>选择快递</th><th width="30%">设置包邮条件</th><th>操作</th></tr></thead><tbody><tr class="FreeRegion"><td><a href="javascript:void(0)" class="exit-area">编辑</a><div class="area-group"><p>未添加地区</p></div></td><td><select class="select-express">' + options + '</select></td><td></td><td><select class="setfreeshipping"><option value="1">件数</option><option  value="2">金额</option><option  value="3">件数+金额</option></select><p class="free-contion">满 <input type="text" value="" class="input-text " name="preferentialStandard"> 件包邮</p></td><td><p class="oper"><a href="javascript:void(0)" class="add">＋</a><a href="javascript:void(0)" class="remove">×</a></p></td></tr></tbody></table>');
+                }
+            } else {
+                $(this).parent().next().empty();
+            }
+        });
+        //是否包邮表格添加行事件
+        $('.specified-dis').on('click', '.add', function () {
+            setStrOption();
+            $('.specified-dis table tbody').append('<tr class="FreeRegion"><td><a href="javascript:void(0)" class="exit-area">编辑</a><div class="area-group"><p>未添加地区</p></div></td><td><select class="select-express">' + options + '</select></td><td></td><td><select class="setfreeshipping"><option value="1">件数</option><option value="2">金额</option><option value="3">件数+金额</option></select><p class="free-contion">满 <input type="text" value="" class="input-text " name="preferentialStandard"> 件包邮</p></td><td><p class="oper"><a href="javascript:void(0)" class="add">＋</a><a href="javascript:void(0)" class="remove">×</a></p></td></tr>');
+        })
+        //是否包邮表格删除行事件
+        $('.specified-dis').on('click', '.remove', function () {
+            $(this).parents('tr').remove();
+        })
+        //包邮选择框事件
+        $('.specified-dis').on('change', '.setfreeshipping', function () {
+            $(this).next().empty();
+            switch ($(this).val()) {
+                case '1':
+                    $(this).next().append('满 <input type="text" value=""> 件包邮');
+                    break;
+                case '2':
+                    $(this).next().append('满 <input type="text" value="">元包邮');
+                    break;
+                case '3':
+                    $(this).next().append('满 <input type="text" value=""> 件,<input type="text" value="">元以上包邮');
+                    break;
+                default:
+                    return;
+            }
+        });
+        //编辑地区
+        $('.freight-template').on('click', '.exit-area', function () {
+            $(this).next().find('p').attr('data-area', true);
+            if (!$('#area')[0]) {
+                createArea();
+            } else {
+                $('#area').show();
+            }
+            $('#area .pro-check').prop('checked', false);
+            $('#area .citycheckbox').prop('checked', false);
+            $('#area .select-number').text('');
+            $('#area .city-box').hide();
+            var data = $(this).next().find('p').attr('data-storage');
+            if (data) {
+                data = data.split(',');
+                data.pop();
+                for (var i = 0; i < data.length; i++) {
+                    $('#city_' + data[i]).prop('checked', true);
+                };
+                $('#area .city-box').each(function () {
+                    var checkedLength = $(this).find('input:checked').length;
+                    if (checkedLength == $(this).find('input').length) {
+                        $(this).prevAll('label').find('input').prop('checked', true);
+                    }
+                    if (checkedLength) {
+                        $(this).prevAll('.select-number').text('(' + checkedLength + ')');
+                    }
+                });
+            }
+            var dataid = $(this).parents('.freight-editor').prev().find("input").attr('dataid');
+            if (dataid) {
+                dataid = dataid.split(',');
+                dataid.pop(dataid);
+                if ($(this).next().find('p').text() != "未添加地区") {
+                    for (var j = 0; j < dataid.length; j++) {
+                        var inputL = $('#' + dataid[j]).parents('.city-box').find('input').length,
+                            checkedL = $('#' + dataid[j]).parents('.city-box').find('input:checked').length;
+                        $('#' + dataid[j]).prop('disabled', false);
+                        if (inputL == checkedL) {
+                            $('#' + dataid[j]).parents('.city-box').prevAll('label').find('input').prop('disabled', true);
+                        } else {
+                            $('#' + dataid[j]).parents('.city-box').prevAll('label').find('input').prop('disabled', false);
+                        }
+                    }
+                } else {
+                    for (var x = 0; x < dataid.length; x++) {
+                        var inputL = $('#' + dataid[x]).parents('.city-box').find('input').length,
+                            checkedL = $('#' + dataid[x]).parents('.city-box').find('input[checked]').length;
+                        $('#' + dataid[x]).prop('disabled', true);
+                        if (inputL == checkedL) {
+                            $('#' + dataid[x]).parents('.city-box').prevAll('label').find('input').prop('disabled', true);
+                        } else {
+                            $('#' + dataid[x]).parents('.city-box').prevAll('label').find('input').prop('disabled', false);
+                        }
+                    };
+                }
+            }
+        })
+        var createArea = function () {
+            var html = "",
+                proName = "",
+                i = 0;
+            for (i; i < province.length; i++) {
+                var cityHtml = "";
+                var j = 0;
+                for (j; j < province[i]["city"].length; j++) {
+                    cityHtml += '<li><label><input type="checkbox" id="city_' + province[i]["city"][j]["id"] + '" class="citycheckbox" value="' + province[i]["city"][j]["name"] + '" data-city="' + province[i]["city"][j]["id"] + '">' + province[i]["city"][j]["name"] + '</label></li>';
+                }
+                html += '<li><label><input type="checkbox" data-province="' + province[i]["name"] + '" id="province_' + province[i]["id"] + '" class="pro-check">' + province[i]["name"] + '</label><span class="select-number"></span><b class="glyphicon glyphicon-menu-down citydown"></b><div class="city-box"><ul class="clearfix">' + cityHtml + '</ul><i class="colse">×</i></div></li>';
+            }
+            $('body').append('<div id="area"><div class="area-title"><h3>选择区域</h3><a class="aui_close" href="javascript:void(0)">×</a></div><div class="setinside"><ul class="clearfix">' + html + '</ul><button class="btn btn-success area-ok">确定</button></div></div>');
+        };
+        $('body').on('click', '.citydown', function () {
+            $(this).parents('.setinside').find('.city-box').hide();
+            $(this).next().show();
+        });
+        $('body').on('click', '.colse', function () {
+            $(this).parent().hide();
+        });
+        //省级选择框事件
+        $('body').on('change', '.pro-check', function () {
+            var cityInput = $(this).parent().nextAll('.city-box');
+            if (!$(this)[0].checked) {
+                cityInput.find('input').prop('checked', false);
+            } else {
+                cityInput.find('input').prop('checked', true);
+                cityInput.find('input[disabled]').prop('checked', false).attr('disab', false);
+            }
+            $(this).parent().next().text('(' + cityInput.find('input:checked').length + ')');
+        })
+        //市级选择框事件
+        $('body').on('click', '.citycheckbox', function () {
+            var downCity = $(this).parents('.city-box');
+            downCity.prevAll('.select-number').text('(' + downCity.find('input:checked').length + ')');
+        })
+        $('body').on('click', '.aui_close', function () {
+            $(this).parents('#area').hide();
+            $('.area-group p').removeAttr('data-area');
+        })
+        //选择地区确定事件
+        $('body').on('click', '.area-ok', function () {
+            $(this).parents('#area').hide();
+            var str = data = "";
+            var express = $('.area-group p[data-area]').parents('.freight-editor').prev().find("input");
+            var id = express.attr('dataid');
+            if (id == undefined) id = "";
+            $('#area .city-box input:checked').each(function () {
+                data += $(this).attr('data-city') + ',';
+                id += $(this).attr('id') + ',';
+            });
+            $('#area .city-box').each(function () {
+                var checkedLength = $(this).find('input:checked').length;
+                if (checkedLength) {
+                    if (checkedLength == $(this).find('input').length) {
+                        str += $(this).prevAll('label').find('input').attr('data-province') + '、';
+                    } else {
+                        $(this).find('input').each(function () {
+                            if ($(this)[0].checked) {
+                                str += $(this).val() + '、';
+                            }
+                        });
+                    }
+                }
+            })
+            express.attr('dataid', id);
+            if (str == "") str = "未添加地区";
+            $('.area-group p[data-area]').attr('data-storage', data);
+            $('.area-group p[data-area]').text(str).attr('title', str);
+            $('.area-group p').removeAttr('data-area');
+        })
+        $('body').on('mousedown', '.area-title h3', function (evt) {
+            var downX = evt.clientX,
+                downY = evt.clientY,
+                topN = downY - parseInt($('#area').css('top')),
+                leftN = downX - parseInt($('#area').css('left'));
+            winH = $(window).height(),
+            elemH = $('#area').height(),
+            winW = $(window).width(),
+            elemW = $('#area').width();
+            $(document).on('mousemove', function (evt) {
+                var moveX = evt.clientX - leftN,
+                    moveY = evt.clientY - topN;
+                if (moveY < 0) moveY = 0;
+                if (moveY > winH - elemH) moveY = winH - elemH;
+                if (moveX < 200) moveX = 200;
+                if (moveX > winW - elemW + 200) moveX = winW - elemW + 200;
+                $('#area').css({
+                    'left': moveX,
+                    'top': moveY
+                })
+            })
+            $(document).on('mouseup', function () {
+                $(document).off('mousemove');
+                $(document).off('mouseup');
+            })
+        })
+    })
+
+
+
+</script>
+</html>

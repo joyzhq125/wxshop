@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>vshop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="icon" href="../images/hi.ico" />
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="keywords" />
+    <meta name="description" />
+</head>
+<body class="theme theme--blue">
+    <header class="ui-header navbar-fixed-top">
+        <div class="ui-header-inner clearfix">
+            <h1 class="ui-header-logo">
+                <a href="#" title="Hishop销客多">
+                    <span class="version"><i>3.0</i></span>
+                </a>
+            </h1>
+            <nav class="ui-header-nav">
+                <ul class="clearfix">
+                    <li class="divide">|</li>
+                    <li class="active">
+                        <a onclick="ShowMenuLeft('店铺', null, null,this)">店铺</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('商品', null, null, this)">商品</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('订单', null, null, this)">订单</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li><a onclick="ShowMenuLeft('会员', null, null, this)">会员</a></li>
+                    <li><a onclick="ShowMenuLeft('分销', null, null, this)">分销</a></li>
+                    <li class="divide">|</li>
+
+                    <li class="js-weixin-notify ">
+                        <a onclick="ShowMenuLeft('微信', null, null, this)">微信</a>
+                    </li>
+                    <li class="js-weibo-notify">
+                        <a onclick="ShowMenuLeft('微博', null, null, this)">微博<sup class="notify-counter" style="visibility: hidden;"></sup></a>
+                    </li>
+                    <li class="divide">|</li>
+                    <li>
+                        <a onclick="ShowMenuLeft('营销', null, null, this)">营销</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li>
+                        <a onclick="ShowMenuLeft('设置', null, null, this)">设置</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('分析统计', null, null, this)">分析统计</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ui-header-user ">
+                <div class="customer-wrap">
+                </div>
+                <div class="dropdown hover dropdown-right">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="txt">
+                            <span class="ellipsis team_name" id="spTopSiteName">这里是店名</span><span class="dash"> - </span><span id="spTopUserName">admin</span>
+                        </span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-user"></span>个人信息</a></li>
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-list-alt"></span>修改密码</a></li>
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-comment"></span>关于</a></li>
+                        <li class="divide"></li>
+                        <li><a href="LoginExit.aspx"><span class="glyphicon glyphicon-indent-right"></span>退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="app">
+            <div class="app-inner clearfix">
+                <div class="page-header">
+                    <h2>营销</h2>
+                </div>
+                <div class="set-switch">
+                    <strong>优惠券</strong>
+                    <p>优惠券分为有门槛和无门槛优惠券，主要作用有提升客单价、提高回购率、吸引新老顾客形成购买转化。</p>
+                </div>
+                <div class="shop-navigation clearfix">
+                    <div class="fl">
+                        <div class="mobile-border">
+                            <div class="mobile-d">
+                                <div class="mobile-header">
+                                    <i></i>
+                                    <div class="mobile-title">店铺首页</div>
+                                </div>
+                                <div class="set-overflow">
+                                    <div class="white-box">
+                                        <div class="coupons autol">
+                                            <div class="fl">
+                                                优惠券
+                                            </div>
+                                            <div class="fr">
+                                                <p class="mo">￥100.00</p>
+                                                <p class="over">满500减100</p>
+                                                <p>生效时间：<span>2015-07-28 11:18:11</span></p>
+                                                <p>到期时间：<span>2015-07-28 11:18:11</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-nav">
+                                        <ul class="clearfix">
+                                            <li>
+                                                <span class="glyphicon glyphicon-home"></span>
+                                                <p>店铺主页</p>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-user"></span>
+                                                <p>会员主页</p>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-list"></span>
+                                                <p>所有商品</p>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-duplicate"></span>
+                                                <p>申请分销</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-line">
+                                <div class="mobile-footer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl frwidth">
+                        这里写右边的东西
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="ui-sidebar sidebar" style="height:100%">
+            <nav class="well" id="menu_left">
+                <ul>
+                    <li class="active"><a href="weibo/setting.aspx" class="new" target="frammain">绑定微博账号</a></li>
+                </ul>
+                <em class="glyphicon glyphicon-scissors"></em>
+                <span>微博管理</span>
+                <ul>
+                    <li><a href="weibo/timeline.aspx" class="new" target="frammain">好友的微博</a></li>
+                    <li><a href="weibo/usertimeline.aspx" class="new" target="frammain">我的微博</a></li>
+                    <li><a href="weibo/message.aspx" class="new" target="frammain">微博消息</a></li>
+                    <li><a href="weibo/post.aspx" class="new" target="frammain">发布微博</a></li>
+                </ul>
+                <em class="glyphicon glyphicon-folder-open"></em>
+                <span>消息推送</span>
+                <ul>
+                    <li><a href="weibo/letter.aspx" class="new" target="frammain">群发私信</a></li>
+                    <li><a href="weibo/autoreply.aspx" class="new" target="frammain">自动回复</a></li>
+                </ul>
+                <ul>
+                    <li><a href="weibo/menu.aspx" class="new" target="frammain">自定义菜单</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>

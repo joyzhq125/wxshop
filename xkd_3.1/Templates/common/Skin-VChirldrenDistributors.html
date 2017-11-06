@@ -1,0 +1,37 @@
+﻿   <hi:common_header runat="server" />
+      <div class="pbox">
+     <asp:Panel ID="onedistributor" runat="server">
+      <ul class="clearfix orders-title">
+        <li  class="activenum"><a href="?gradeId=2">一级分店</a></li>
+        <li><a href="?gradeId=3">二级分店</a></li>
+      </ul>
+      </asp:Panel>
+      <asp:Panel ID="twodistributor" runat="server">
+       <ul class="clearfix orders-title">
+        <li style="width:100%" class="activenum"><a>二级分店</a></li>
+      </ul>
+      </asp:Panel>
+      <div id="distributor">
+       <hi:vshoptemplatedrepeater id="rpdistributor" templatefile="/Tags/Skin-Common-ChirldrenStores.ascx"
+                runat="server" /></div>
+                 <div id="empty" style="text-align: center;">
+        <img src="/Utility/pics/nonestore.gif" />
+    </div>
+    </div>  
+    
+    <script>
+        var gradeId = getParam('gradeId');
+        if (gradeId == '3') {
+            $(".orders-title li:eq(1)").addClass("activenum").siblings().removeClass("activenum");
+        }
+        $(function () {
+
+            if (!$.trim($('#distributor').html())) {
+                $('#empty').css('display', '');
+            }
+            else {
+                $('#empty').css('display', 'none');
+            }
+        });
+    </script> 
+    <hi:common_footer runat="server" />   

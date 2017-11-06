@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA3B80A6-2DFE-4EFC-863C-5D0EE3A3E12F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Hidistro.UI.ControlPanel.Utility</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\AllowLoginRadioButtonList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\AttributeUseageModeRadioButtonList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\AdminPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\BrandCategoriesCheckBoxList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\ExpressCheckBoxList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\ExpressPrintButton.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\GiftStatusRadioButtonList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\GridSkuMemberPriceTable.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\HiControls.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\ImageDataGradeDropDownList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\ImageTypeLabel.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\LogsUserNameDropDownList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\DistributorGradeDropDownList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\MemberGradeDropDownList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\MemberGradeCheckBoxList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\MemberSearch.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\PaymentDropDownList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\ProductCategoriesDropDownList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\ProductCategoriesListBox.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\ProductEditColumn.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\ProductTypesCheckBoxList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\PurchaseOrderItemUpdateHyperLink.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\RegionArea.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\RoleDropDownList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\ShippingTemplatesDropDownList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\SiteNameLabel.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\SKUImage.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\UseAttributeImageRadioButtonList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\ShippersDropDownList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\MemberPriceDropDownList.cs" />
+    <Compile Include="Hidistro\UI\ControlPanel\Utility\MemberHasVipCardDropDownList.cs" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hidistro.Bll\Chenduo.Bll.csproj">
+      <Project>{808c6cc8-4cbc-4c3e-9acc-573819afc2e5}</Project>
+      <Name>Chenduo.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.ControlPanel\Hidistro.ControlPanel.csproj">
+      <Project>{8c478dd2-c91e-4e34-bc61-8bc181247e31}</Project>
+      <Name>Hidistro.ControlPanel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Core\Hidistro.Core.csproj">
+      <Project>{c2f9053c-c4dd-467a-958e-28f27971f9af}</Project>
+      <Name>Hidistro.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Entities\Hidistro.Entities.csproj">
+      <Project>{b544c93d-c963-40f6-8702-8b75d2ddb8a7}</Project>
+      <Name>Hidistro.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.UI.Common.Controls\Hidistro.UI.Common.Controls.csproj">
+      <Project>{2cd5b19a-6a7d-45be-8d16-f0c6ee517805}</Project>
+      <Name>Hidistro.UI.Common.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.Components.Validation\Hishop.Components.Validation.csproj">
+      <Project>{0bb99e47-2e13-4699-8a17-b694bafdaf8e}</Project>
+      <Name>Hishop.Components.Validation</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4C164E7-9F3B-43A2-A087-8295C6A0982A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Hidistro.Messages</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Hidistro\Messages\Emails.cs" />
+    <Compile Include="Hidistro\Messages\MessageTemplateHelper.cs" />
+    <Compile Include="Hidistro\Messages\MessageType.cs" />
+    <Compile Include="Hidistro\Messages\SendStatus.cs" />
+    <Compile Include="Hidistro\Messages\Messenger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hidistro.Core\Hidistro.Core.csproj">
+      <Project>{c2f9053c-c4dd-467a-958e-28f27971f9af}</Project>
+      <Name>Hidistro.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Entities\Hidistro.Entities.csproj">
+      <Project>{b544c93d-c963-40f6-8702-8b75d2ddb8a7}</Project>
+      <Name>Hidistro.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.SqlDal\Hidistro.SqlDal.csproj">
+      <Project>{a0d0a688-a825-464d-b3dc-9e233f74bb68}</Project>
+      <Name>Hidistro.SqlDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.Plugins\Hishop.Plugins.csproj">
+      <Project>{0e59e504-5d0d-457d-8c08-f4c1a9ad6026}</Project>
+      <Name>Hishop.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.Weixin.MP\Hishop.Weixin.MP.csproj">
+      <Project>{8e1202a9-2483-48f9-a1a5-82571fe70946}</Project>
+      <Name>Hishop.Weixin.MP</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

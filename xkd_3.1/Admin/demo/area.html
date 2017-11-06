@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>vshop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="icon" href="../images/hi.ico" />
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/Region.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="keywords" />
+    <meta name="description" />
+    <style type="text/css">
+    .selectcheckbox{width: 20px;height: 20px;background-color: #ccc;border-radius: 3px;margin-top: 40px;cursor: pointer;}
+    .selectcheckbox span{color: red;display: none;}
+    .selectcheckbox.checked span{display: block;}
+    </style>
+    <script type="text/javascript">
+        $(function (){
+            var flag=false;
+            $('.selectcheckbox').click(function (){
+                if(!flag){
+                    $(this).addClass('checked');
+                    flag=true;
+                }else{
+                    $(this).removeClass('checked');
+                    flag=false;
+                }
+            })
+        })
+    </script>
+</head>
+<body class="theme theme--blue">
+    <header class="ui-header navbar-fixed-top">
+        <div class="ui-header-inner clearfix">
+            <h1 class="ui-header-logo">
+                <a href="#" title="Hishop销客多">
+                    <span class="version"><i>3.0</i></span>
+                </a>
+            </h1>
+            <nav class="ui-header-nav">
+                <ul class="clearfix">
+                    <li class="divide">|</li>
+                    <li class="active">
+                        <a onclick="ShowMenuLeft('店铺', null, null,this)">店铺</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('商品', null, null, this)">商品</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('订单', null, null, this)">订单</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li><a onclick="ShowMenuLeft('会员', null, null, this)">会员</a></li>
+                    <li><a onclick="ShowMenuLeft('分销', null, null, this)">分销</a></li>
+                    <li class="divide">|</li>
+
+                    <li class="js-weixin-notify ">
+                        <a onclick="ShowMenuLeft('微信', null, null, this)">微信</a>
+                    </li>
+                    <li class="js-weibo-notify">
+                        <a onclick="ShowMenuLeft('微博', null, null, this)">微博<sup class="notify-counter" style="visibility: hidden;"></sup></a>
+                    </li>
+                    <li class="divide">|</li>
+                    <li>
+                        <a onclick="ShowMenuLeft('营销', null, null, this)">营销</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li>
+                        <a onclick="ShowMenuLeft('设置', null, null, this)">设置</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('分析统计', null, null, this)">分析统计</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ui-header-user ">
+                <div class="customer-wrap">
+                </div>
+                <div class="dropdown hover dropdown-right">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="txt">
+                            <span class="ellipsis team_name" id="spTopSiteName">这里是店名</span><span class="dash"> - </span><span id="spTopUserName">admin</span>
+                        </span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-user"></span>个人信息</a></li>
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-list-alt"></span>修改密码</a></li>
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-comment"></span>关于</a></li>
+                        <li class="divide"></li>
+                        <li><a href="LoginExit.aspx"><span class="glyphicon glyphicon-indent-right"></span>退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container nocopy">
+        <div class="app">
+            <div class="app-inner clearfix">
+                <div class="page-header">
+                    <h2>店铺信息</h2>
+                </div>
+                <button id="btn">编辑</button>
+                <div class="selectcheckbox">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </div>
+<!--                 <div id="area">
+                    <div class="area-title">
+                        <h3>选择区域</h3>
+                        <a class="aui_close" href="javascript:void(0)">×</a>
+                    </div>
+                    <div class="setinside">
+                        <ul class="clearfix">
+                            <li>
+                                <label>
+                                    <input type="checkbox" class="pro-check">浙江省
+                                </label>
+                                <span class="select-number">(12)</span>
+                                <b class="glyphicon glyphicon-menu-down"></b>
+                                <div class="city-box">
+                                    <ul class="clearfix">
+                                        <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+                                        <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+                                        <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+                                        <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+                                        <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+                                        <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+                                        <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+                                        <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+                                    </ul>
+                                    <i class="colse">×</i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <aside class="ui-sidebar sidebar" style="height:100%">
+            <nav class="well" id="menu_left">
+                <ul>
+                    <li class="active"><a href="weibo/setting.aspx" class="new" target="frammain">绑定微博账号</a></li>
+                </ul>
+                <em class="glyphicon glyphicon-scissors"></em>
+                <span>微博管理</span>
+                <ul>
+                    <li><a href="weibo/timeline.aspx" class="new" target="frammain">好友的微博</a></li>
+                    <li><a href="weibo/usertimeline.aspx" class="new" target="frammain">我的微博</a></li>
+                    <li><a href="weibo/message.aspx" class="new" target="frammain">微博消息</a></li>
+                    <li><a href="weibo/post.aspx" class="new" target="frammain">发布微博</a></li>
+                </ul>
+                <em class="glyphicon glyphicon-folder-open"></em>
+                <span>消息推送</span>
+                <ul>
+                    <li><a href="weibo/letter.aspx" class="new" target="frammain">群发私信</a></li>
+                    <li><a href="weibo/autoreply.aspx" class="new" target="frammain">自动回复</a></li>
+                </ul>
+                <ul>
+                    <li><a href="weibo/menu.aspx" class="new" target="frammain">自定义菜单</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <script type="text/javascript">
+        $(function (){
+            $('#btn').click(function (){
+                if(!$('#area')[0]){
+                    createArea();
+                }else{
+                    $('#area').show();
+                }
+            })
+        })
+        // <li>
+        //     <label>
+        //         <input type="checkbox" class="pro-check">浙江省
+        //     </label>
+        //     <span class="select-number">(12)</span>
+        //     <b class="glyphicon glyphicon-menu-down"></b>
+        //     <div class="city-box">
+        //         <ul class="clearfix">
+        //             <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+        //             <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+        //             <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+        //             <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+        //             <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+        //             <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+        //             <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+        //             <li><label><input type="checkbox" id="city_101">杭州市</label></li>
+        //         </ul>
+        //         <i class="colse">×</i>
+        //     </div>
+        // </li>
+        var createArea= function (){
+            var html="",
+                proName="",
+                i=0;
+            for(i;i<province.length;i++){
+                var cityHtml="";
+                var j=0;
+                for(j;j<province[i]["city"].length;j++){
+                    cityHtml+='<li><label><input type="checkbox" class="citycheckbox" id="city_'+province[i]["city"][j]["id"]+'">'+province[i]["city"][j]["name"]+'</label></li>';
+                }
+                html+='<li><label><input type="checkbox" id="province_'+province[i]["id"]+'" class="pro-check">'+province[i]["name"]+'</label><span class="select-number"></span><b class="glyphicon glyphicon-menu-down citydown"></b><div class="city-box"><ul class="clearfix">'+cityHtml+'</ul><i class="colse">×</i></div></li>';
+            }
+            $('body').append('<div id="area"><div class="area-title"><h3>选择区域</h3><a class="aui_close" href="javascript:void(0)">×</a></div><div class="setinside"><ul class="clearfix">'+html+'</ul></div></div>');
+        };
+        $('body').on('click','.citydown',function (){
+            $(this).parents('.setinside').find('.city-box').hide();
+            $(this).next().show();
+        });
+        $('body').on('click','.colse',function (){
+            $(this).parent().hide();
+        });
+        $('body').on('change','.pro-check',function (){
+            var cityInput=$(this).parent().nextAll('.city-box');
+            if(!$(this)[0].checked){
+                cityInput.find('input').prop('checked',false);
+            }else{
+                cityInput.find('input').prop('checked',true);
+            }
+            $(this).parent().next().text('('+cityInput.find('input:checked').length+')');
+        })
+        $('body').on('click','.citycheckbox',function (){
+            var downCity=$(this).parents('.city-box');
+            downCity.prevAll('.select-number').text('('+downCity.find('input:checked').length+')');
+        })
+        $('body').on('click','.aui_close',function (){
+            $(this).parents('#area').hide();
+        })
+    </script>
+</body>
+</html>

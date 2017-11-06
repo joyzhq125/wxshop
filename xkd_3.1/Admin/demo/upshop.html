@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>vshop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="icon" href="../images/hi.ico" />
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/admin/js/jquery.nicescroll.min.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="keywords" />
+    <meta name="description" />
+</head>
+<body class="theme theme--blue">
+    <header class="ui-header navbar-fixed-top">
+        <div class="ui-header-inner clearfix">
+            <h1 class="ui-header-logo">
+                <a href="#" title="Hishop销客多">
+                    <span class="version"><i>3.0</i></span>
+                </a>
+            </h1>
+            <nav class="ui-header-nav">
+                <ul class="clearfix">
+                    <li class="divide">|</li>
+                    <li class="active">
+                        <a onclick="ShowMenuLeft('店铺', null, null,this)">店铺</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('商品', null, null, this)">商品</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('订单', null, null, this)">订单</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li><a onclick="ShowMenuLeft('会员', null, null, this)">会员</a></li>
+                    <li><a onclick="ShowMenuLeft('分销', null, null, this)">分销</a></li>
+                    <li class="divide">|</li>
+
+                    <li class="js-weixin-notify ">
+                        <a onclick="ShowMenuLeft('微信', null, null, this)">微信</a>
+                    </li>
+                    <li class="js-weibo-notify">
+                        <a onclick="ShowMenuLeft('微博', null, null, this)">微博<sup class="notify-counter" style="visibility: hidden;"></sup></a>
+                    </li>
+                    <li class="divide">|</li>
+                    <li>
+                        <a onclick="ShowMenuLeft('营销', null, null, this)">营销</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li>
+                        <a onclick="ShowMenuLeft('设置', null, null, this)">设置</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('分析统计', null, null, this)">分析统计</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ui-header-user ">
+                <div class="customer-wrap">
+                </div>
+                <div class="dropdown hover dropdown-right">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="txt">
+                            <span class="ellipsis team_name" id="spTopSiteName">这里是店名</span><span class="dash"> - </span><span id="spTopUserName">admin</span>
+                        </span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-user"></span>个人信息</a></li>
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-list-alt"></span>修改密码</a></li>
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-comment"></span>关于</a></li>
+                        <li class="divide"></li>
+                        <li><a href="LoginExit.aspx"><span class="glyphicon glyphicon-indent-right"></span>退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="app">
+            <div class="app-inner clearfix">
+                <div class="page-header">
+                    <h2>上架新商品</h2>
+                </div>
+                <div class="play-tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#shopclass" aria-controls="shopclass" role="tab" data-toggle="tab">1.选择商品分类</a></li>
+                        <li role="presentation"><a href="#exitshopinfo" aria-controls="exitshopinfo" role="tab" data-toggle="tab">2.编辑商品信息</a></li>
+                        <li role="presentation"><a href="#exitshopdate" aria-controls="exitshopdate" role="tab" data-toggle="tab">3.编辑商品详情</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="shopclass">选择商品分类</div>
+                        <div role="tabpanel" class="tab-pane" id="exitshopinfo">
+                            <div class="exitshopinfo">
+                                <div class="form-horizontal">
+                                    <h3>基本信息</h3>
+                                    <div class="form-group">
+                                        <label class="col-xs-2 control-label">所属分类：</label>
+                                        <div class="col-xs-4">
+                                            <div class="exitpa">
+                                                <span>休闲鞋子</span>
+                                                <a href="javascript:void(0)">[编辑]</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="brand" class="col-xs-2 control-label">品牌：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="brand">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="shopname" class="col-xs-2 control-label">商品名称：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="shopname">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="shopinfo" class="col-xs-2 control-label">商品简介：</label>
+                                        <div class="col-xs-6">
+                                            <textarea id="shopinfo" rows="4" cols="50">
+                                                
+                                            </textarea>
+                                            <small>微信分享给好友时会显示这里的文案，如果没有填写，则显示商品名称</small>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-xs-2 control-label">商品图片：</label>
+                                        <div class="col-xs-6 clearbor">
+                                                <div class="exitpa">
+                                                    <a class="addimg" href="javascript:void(0)">+</a>
+                                                    <small>建议尺寸640×640像素</small>
+                                                    <small>支持批量上传，每个商品最多5张图，每张小于300KB，支持jpg、gif、png格式</small>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exitshopinfo">
+                                <div class="form-horizontal">
+                                    <h3>商品信息</h3>
+                                </div>
+                            </div>
+                            <div class="exitshopinfo resize">
+                                <div class="form-horizontal">
+                                    <h3>库存/规格</h3>
+                                    <div class="form-group">
+                                        <label class="col-xs-2 control-label">商品规格：</label>
+                                        <div class="col-xs-4">
+                                            <p class="onshopmo">开启多商城规格</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-xs-2 control-label"><em>*</em>原价：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="input1">&nbsp;&nbsp;元
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input2" class="col-xs-2 control-label"><em>*</em>现价：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="input2">&nbsp;&nbsp;元
+                                            <span class="setma">设置会员价</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input3" class="col-xs-2 control-label"><em>*</em>总库存：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="input3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input4" class="col-xs-2 control-label">商家编码：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="input4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input5" class="col-xs-2 control-label">基础销量：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="input5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exitshopinfo resize bg">
+                                <div class="form-horizontal">
+                                    <h3 class="resize">分销佣金设置</h3>
+                                    <div class="form-group">
+                                        <label for="input6" class="col-xs-2 control-label"><em>*</em>上二级佣金比例：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="input6">&nbsp;&nbsp;%
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input7" class="col-xs-2 control-label"><em>*</em>上一级佣金比例：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="input7">&nbsp;&nbsp;%
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input8" class="col-xs-2 control-label"><em>*</em>生胶店铺佣金比例：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="input8">&nbsp;&nbsp;%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exitshopinfo resize">
+                                <div class="form-horizontal">
+                                    <h3 class="resize">物流及其他</h3>
+                                    <div class="form-group">
+                                        <label for="input9" class="col-xs-2 control-label">物流体积：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="input9">&nbsp;&nbsp;立方米
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input10" class="col-xs-2 control-label">物流重量：</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control" id="input10">&nbsp;&nbsp;千克
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-xs-2 control-label"><em>*</em>运费设置：</label>
+                                        <div class="col-xs-4">
+                                            <div class="setradio">
+                                                <input type="radio" id="radio1" name="freight">
+                                                <label for="radio1">包邮</label>
+                                            </div>
+                                            <div class="setradio">
+                                                <input type="radio" id="radio2" name="freight">
+                                                <label for="radio2">运费模板</label>
+                                                <select></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-xs-2 control-label"><em>*</em>是否上架：</label>
+                                        <div class="col-xs-4">
+                                            <div class="setradio">
+                                                <input type="radio" id="radio3" name="warehouse">
+                                                <label for="radio3">立刻上架</label>
+                                            </div>
+                                            <div class="setradio">
+                                                <input type="radio" id="radio4" name="warehouse">
+                                                <label for="radio4">放入仓库</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nextbtn">
+                                <button type="button" class="btn btn-success btn-sm">下一步，编辑商品详情</button>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="exitshopdate">
+                            <div class="edit-text clearfix">
+                                <div class="edit-text-left">
+                                    <div class="mobile-border">
+                                        <div class="mobile-d">
+                                            <div class="mobile-header">
+                                                <i></i>
+                                                <div class="mobile-title">店铺首页</div>
+                                            </div>
+                                            <div class="upshop-view">
+                                                <div class="img-info">
+                                                    <p>基本信息区</p>
+                                                    <p>固定样式，显示商品主图、价格等信息</p>
+                                                </div>
+                                                <div class="exit-shop-info">
+                                                    <h6>商品详情区</h6>
+                                                    <p>点击进行编辑</p>
+                                                    <span class="exit">编辑</span>
+                                                </div>
+                                            </div>
+                                            <div class="mobile-footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit-text-right">
+                                    <div class="edit-inner">
+                                        这里是编辑器部分
+                                    </div>
+                                    <div class="exit-bottom">
+                                        <p><input type="checkbox">下载站外图片</p>
+                                        <p>勾选以后，如果商品详情中包含有站外图片，则会将图片下载保存到您店铺的图片库中，需要下载的图片越多，需要的时间越长，请慎重选择。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-btn navbar-fixed-bottom">
+                                <button type="button" class="btn btn-primary">上一步</button>
+                                <button type="button" class="btn btn-primary">保存</button>
+                                <button type="button" class="btn btn-primary" id="preview">保存并预览</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="ui-sidebar sidebar" style="height:100%">
+            <nav class="well" id="menu_left">
+                <ul>
+                    <li class="active"><a href="weibo/setting.aspx" class="new" target="frammain">绑定微博账号</a></li>
+                </ul>
+                <em class="glyphicon glyphicon-scissors"></em>
+                <span>微博管理</span>
+                <ul>
+                    <li><a href="weibo/timeline.aspx" class="new" target="frammain">好友的微博</a></li>
+                    <li><a href="weibo/usertimeline.aspx" class="new" target="frammain">我的微博</a></li>
+                    <li><a href="weibo/message.aspx" class="new" target="frammain">微博消息</a></li>
+                    <li><a href="weibo/post.aspx" class="new" target="frammain">发布微博</a></li>
+                </ul>
+                <em class="glyphicon glyphicon-folder-open"></em>
+                <span>消息推送</span>
+                <ul>
+                    <li><a href="weibo/letter.aspx" class="new" target="frammain">群发私信</a></li>
+                    <li><a href="weibo/autoreply.aspx" class="new" target="frammain">自动回复</a></li>
+                </ul>
+                <ul>
+                    <li><a href="weibo/menu.aspx" class="new" target="frammain">自定义菜单</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe src="basic.html"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- Visual Studio Browser Link -->
+    <script type="application/json" id="__browserLink_initializationData">
+        {"appName":"Firefox","requestId":"9efac639e94f4d849c00d3a3fb1e414b"}
+    </script>
+    <script type="text/javascript" src="http://localhost:4039/26e94d52adea49638af11b513b6eadf1/browserLink" async="async"></script>
+    <!-- End Browser Link -->
+
+</body>
+</html>

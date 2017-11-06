@@ -1,0 +1,262 @@
+﻿<hi:common_mybaseheader runat="server" />
+
+<link href="/style/dafuwen.css" rel="stylesheet" />
+<div class="container">
+    <div class="containerInner">
+        <div class="gameTitle clearfix">
+            <p class="borderline"></p>
+            <h3><span>游戏规则</span></h3>
+            <p class="borderline"></p>
+        </div>
+        <div class="gameRules">
+            <div class="gameRulesInner">
+                <div class="borderTop"></div>
+                <div class="innerText">
+                    <h3 class="mb">1.点击骰子开始游戏</h3>
+                    <h3>2.活动时间：</h3>
+                    <p class="mb" id="gameTime"></p>
+                    <h3>3.游戏说明：</h3>
+                    <p id="dGameDescription"></p>
+                </div>
+                <div class="borderBottom"></div>
+            </div>
+        </div>
+        <div class="gameTitle starGame clearfix">
+            <p class="borderline"></p>
+            <h3><span>开始游戏</span></h3>
+            <p class="borderline"></p>
+        </div>
+        <div class="monopolyGame clearfix">
+            <div class="prize fl prizeW prizebg prize0 active">
+                <div class="text">
+                    <h3></h3>
+                    <span></span>
+                </div>
+            </div>
+            <div class="prizePadd fl">
+                <div class="prize prizebg prize1">
+                    <div class="text">
+                        <h3></h3>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="prizePadd fl">
+                <div class="prize prizebg prize2">
+                    <div class="text">
+                        <h3></h3>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="prizePadd fl">
+                <div class="prize prizebg prize3">
+                    <div class="text">
+                        <h3></h3>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="prize fl prizeW prizebg prize9">
+                <div class="text">
+                    <h3></h3>
+                    <span></span>
+                </div>
+            </div>
+            <div class="prizePadd fl">
+                <div class="prize prizemove" id="prizemove1">
+                    <img src="/images/shaizi-1.png" />
+                </div>
+            </div>
+            <div class="prizePadd fl">
+                <div class="prize prizemove" id="prizemove2">
+                    <img src="/images/shaizi-1.png" />
+                </div>
+            </div>
+            <div class="prizePadd fl">
+                <div class="prize prizebg prize4">
+                    <div class="text">
+                        <h3></h3>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="prize fl prizeW prizebg prize8">
+                <div class="text">
+                    <h3></h3>
+                    <span></span>
+                </div>
+            </div>
+            <div class="prizePadd fl">
+                <div class="prize prizebg prize7">
+                    <div class="text">
+                        <h3></h3>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="prizePadd fl">
+                <div class="prize prizebg prize6">
+                    <div class="text">
+                        <h3></h3>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="prizePadd fl">
+                <div class="prize prizebg prize5">
+                    <div class="text">
+                        <h3></h3>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gameTitle clearfix">
+            <p class="borderline"></p>
+            <h3>
+                <span>中奖名单</span>
+            </h3>
+            <p class="borderline"></p>
+        </div>
+        <div class="winningList">
+            <div class="nameListTop">
+                <ul>
+                    <li>昵称</li>
+                    <li>奖品</li>
+                    <li>等级</li>
+                    <li>中奖时间</li>
+                </ul>
+            </div>
+            <div class="nameList" id="userPrizeLists">
+            </div>
+        </div>
+        <div class="myWinning">
+            <a href="Vshop/MyPrizeList.aspx?ShowTab=1">点击查看我的奖品</a>
+        </div>
+    </div>
+</div>
+<div class="prizeImg">
+    <img src="/images/shaizi-1.png">
+    <img src="/images/shaizi-2.png">
+    <img src="/images/shaizi-3.png">
+    <img src="/images/shaizi-4.png">
+    <img src="/images/shaizi-5.png">
+    <img src="/images/shaizi-6.png">
+    <img src="/images/shaizi-m1.png">
+    <img src="/images/shaizi-m2.png">
+    <img src="/images/shaizi-m3.png">
+    <img src="/images/shaizi-m4.png">
+</div>
+</body>
+</html>
+<script src="/script/vgame.js"></script>
+<script type="text/javascript">
+    $(function () {
+        BindData();
+        function setElementH() {
+            $('.gameTitle h3').css({ height: $('.gameTitle h3').width() * 0.23 });
+            $('.gameTitle h3 span').css('border-radius', parseInt($('.gameTitle h3').width() * 0.23) / 2 + 'px')
+            $('.prizePadd .prize').width($('.prizeW').width());
+            $('.prize').height($('.prizeW').width());
+            $('.myWinning a').css({ height: $('.myWinning a').width() * 0.22 });
+            $('.gameRulesInner .borderTop,.gameRulesInner .borderBottom').height($('.gameRulesInner .borderTop').width() * 0.048 - 1);
+        };
+
+        setElementH();
+        $(window).resize(function () {
+            setElementH();
+        });
+        var flag = true;
+        $('.prizemove').click(function () {
+            var item = GetIndex();
+            if (item[0] < 0) return;
+            if (flag) {
+                flag = false;
+                var stopDice = ['shaizi-1.png', 'shaizi-2.png', 'shaizi-3.png', 'shaizi-4.png', 'shaizi-5.png', 'shaizi-6.png'],
+				moveDice = ['shaizi-m1.png', 'shaizi-m2.png', 'shaizi-m3.png', 'shaizi-m4.png'];
+                var num = 0,
+					time = null,
+					_this = $(this);
+                time = setInterval(function () {
+                    $('.prizemove').find('img').attr('src', '/images/' + moveDice[num] + '');
+                    num++;
+                    if (num > 3) {
+                        num = 0;
+                    }
+                }, 100);
+                setTimeout(function () {
+                    clearInterval(time);
+                    $('#prizemove1').find('img').attr('src', '/images/' + stopDice[item[1] - 1] + '');
+                    $('#prizemove2').find('img').attr('src', '/images/' + stopDice[item[2] - 1] + '');
+                    var index = 0;
+                    var time1 = null;
+                    time1 = setInterval(function () {
+                        ++index;
+                        $('.prizebg').removeClass('active');
+                        $('.prize' + index).addClass('active');
+                        if (index > item[0] - 1) {
+                            clearInterval(time1);
+                            index = item[0] - 1;
+                            $('.prizebg').removeClass('active');
+                            $('.prize' + index).addClass('active');
+                            alert_h($('.prize' + index).text())
+                            flag = true;
+                        }
+                    }, 200);
+                }, 1000);
+            }
+        });
+    })
+
+    function GetIndex() {
+        var item = GetPrize();
+        if (item < 0) {
+            return new Array(item, 0, 0);
+        }
+        var value1 = value2 = 0;
+        if (item == 1) {
+            value1 = 1;
+            value2 = 1;
+        }
+        item += 1;
+        if (item != 1) {
+
+            value1 = getRandom(1, item - 1);
+            if (value1 > 6) value1 = 6;
+
+            value2 = item - value1;
+            if (value2 > 6) {
+                value2 = 6;
+                value1 = item - value2;
+            }
+        }
+
+        return new Array(item, value1, value2);
+
+    }
+    function getRandom(min, max) {
+        return parseInt(Math.random() * (max - min + 1) + min);
+    }
+    function BindData() {
+        InitInfo();
+        $(".prize0 DIV h3 ").html("开始");
+        //绑定游戏信息
+        for (var i = 0; i < 4; i++) {
+            var item = i + 1;
+            $(".prize" + item + " DIV h3 ").html(gameData.prizeLists[i].prizeType);
+            $(".prize" + item + " DIV span ").html(gameData.prizeLists[i].prizeName);
+        }
+        $(".prize5 DIV h3 ").html(gameData.prizeLists[4].prizeType);
+        for (var i = 0; i < 4; i++) {
+            var index = i + 6;
+            $(".prize" + index + " DIV h3 ").html(gameData.prizeLists[i].prizeType);
+            $(".prize" + index + " DIV span ").html(gameData.prizeLists[i].prizeName);
+        }
+
+        $("#dGameDescription").html(gameData.Description);
+        $("#gameTime").html(gameData.BeginDate + " 至 " + gameData.EndDate);
+        UserPrizeLists();
+    }
+
+</script>

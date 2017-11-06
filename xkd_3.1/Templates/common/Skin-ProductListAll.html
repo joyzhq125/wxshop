@@ -1,0 +1,204 @@
+﻿<hi:common_header runat="server" />
+<ul class="clearfix orders-title title_bg">
+        <li><a href="MyProducts.aspx">我的商品</a></li>
+        <li class="activenum"><a>全部商品</a></li>
+</ul>
+<div class="pbox clearfix">
+  <div class="clearfix class_goods">
+    <div class="dropdown">
+        <div class="dropdown-toggle search_img" id="dropdownMenu1" data-toggle="dropdown"><span class="glyphicon glyphicon-th"></span>
+        </div>
+        <div class="search_input">
+            <input type="text" class="text" runat="server" id="keywords" placeholder="">
+            <span class="glyphicon glyphicon-search" onclick="Searchkeys()">
+            </span>
+        </div>
+        <label>
+            全选<input type="checkbox" name="CheckAll" /></label>
+        <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dropdownMenu1">
+            <hi:vshoptemplatedrepeater id="rpCategorys" templatefile="/Tags/skin-Common_SubCategory.ascx"
+                runat="server" />
+        </ul>
+    </div>
+  </div>
+      <div id="empty" style="text-align: center;">
+        <img src="/Utility/pics/nonestore.gif" />
+    </div>
+     <div id="shops" class="clearfix myproduct">
+    <hi:vshoptemplatedrepeater id="rpChooseProducts" templatefile="/Tags/skin-Common_ChooseProducts.ascx" runat="server" />
+    </div>
+</div>
+
+<div class="nextstep pbox">
+    <a type="button" class="btn  btn-block btn-info" href="#" id="readNext" onclick="readmore()">加载更多商品</a>
+</div>
+
+<div class="nextstep pbox">
+     <a type="button" class="btn btn-danger btn-block" href="#" onclick="javascript:return SaveDistributorProducts()">上架所选商品</a>
+  </div>
+<div style="line-height:70px">　　</div>
+  <script>
+
+      var categoryId = "";
+    
+      var keyWord = ""
+      var pgSize = "10";
+      var pgIndex = 2;
+      var isEnd = false;
+
+      function readmore(){
+
+          if (isEnd) {
+              return;
+          }
+
+          $.ajax({
+              url: "ProductListAll.aspx",
+              type: 'POST',timeout: 10000,
+              data: { task: "next", categoryId: categoryId, keyWord: keyWord, pgSize: pgSize, pgIndex: pgIndex },
+              async: false,
+              success: function (resultData) {
+                 
+                  pgIndex++;
+
+                  try{
+
+                      var data = eval("(" + resultData + ")");
+                      if (data.length == 0) {
+                          $("#readNext").html("全部数据已加载完");
+                          $("#readNext").attr("disabled", "disabled");
+                          isEnd = true;
+                          return;
+                      }
+
+
+
+                      var addHtml = "";
+                      for (var i = 0; i < data.length; i++) {
+
+                          addHtml += "<div class='col-xs-6'><div class='index-content well'>";
+                          addHtml += "<img src='" + data[i]["ThumbnailUrl310"]+ "' style='border-width:0px;' />";
+                          addHtml += "<div class='content-right'><div>";
+                          addHtml += "<a href='/ProductDetails.aspx?ProductId=" + data[i]["ProductId"] + "&wid=" + data[i]["wid"] + "'>" + data[i]["ProductName"] + "</a></div>";
+                          addHtml += "<div class='price text-danger'>¥" + data[i]["SalePrice"] + "<span class='text-muted'>已售" + data[i]["SaleCounts"] + "件</span></div>";
+                          addHtml += "</div></div><div class='right'>";
+                          addHtml += "<input type='checkbox' style='position: absolute; opacity: 0;' name='CheckGroup' id='CheckGroup" + data[i]["ProductId"] + "' value='" + data[i]["ProductId"] + "' />";
+                          addHtml += "</div></div>";
+
+                      }
+
+                     
+
+                      var $add = $(addHtml);
+
+                    
+                   
+                      $("#shops").append($add);
+
+
+                      $add.find("input[name='CheckGroup']").iCheck({
+                          checkboxClass: 'icheckbox_flat-red',
+                          radioClass: 'iradio_flat-red'
+                      });
+
+
+                      $add.find("input[name='CheckGroup']").on('ifChecked', function (event) {
+
+                          selectProdcut["CheckGroup" + $(this).val()] = $(this).val();
+                          UpdateCookieProductId();
+
+                          var real_h;
+                          var right_H = $(this).parent().parent().prev().height();
+
+                          $(this).parent().parent().height(right_H);
+                          var right_W = $(this).parent().parent().prev().width();
+                          $(this).parent().parent().width(right_W);
+                          real_h = (right_H - $(this).parent().height()) * 0.5;
+                          $(this).parent().css({ position: 'absolute', top: real_h, left: right_W / 2 - 10 });
+
+
+
+                          $(this).parent("div").parent("div").css("display", "block");
+                      });
+                      $add.find("input[name='CheckGroup']").on('ifUnchecked', function (event) {
+                          $(this).parent("div").parent("div").css({ display: 'none' });
+                          delete selectProdcut["CheckGroup" + $(this).val()];
+                         UpdateCookieProductId();
+                      });
+
+                      $add.find(".right").click(function () {
+                          $(this).css("display", "none");
+                          $(this).find("input[type='checkbox']").iCheck('uncheck');
+                      });
+                      $add.find(".index-content").click(function () {
+                          $(this).next().find("input[type='checkbox']").iCheck('check');
+                      });
+
+
+                  } catch (e) {
+                      alert_h("读取数据失败!");
+                  }
+
+               
+              }
+          });
+
+
+      }
+
+      $(function () {
+
+          $("input[type='checkbox']").iCheck({
+              checkboxClass: 'icheckbox_flat-red',
+              radioClass: 'iradio_flat-red'
+          });
+
+
+          if (!$.trim($('#shops').html())) {
+              $('#empty').css('display', '');
+          }
+          else {
+              $('#empty').css('display', 'none');
+          }
+          
+
+          $(document).scroll(function () {
+              var scrollTop = $(document).scrollTop();
+
+              if (scrollTop >= $(document).height() - $(window).height()) {
+
+                  readmore();
+              }
+          })
+
+
+      });
+      function Searchkeys() {
+          var serachkey = $("#VProductListAll_keywords").val().replace(/\s/g, "");
+          location.href = "?keyWord=" + escape(serachkey);
+      }
+      function SaveDistributorProducts() {
+          if (jQuery.isEmptyObject(selectProdcut)) {
+              alert_h('请先选择要上架的商品！');
+              return false;
+          }
+
+          $.ajax({
+              url: "/API/VshopProcess.ashx",
+              type: 'POST', dataType: 'json', timeout: 10000,
+              data: { action: "AddDistributorProducts", Params: JSON.stringify(selectProdcut) },
+              async: false,
+              success: function (resultData) {
+                 
+                  window.location.href = "MyProducts.aspx";
+                  $.cookie("SelectProcutId", null);
+                
+              },
+              error: function () {
+                  location.href = location.href;
+              }
+          });
+      }
+      
+  </script>
+<hi:common_footer runat="server" />

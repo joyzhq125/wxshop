@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+警告: 请勿修改此文件，它将用于 Web 发布过程。
+
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1de9d1c5-f7f1-4745-a65a-0aa2652adfb5}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/xkd_3.1</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SourceWebProject>http://localhost:64997</SourceWebProject>
+    <SourceWebMetabasePath>/IISExpress/7.5/LM/W3SVC/2/ROOT</SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASPNET.WebControls\ASPNET.WebControls.csproj">
+      <Project>{9A7020D5-451B-4C0D-8AED-AB6F0E0E09DF}</Project>
+      <Name>ASPNET.WebControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Bll\Chenduo.Bll.csproj">
+      <Project>{808C6CC8-4CBC-4C3E-9ACC-573819AFC2E5}</Project>
+      <Name>Chenduo.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.ControlPanel\Hidistro.ControlPanel.csproj">
+      <Project>{8C478DD2-C91E-4E34-BC61-8BC181247E31}</Project>
+      <Name>Hidistro.ControlPanel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Core\Hidistro.Core.csproj">
+      <Project>{C2F9053C-C4DD-467A-958E-28F27971F9AF}</Project>
+      <Name>Hidistro.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Dal\Chenduo.Dal.csproj">
+      <Project>{804AD297-8D3F-4A41-82DF-4E353FCCBE4A}</Project>
+      <Name>Chenduo.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Entities\Hidistro.Entities.csproj">
+      <Project>{B544C93D-C963-40F6-8702-8B75D2DDB8A7}</Project>
+      <Name>Hidistro.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Jobs\Hidistro.Jobs.csproj">
+      <Project>{ED0A2200-295B-4D58-82C3-8378B49D088A}</Project>
+      <Name>Hidistro.Jobs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Messages\Hidistro.Messages.csproj">
+      <Project>{F4C164E7-9F3B-43A2-A087-8295C6A0982A}</Project>
+      <Name>Hidistro.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Model\Chenduo.Model.csproj">
+      <Project>{54B39254-4239-4319-847E-FC5839C6371D}</Project>
+      <Name>Chenduo.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.SaleSystem.Vshop\Hidistro.SaleSystem.Vshop.csproj">
+      <Project>{163A7CC3-2F91-436C-8BBB-C04D199C61F7}</Project>
+      <Name>Hidistro.SaleSystem.Vshop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.SqlDal\Hidistro.SqlDal.csproj">
+      <Project>{A0D0A688-A825-464D-B3DC-9E233F74BB68}</Project>
+      <Name>Hidistro.SqlDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.UI.Common.Controls\Hidistro.UI.Common.Controls.csproj">
+      <Project>{2CD5B19A-6A7D-45BE-8D16-F0C6EE517805}</Project>
+      <Name>Hidistro.UI.Common.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.UI.ControlPanel.Utility\Hidistro.UI.ControlPanel.Utility.csproj">
+      <Project>{DA3B80A6-2DFE-4EFC-863C-5D0EE3A3E12F}</Project>
+      <Name>Hidistro.UI.ControlPanel.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.UI.SaleSystem.CodeBehind\Hidistro.UI.SaleSystem.CodeBehind.csproj">
+      <Project>{7EA052EE-92F9-4700-98F0-7D4FC922B740}</Project>
+      <Name>Hidistro.UI.SaleSystem.CodeBehind</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.UI.SaleSystem.Tags\Hidistro.UI.SaleSystem.Tags.csproj">
+      <Project>{44E623E8-27F6-40CF-8B26-4D5D14B41D4E}</Project>
+      <Name>Hidistro.UI.SaleSystem.Tags</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.UI.Web\Hidistro.UI.Web.csproj">
+      <Project>{97A3C334-9466-494E-962A-B371DA7EDF90}</Project>
+      <Name>Hidistro.UI.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.Components.Validation\Hishop.Components.Validation.csproj">
+      <Project>{0BB99E47-2E13-4699-8A17-B694BAFDAF8E}</Project>
+      <Name>Hishop.Components.Validation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.MeiQia.Api\Hishop.MeiQia.Api.csproj">
+      <Project>{BC919641-51B9-40DF-A3D1-72CE24F3758B}</Project>
+      <Name>Hishop.MeiQia.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.Plugins\Hishop.Plugins.csproj">
+      <Project>{0E59E504-5D0D-457D-8C08-F4C1A9AD6026}</Project>
+      <Name>Hishop.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.TransferManager\Hishop.TransferManager.csproj">
+      <Project>{2B9F448E-A6D4-43BD-9670-23ADDBC0BFAC}</Project>
+      <Name>Hishop.TransferManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.WeiBo.Api\Hishop.WeiBo.Api.csproj">
+      <Project>{47EA7AE2-B10D-4807-9B3F-EFC36DD87717}</Project>
+      <Name>Hishop.WeiBo.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.Weixin.MP\Hishop.Weixin.MP.csproj">
+      <Project>{8E1202A9-2483-48F9-A1A5-82571FE70946}</Project>
+      <Name>Hishop.Weixin.MP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.Weixin.Pay\Hishop.Weixin.Pay.csproj">
+      <Project>{5796D24E-C8A9-4027-BDB4-472C37169F92}</Project>
+      <Name>Hishop.Weixin.Pay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HiTemplate\HiTemplate.csproj">
+      <Project>{6CCD8E2E-0E48-4DAC-8860-A67E531156EF}</Project>
+      <Name>HiTemplate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\kindeditor.Net\kindeditor.Net.csproj">
+      <Project>{1160ED3F-AA6F-4514-A0DC-551647AE12DA}</Project>
+      <Name>kindeditor.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MxWeiXinPF.Templates\MxWeiXinPF.Templates.csproj">
+      <Project>{C8278B7B-CC1F-4D24-B013-39B63F551DB4}</Project>
+      <Name>MxWeiXinPF.Templates</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTemplate.Engine\VTemplate.Engine.csproj">
+      <Project>{FFE421FA-C56D-466D-BCBE-5C451F2C82BC}</Project>
+      <Name>VTemplate.Engine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

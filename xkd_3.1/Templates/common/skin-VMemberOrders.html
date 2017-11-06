@@ -1,0 +1,99 @@
+﻿<hi:common_header runat="server" />
+<link href="/style/memberorder.css" rel="stylesheet" type="text/css">
+
+
+<div class="container">
+    <header>
+        <ul class="clearfix orderul title_bg">
+            <li class=""><a href="?status=0">全部订单</a></li>
+            <li><a href="?status=1">待付款</a></li>
+            <li><a href="?status=3">配送中</a></li>
+        </ul>
+    </header>
+
+    <div class="orderbox" id="divorderlist">
+        <hi:vshoptemplatedrepeater id="rptOrders" templatefile="/Tags/skin-Common_MemberCenterOrders.ascx"
+                                   runat="server" />
+    </div>
+
+
+        <script>
+            //禁用右上角菜单
+            document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+                WeixinJSBridge.call('hideOptionMenu');
+            });
+        </script>
+        <p id="divEmpty" class="text-center list-empty hide">
+            <span class="glyphicon glyphicon-list-alt" style="margin-left: -3px;"></span><em>订单列表为空</em>
+        </p>
+    </div>
+    <script type="text/javascript">
+        function FinishOrder(orderId) {
+            var data = {};
+            data.orderId = orderId;
+            myConfirm('询问', '您确定已经收到货物了吗？', '确定收货', function () {
+                $.post("/api/VshopProcess.ashx?action=FinishOrder", data, function (json) {
+                    if (json.success === true) {
+                        if (json.isapply == 0) {
+                            alert_h('确认收货成功！', function () {
+                                location.reload();
+                            });
+                        }
+                        else {
+                            myConfirm1('咨询', '确认收货成功,您的消费达到成为分销商要求,是否申请？', '取消', '确认', function (result) {
+                                if (result) {
+                                    location.href = "/Vshop/DistributorRegCheck.aspx";
+                                } else {
+                                    location.reload();
+                                }
+                            });
+                        }
+                    }
+                    else {
+                        alert_h(json.msg);
+                    }
+                });
+            });
+        }
+
+        $(function () {
+            if (!$.trim($("#divorderlist").html())) {
+                $("#divorderlist").hide();
+                $("#divEmpty").removeClass('hide');
+            }
+
+            var list_h = (document.documentElement.clientHeight - 49 - $('.list-empty').height()) * .5 + 'px';
+            $('.list-empty').css('margin-top', list_h);
+            var status = getParam('status');
+            if (status == "1") {
+                $(".title_bg li").removeClass("active").eq(1).addClass("active");
+            } else if (status == "3") {
+                $(".title_bg li").removeClass("active").eq(2).addClass("active");
+            } else{
+                $(".title_bg li").removeClass("active").eq(0).addClass("active");
+            }
+        })
+    </script>
+<script type="text/javascript">
+    $(function () {
+        var skuInputs = $('.specification input');
+        $.each(skuInputs, function (j, input) {
+            var text = '';
+            var sku = $(input).val().split(';');
+            var changsku = '';
+            for (var i = sku.length - 2; i >= 0; i--) {
+                changsku += sku[i] + ';';
+            }
+            $.each(changsku.split(';'), function (i, sku) {
+                if ($.trim(sku))
+                    text += '<span class="property">' + sku.split('：')[1] + '</span>';
+            });
+            $(input).parent().html(text);
+        });
+    });
+</script>
+
+
+
+
+    <hi:common_footer runat="server" />

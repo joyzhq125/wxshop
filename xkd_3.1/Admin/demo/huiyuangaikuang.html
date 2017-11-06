@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>vshop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="icon" href="../images/hi.ico" />
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/Region.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <script src="../js/echarts.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="keywords" />
+    <meta name="description" />
+</head>
+<body class="theme theme--blue">
+
+    <header class="ui-header navbar-fixed-top">
+        <div class="ui-header-inner clearfix">
+            <h1 class="ui-header-logo">
+                <a href="#" title="Hishop销客多">
+                    <span class="version"><i>3.0</i></span>
+                </a>
+            </h1>
+            <nav class="ui-header-nav">
+                <ul class="clearfix">
+                    <li class="divide">|</li>
+                    <li class="active">
+                        <a onclick="ShowMenuLeft('店铺', null, null,this)">店铺</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('商品', null, null, this)">商品</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('订单', null, null, this)">订单</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li><a onclick="ShowMenuLeft('会员', null, null, this)">会员</a></li>
+                    <li><a onclick="ShowMenuLeft('分销', null, null, this)">分销</a></li>
+                    <li class="divide">|</li>
+
+                    <li class="js-weixin-notify ">
+                        <a onclick="ShowMenuLeft('微信', null, null, this)">微信</a>
+                    </li>
+                    <li class="js-weibo-notify">
+                        <a onclick="ShowMenuLeft('微博', null, null, this)">微博<sup class="notify-counter" style="visibility: hidden;"></sup></a>
+                    </li>
+                    <li class="divide">|</li>
+                    <li>
+                        <a onclick="ShowMenuLeft('营销', null, null, this)">营销</a>
+                    </li>
+                    <li class="divide">|</li>
+
+                    <li>
+                        <a onclick="ShowMenuLeft('设置', null, null, this)">设置</a>
+                    </li>
+                    <li>
+                        <a onclick="ShowMenuLeft('分析统计', null, null, this)">分析统计</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ui-header-user ">
+                <div class="customer-wrap">
+                </div>
+                <div class="dropdown hover dropdown-right">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="txt">
+                            <span class="ellipsis team_name" id="spTopSiteName">这里是店名</span><span class="dash"> - </span><span id="spTopUserName">admin</span>
+                        </span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-user"></span>个人信息</a></li>
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-list-alt"></span>修改密码</a></li>
+                        <li><a href="javascript:DialogFrame('help/about.html','关于销客多',550,345)"><span class="glyphicon glyphicon-comment"></span>关于</a></li>
+                        <li class="divide"></li>
+                        <li><a href="LoginExit.aspx"><span class="glyphicon glyphicon-indent-right"></span>退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="app">
+            <div class="app-inner clearfix">
+                <div class="page-header">
+                    <h2>店铺会员概况</h2>
+                </div>
+                <div class="member-info clearfix">
+                    <div class="fl">
+                        <p class="line">活跃会员数2163</p>
+                        <div class="blank"></div>
+                        <p class="line">休眠会员数4052</p>
+                        <div class="radius left">
+                            <div class="bigsize">
+                                <p>成交会员</p>
+                                <span>6215</span>
+                            </div>
+                            <p>昨日新增</p>
+                            <span>12</span>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <p class="line">收藏会员数126</p>
+                        <div class="blank"></div>
+                        <p class="line">加购物车会员数52</p>
+                        <div class="radius right">
+                            <div class="bigsize">
+                                <p>成交会员</p>
+                                <span>6215</span>
+                            </div>
+                            <p>昨日新增</p>
+                            <span>12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="membership">
+                    <p>会员总数<span>6393</span></p>
+                    <div class="lineBox"></div>
+                    <div class="triangle"></div>
+                </div>
+                <div class="memberChart clearfix">
+                    <div class="chartLedt fl" id="radiuschart"></div>
+                    <div class="chartRight fr" id="linechart"></div>
+                </div>
+            </div>
+        </div>
+        <aside class="ui-sidebar sidebar" style="height:100%">
+            <nav class="well" id="menu_left">
+                <ul>
+                    <li class="active"><a href="weibo/setting.aspx" class="new" target="frammain">绑定微博账号</a></li>
+                </ul>
+                <em class="glyphicon glyphicon-scissors"></em>
+                <span>微博管理</span>
+                <ul>
+                    <li><a href="weibo/timeline.aspx" class="new" target="frammain">好友的微博</a></li>
+                    <li><a href="weibo/usertimeline.aspx" class="new" target="frammain">我的微博</a></li>
+                    <li><a href="weibo/message.aspx" class="new" target="frammain">微博消息</a></li>
+                    <li><a href="weibo/post.aspx" class="new" target="frammain">发布微博</a></li>
+                </ul>
+                <em class="glyphicon glyphicon-folder-open"></em>
+                <span>消息推送</span>
+                <ul>
+                    <li><a href="weibo/letter.aspx" class="new" target="frammain">群发私信</a></li>
+                    <li><a href="weibo/autoreply.aspx" class="new" target="frammain">自动回复</a></li>
+                </ul>
+                <ul>
+                    <li><a href="weibo/menu.aspx" class="new" target="frammain">自定义菜单</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+        <script type="text/javascript">
+    // Step:3 conifg ECharts's path, link to echarts.js from current page.
+    // Step:3 为模块加载器配置echarts的路径，从当前页面链接到echarts.js，定义所需图表路径
+    require.config({
+        paths: {
+            echarts: '../js'
+        }
+    });
+    
+    // Step:4 require echarts and use it in the callback.
+    // Step:4 动态加载echarts然后在回调函数中开始使用，注意保持按需加载结构定义图表路径
+    require(
+        [
+            'echarts',
+            'echarts/chart/pie',
+            'echarts/chart/funnel',
+            'echarts/chart/bar',
+            'echarts/chart/line',
+            'echarts/chart/map'
+        ],
+        function (ec) {
+            //--- 折柱 ---
+            var myChart = ec.init(document.getElementById('radiuschart'));
+            myChart.setOption({
+                title : {
+                    text: '数据',
+                    x:'center'
+                },
+                tooltip : {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                legend: {
+                    orient : 'vertical',
+                    x : 'left',
+                    data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+                },
+                toolbox: {
+                    show : true,
+                    feature : {
+                        mark : {show: true},
+                        dataView : {show: true, readOnly: false},
+                        magicType : {
+                            show: true, 
+                            type: ['pie', 'funnel'],
+                            option: {
+                                funnel: {
+                                    x: '25%',
+                                    width: '50%',
+                                    funnelAlign: 'left',
+                                    max: 1548
+                                }
+                            }
+                        },
+                        restore : {show: true},
+                        saveAsImage : {show: true}
+                    }
+                },
+                calculable : true,
+                series : [
+                    {
+                        name:'访问来源',
+                        type:'pie',
+                        radius : '55%',
+                        center: ['50%', '60%'],
+                        data:[
+                            {value:335, name:'直接访问'},
+                            {value:310, name:'邮件营销'},
+                            {value:234, name:'联盟广告'},
+                            {value:135, name:'视频广告'},
+                            {value:1548, name:'搜索引擎'}
+                        ]
+                    }
+                ]
+            });
+            var myChart1 = ec.init(document.getElementById('linechart'));
+            myChart1.setOption({
+                title : {
+                    text: '世界人口总量',
+                    subtext: '数据来自网络'
+                },
+                tooltip : {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data:['2011年', '2012年']
+                },
+                toolbox: {
+                    show : true,
+                    feature : {
+                        mark : {show: true},
+                        dataView : {show: true, readOnly: false},
+                        magicType: {show: true, type: ['line', 'bar']},
+                        restore : {show: true},
+                        saveAsImage : {show: true}
+                    }
+                },
+                calculable : true,
+                xAxis : [
+                    {
+                        type : 'value',
+                        boundaryGap : [0, 0.01]
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'category',
+                        data : ['巴西','印尼','美国','印度','中国','世界人口(万)']
+                    }
+                ],
+                series : [
+                    {
+                        name:'2011年',
+                        type:'bar',
+                        data:[18203, 23489, 29034, 104970, 131744, 630230]
+                    },
+                    {
+                        name:'2012年',
+                        type:'bar',
+                        data:[19325, 23438, 31000, 121594, 134141, 681807]
+                    }
+                ]
+            });            
+        }
+    );
+    </script>
+</body>
+</html>

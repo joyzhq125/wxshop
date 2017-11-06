@@ -1,0 +1,14 @@
+F:\练习项目\xkd3.1 - 副本\Hishop.Plugins\bin\Release\Hishop.Plugins.dll
+F:\练习项目\xkd3.1 - 副本\Hishop.Plugins\bin\Release\Hishop.Plugins.pdb
+F:\练习项目\xkd3.1 - 副本\Hishop.Plugins\obj\x86\Release\Hishop.Plugins.csprojResolveAssemblyReference.cache
+F:\练习项目\xkd3.1 - 副本\Hishop.Plugins\obj\x86\Release\Hishop.Plugins.dll
+F:\练习项目\xkd3.1 - 副本\Hishop.Plugins\obj\x86\Release\Hishop.Plugins.pdb
+F:\练习项目\xkd3.1 - 修复版\Hishop.Plugins\bin\Release\Hishop.Plugins.dll
+F:\练习项目\xkd3.1 - 修复版\Hishop.Plugins\bin\Release\Hishop.Plugins.pdb
+F:\练习项目\xkd3.1 - 修复版\Hishop.Plugins\obj\x86\Release\Hishop.Plugins.csprojResolveAssemblyReference.cache
+F:\练习项目\xkd3.1 - 修复版\Hishop.Plugins\obj\x86\Release\Hishop.Plugins.dll
+F:\练习项目\xkd3.1 - 修复版\Hishop.Plugins\obj\x86\Release\Hishop.Plugins.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\bin\Release\Hishop.Plugins.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\bin\Release\Hishop.Plugins.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\obj\x86\Release\Hishop.Plugins.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\obj\x86\Release\Hishop.Plugins.pdb
