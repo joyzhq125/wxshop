@@ -59,6 +59,6 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixi
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Model.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Core.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\Hidistro.Model.pdb
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\obj\x86\Debug\Hishop.Weixin.MP.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.MP\bin\Debug\log4net.dll

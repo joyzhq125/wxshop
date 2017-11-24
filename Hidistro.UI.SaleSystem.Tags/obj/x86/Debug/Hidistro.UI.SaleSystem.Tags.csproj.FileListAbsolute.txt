@@ -381,3 +381,4 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\obj\x86\Debug\Hidistro.UI.SaleSystem.Tags.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\obj\x86\Debug\Hidistro.UI.SaleSystem.Tags.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\obj\x86\Debug\Hidistro.UI.SaleSystem.Tags.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\log4net.dll

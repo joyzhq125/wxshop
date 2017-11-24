@@ -39,9 +39,13 @@
     <Compile Include="Hidistro\Core\DTEnums.cs" />
     <Compile Include="Hidistro\Core\DTKeys.cs" />
     <Compile Include="Hidistro\Core\Log.cs" />
+    <Compile Include="Hidistro\Core\LogHelper.cs" />
     <Compile Include="Hidistro\Core\PagingHelper.cs" />
     <Compile Include="Hidistro\Core\SettingsManager.cs" />
     <Compile Include="Hidistro\Core\SFUtils.cs" />
+    <Reference Include="log4net">
+      <HintPath>..\xkd_3.1\bin\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Data" />
@@ -108,5 +112,8 @@
       <Project>{54b39254-4239-4319-847e-fc5839c6371d}</Project>
       <Name>Chenduo.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Log4Net.config" />
   </ItemGroup>
 </Project>

@@ -37,6 +37,5 @@ E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\kindeditor.Net\obj
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\kindeditor.Net\obj\x86\Debug\kindeditor.Net.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\kindeditor.Net\bin\Debug\kindeditor.Net.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\kindeditor.Net\bin\Debug\kindeditor.Net.pdb
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\kindeditor.Net\obj\x86\Debug\kindeditor.Net.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\kindeditor.Net\obj\x86\Debug\kindeditor.Net.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\kindeditor.Net\obj\x86\Debug\kindeditor.Net.pdb

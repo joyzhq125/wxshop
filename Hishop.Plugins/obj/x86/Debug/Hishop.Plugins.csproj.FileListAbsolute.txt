@@ -43,6 +43,5 @@ E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\obj
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\obj\x86\Debug\Hishop.Plugins.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\bin\Debug\Hishop.Plugins.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\bin\Debug\Hishop.Plugins.pdb
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\obj\x86\Debug\Hishop.Plugins.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\obj\x86\Debug\Hishop.Plugins.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Plugins\obj\x86\Debug\Hishop.Plugins.pdb

@@ -545,3 +545,4 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.Web\obj\x86\Debug\Hidistro.UI.Web.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.Web\obj\x86\Debug\Hidistro.UI.Web.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.Web\obj\x86\Debug\Hidistro.UI.Web.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.Web\bin\Debug\log4net.dll

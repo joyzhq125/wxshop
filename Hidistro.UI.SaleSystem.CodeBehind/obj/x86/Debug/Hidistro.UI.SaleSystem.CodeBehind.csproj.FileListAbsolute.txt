@@ -375,6 +375,7 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.CodeBehind\bin\Debug\System.Net.Http.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.CodeBehind\bin\Debug\Hidistro.Messages.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.CodeBehind\bin\Debug\Hidistro.Bll.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.CodeBehind\bin\Debug\log4net.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.CodeBehind\bin\Debug\Hishop.Components.Validation.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.CodeBehind\bin\Debug\Hishop.Weixin.MP.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.CodeBehind\bin\Debug\Hidistro.Dal.dll
