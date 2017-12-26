@@ -60,21 +60,21 @@
     <Compile Include="TemplateMgr.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hidistro.Bll\Chenduo.Bll.csproj">
+    <ProjectReference Include="..\Chenduo.Bll\Chenduo.Bll.csproj">
       <Project>{808c6cc8-4cbc-4c3e-9acc-573819afc2e5}</Project>
       <Name>Chenduo.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chenduo.Dal\Chenduo.Dal.csproj">
+      <Project>{804ad297-8d3f-4a41-82df-4e353fccbe4a}</Project>
+      <Name>Chenduo.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chenduo.Model\Chenduo.Model.csproj">
+      <Project>{54b39254-4239-4319-847e-fc5839c6371d}</Project>
+      <Name>Chenduo.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hidistro.Core\Hidistro.Core.csproj">
       <Project>{c2f9053c-c4dd-467a-958e-28f27971f9af}</Project>
       <Name>Hidistro.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hidistro.Dal\Chenduo.Dal.csproj">
-      <Project>{804ad297-8d3f-4a41-82df-4e353fccbe4a}</Project>
-      <Name>Chenduo.Dal</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hidistro.Model\Chenduo.Model.csproj">
-      <Project>{54b39254-4239-4319-847e-fc5839c6371d}</Project>
-      <Name>Chenduo.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\VTemplate.Engine\VTemplate.Engine.csproj">
       <Project>{ffe421fa-c56d-466d-bcbe-5c451f2c82bc}</Project>

@@ -76,10 +76,6 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hidistro.Bll\Chenduo.Bll.csproj">
-      <Project>{808c6cc8-4cbc-4c3e-9acc-573819afc2e5}</Project>
-      <Name>Chenduo.Bll</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Hidistro.ControlPanel\Hidistro.ControlPanel.csproj">
       <Project>{8c478dd2-c91e-4e34-bc61-8bc181247e31}</Project>
       <Name>Hidistro.ControlPanel</Name>

@@ -1496,10 +1496,6 @@
       <Project>{9a7020d5-451b-4c0d-8aed-ab6f0e0e09df}</Project>
       <Name>ASPNET.WebControls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hidistro.Bll\Chenduo.Bll.csproj">
-      <Project>{808c6cc8-4cbc-4c3e-9acc-573819afc2e5}</Project>
-      <Name>Chenduo.Bll</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Hidistro.ControlPanel\Hidistro.ControlPanel.csproj">
       <Project>{8c478dd2-c91e-4e34-bc61-8bc181247e31}</Project>
       <Name>Hidistro.ControlPanel</Name>
@@ -1515,10 +1511,6 @@
     <ProjectReference Include="..\Hidistro.Messages\Hidistro.Messages.csproj">
       <Project>{f4c164e7-9f3b-43a2-a087-8295c6a0982a}</Project>
       <Name>Hidistro.Messages</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hidistro.Model\Chenduo.Model.csproj">
-      <Project>{54b39254-4239-4319-847e-fc5839c6371d}</Project>
-      <Name>Chenduo.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hidistro.SaleSystem.Vshop\Hidistro.SaleSystem.Vshop.csproj">
       <Project>{163a7cc3-2f91-436c-8bbb-c04d199c61f7}</Project>

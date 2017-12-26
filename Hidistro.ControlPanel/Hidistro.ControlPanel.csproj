@@ -91,10 +91,6 @@
     <Compile Include="ControlPanel\WeiXin\WeiXinHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hidistro.Bll\Chenduo.Bll.csproj">
-      <Project>{808c6cc8-4cbc-4c3e-9acc-573819afc2e5}</Project>
-      <Name>Chenduo.Bll</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Hidistro.Core\Hidistro.Core.csproj">
       <Project>{c2f9053c-c4dd-467a-958e-28f27971f9af}</Project>
       <Name>Hidistro.Core</Name>
@@ -106,10 +102,6 @@
     <ProjectReference Include="..\Hidistro.Messages\Hidistro.Messages.csproj">
       <Project>{f4c164e7-9f3b-43a2-a087-8295c6a0982a}</Project>
       <Name>Hidistro.Messages</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hidistro.Model\Chenduo.Model.csproj">
-      <Project>{54b39254-4239-4319-847e-fc5839c6371d}</Project>
-      <Name>Chenduo.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hidistro.SaleSystem.Vshop\Hidistro.SaleSystem.Vshop.csproj">
       <Project>{163a7cc3-2f91-436c-8bbb-c04d199c61f7}</Project>

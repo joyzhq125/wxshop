@@ -157,10 +157,6 @@
       <Project>{b544c93d-c963-40f6-8702-8b75d2ddb8a7}</Project>
       <Name>Hidistro.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hidistro.Model\Chenduo.Model.csproj">
-      <Project>{54b39254-4239-4319-847e-fc5839c6371d}</Project>
-      <Name>Chenduo.Model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Hidistro.SaleSystem.Vshop\Hidistro.SaleSystem.Vshop.csproj">
       <Project>{163a7cc3-2f91-436c-8bbb-c04d199c61f7}</Project>
       <Name>Hidistro.SaleSystem.Vshop</Name>

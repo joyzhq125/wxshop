@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using VTemplate.Engine;
+using Chenduo;
 
 namespace MxWeiXinPF.Templates
 {
@@ -151,8 +152,7 @@ namespace MxWeiXinPF.Templates
             DataSet artlist = new DataSet();
             if (category_id != 0)
             {
-
-                DAL.article artDal = new DAL.article();
+                Chenduo.DAL.article artDal = new Chenduo.DAL.article();
                 artlist = artDal.GetList("news", category_id, pageSize, currPage, "wid=" + wid, orderby, out recordCount);
                 if (artlist != null && artlist.Tables.Count > 0 && artlist.Tables[0].Rows.Count > 0)
                 {
@@ -235,9 +235,9 @@ namespace MxWeiXinPF.Templates
 
         public void ArticleDetailPage()
         {
-            DAL.article artDal = new DAL.article();
+            Chenduo.DAL.article artDal = new Chenduo.DAL.article();
             int aid = Globals.RequestQueryNum("aid");
-            Model.article article = artDal.GetModel(aid);
+            Chenduo.Model.article article = artDal.GetModel(aid);
             if (article != null)
             {
                 this.Document.SetValue("model", article);
@@ -252,8 +252,8 @@ namespace MxWeiXinPF.Templates
 
             int parentId = Globals.RequestQueryNum("cid");
             this.Document.SetValue("parentid", parentId);//父级id
-            BLL.article_category cateBll = new BLL.article_category();
-            Model.article_category pCategory = cateBll.GetModel(parentId);
+            Chenduo.BLL.article_category cateBll = new Chenduo.BLL.article_category();
+            Chenduo.Model.article_category pCategory = cateBll.GetModel(parentId);
             if (pCategory == null)
             {
                 return;
@@ -295,12 +295,12 @@ namespace MxWeiXinPF.Templates
         /// 获得幻灯片列表二：优点：（1）使用function标签与foreach结合，可以从模版页面控制记录数量；（2）不需要实现注册到模版里
         /// </summary>
         /// <returns></returns>
-        public IList<Model.article> getHdp()
+        public IList<Chenduo.Model.article> getHdp()
         {
             Tag tag = this.Document.CurrentRenderingTag;
 
             var attribute = tag.Attributes["rows"];
-            IList<Model.article> artlist = new List<Model.article>();
+            IList<Chenduo.Model.article> artlist = new List<Chenduo.Model.article>();
 
             //int rows = -1;//若为-1，则不做限制条件
             //if (attribute != null && MyCommFun.isNumber(attribute.Value.GetValue()))

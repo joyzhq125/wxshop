@@ -703,7 +703,7 @@
             }
         }
 
-        public static SF.Model.sf_website GetModelByWid(string wid)
+        public static Chenduo.Model.sf_website GetModelByWid(string wid)
         {
 
             StringBuilder strSql = new StringBuilder();
@@ -726,9 +726,9 @@
             }
         }
 
-        public static SF.Model.sf_website DataRowToModel(DataRow row)
+        public static Chenduo.Model.sf_website DataRowToModel(DataRow row)
         {
-            SF.Model.sf_website model = new SF.Model.sf_website();
+            Chenduo.Model.sf_website model = new Chenduo.Model.sf_website();
             if (row != null)
             {
                 if (row["id"] != null && row["id"].ToString() != "")

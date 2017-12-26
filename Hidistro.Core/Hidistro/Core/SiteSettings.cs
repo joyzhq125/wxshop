@@ -204,7 +204,7 @@
             SiteSettings.ActiveDay = int.Parse(node.SelectSingleNode("ActiveDay").InnerText);
             SiteSettings.entId = "0";
 
-            SF.Model.sf_website website = Globals.GetModelByWid(wid);
+            Chenduo.Model.sf_website website = Globals.GetModelByWid(wid);
             if (website != null)
             {
                 SiteSettings.VTheme = website.templatesNum;//node.SelectSingleNode("VTheme").InnerText;

@@ -1050,7 +1050,6 @@ namespace Hidistro.Core
             command.CommandType = CommandType.StoredProcedure;
             returnReader = command.ExecuteReader(CommandBehavior.CloseConnection);
             return returnReader;
-
         }
 
 
