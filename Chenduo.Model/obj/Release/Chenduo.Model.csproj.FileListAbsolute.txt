@@ -1,0 +1,9 @@
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Model\bin\Release\Hidistro.Model.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Model\bin\Release\Hidistro.Model.pdb
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Model\obj\Release\Hidistro.Model.dll
+E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hidistro.Model\obj\Release\Hidistro.Model.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Chenduo.Model\bin\Release\Chenduo.Model.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Chenduo.Model\bin\Release\Chenduo.Model.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Chenduo.Model\obj\Release\Chenduo.Model.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Chenduo.Model\obj\Release\Chenduo.Model.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Chenduo.Model\obj\Release\Chenduo.Model.csprojResolveAssemblyReference.cache
