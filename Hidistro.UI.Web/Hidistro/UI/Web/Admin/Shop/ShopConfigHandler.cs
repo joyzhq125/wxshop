@@ -18,8 +18,8 @@
             context.Response.ContentType = "text/plain";
             try
             {
-                SF.BLL.sf_website bll = new SF.BLL.sf_website();
-                SF.Model.sf_website website = bll.GetModelByWid(wid);
+                Chenduo.BLL.sf_website bll = new Chenduo.BLL.sf_website();
+                Chenduo.Model.sf_website website = bll.GetModelByWid(wid);
                 string str = context.Request["type"].ToString();
                 SiteSettings masterSettings = SettingsManager.GetMasterSettings(false,wid);
                 if (str == "0")

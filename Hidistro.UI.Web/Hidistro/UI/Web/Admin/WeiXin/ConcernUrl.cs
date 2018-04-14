@@ -18,8 +18,8 @@
         protected HtmlForm form1;
         private SiteSettings siteSettings;
         protected TextBox txtGuidePageSet;
-        SF.BLL.sf_website bll;
-        SF.Model.sf_website website;
+        Chenduo.BLL.sf_website bll;
+        Chenduo.Model.sf_website website;
 
         protected ConcernUrl() : base("m06", "wxp02")
         {
@@ -41,7 +41,7 @@
         {
             wid = GetCurWebId();
             if (string.IsNullOrEmpty(wid)) return;
-            bll = new SF.BLL.sf_website();
+            bll = new Chenduo.BLL.sf_website();
             website = bll.GetModelByWid(wid);
 
             this.siteSettings = SettingsManager.GetMasterSettings(false, wid);

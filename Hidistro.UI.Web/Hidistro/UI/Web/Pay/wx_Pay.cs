@@ -98,7 +98,7 @@
 
                     //交易成功
                     string wid = resHandler.GetParameter("attach");
-                    SF.Model.sf_website website = new SF.BLL.sf_website().GetModelByWid(wid);
+                    Chenduo.Model.sf_website website = new Chenduo.BLL.sf_website().GetModelByWid(wid);
                     resHandler.SetKey(website.account_pay_key);
 
                     //writer.WriteLine("wx_pay wid:" + wid);

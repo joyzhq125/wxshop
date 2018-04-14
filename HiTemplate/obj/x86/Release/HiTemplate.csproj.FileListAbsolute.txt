@@ -22,3 +22,14 @@ E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\HiTemplate\bin\Rel
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\HiTemplate\obj\x86\Release\HiTemplate.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\HiTemplate\obj\x86\Release\HiTemplate.dll
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\HiTemplate\obj\x86\Release\HiTemplate.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\bin\Release\HiTemplate.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\bin\Release\HiTemplate.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\bin\Release\Hidistro.Core.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\bin\Release\log4net.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\bin\Release\Chenduo.Model.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\bin\Release\Hidistro.Core.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\bin\Release\Chenduo.Model.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\obj\x86\Release\HiTemplate.csprojResolveAssemblyReference.cache
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\obj\x86\Release\HiTemplate.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\HiTemplate\obj\x86\Release\HiTemplate.pdb

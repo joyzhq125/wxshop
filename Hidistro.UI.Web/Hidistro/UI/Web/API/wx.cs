@@ -16,7 +16,7 @@
         {
             HttpRequest request = context.Request;
             //string weixinToken = SettingsManager.GetMasterSettings(false).WeixinToken;
-            SF.Model.sf_website website;
+            Chenduo.Model.sf_website website;
             string wid = request["wid"];
             if(string.IsNullOrEmpty(wid))
             {
@@ -24,7 +24,7 @@
                 return;
             }
 
-            website = new SF.BLL.sf_website().GetModelByWid(wid);
+            website = new Chenduo.BLL.sf_website().GetModelByWid(wid);
             if(string.IsNullOrEmpty(website.token_value))
             {
                 context.Response.Write("不存在该微信号");

@@ -101,8 +101,8 @@
         }
         protected void SaveBtn_Click(object sender, EventArgs e)
         {
-            SF.BLL.sf_website bll = new SF.BLL.sf_website();
-            SF.Model.sf_website website = bll.GetModelByWid(wid);
+            Chenduo.BLL.sf_website bll = new Chenduo.BLL.sf_website();
+            Chenduo.Model.sf_website website = bll.GetModelByWid(wid);
             if (string.IsNullOrEmpty(this.txt_entid.Text))
             {
                 this.ShowMsg("请输入ent号码！", false);

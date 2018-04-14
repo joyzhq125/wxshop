@@ -350,7 +350,6 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.SaleSystem.Vshop.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.UI.Common.Controls.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.Model.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hishop.Components.Validation.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.SqlDal.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.Messages.dll
@@ -361,13 +360,10 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hishop.Plugins.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hishop.WeiBo.Api.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\System.Net.Http.dll
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.Bll.dll
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.Dal.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.Core.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.Entities.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.SaleSystem.Vshop.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.UI.Common.Controls.pdb
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.Model.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hishop.Components.Validation.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.SqlDal.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.Messages.pdb
@@ -376,9 +372,13 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\ASPNET.WebControls.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hishop.Plugins.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hishop.WeiBo.Api.pdb
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.Bll.pdb
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.Dal.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\obj\x86\Debug\Hidistro.UI.SaleSystem.Tags.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\obj\x86\Debug\Hidistro.UI.SaleSystem.Tags.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\obj\x86\Debug\Hidistro.UI.SaleSystem.Tags.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\log4net.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Chenduo.Model.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Chenduo.Model.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Chenduo.Bll.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Chenduo.Dal.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Chenduo.Bll.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.UI.SaleSystem.Tags\bin\Debug\Chenduo.Dal.pdb

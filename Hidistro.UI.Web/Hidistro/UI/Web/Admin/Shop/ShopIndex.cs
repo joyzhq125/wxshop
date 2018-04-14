@@ -48,8 +48,8 @@
             //masterSettings.VTheme = TempName;
             //SettingsManager.Save(masterSettings);
 
-            SF.BLL.sf_website bll = new SF.BLL.sf_website();
-            SF.Model.sf_website website = bll.GetModelByWid(wid);
+            Chenduo.BLL.sf_website bll = new Chenduo.BLL.sf_website();
+            Chenduo.Model.sf_website website = bll.GetModelByWid(wid);
             if (website == null) return false;
             website.templatesNum = TempName;
             bll.Update(website);
@@ -117,8 +117,8 @@
         {
             wid = GetCurWebId();
             if (string.IsNullOrEmpty(wid)) return;
-            SF.BLL.sf_website bll = new SF.BLL.sf_website();
-            SF.Model.sf_website website = bll.GetModelByWid(wid);
+            Chenduo.BLL.sf_website bll = new Chenduo.BLL.sf_website();
+            Chenduo.Model.sf_website website = bll.GetModelByWid(wid);
             if (website == null) return;
 
             Utility.RegisterTypeForAjax(typeof(ShopIndex));

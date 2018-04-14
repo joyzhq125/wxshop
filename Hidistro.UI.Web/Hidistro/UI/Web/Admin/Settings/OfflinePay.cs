@@ -44,8 +44,8 @@
             {
                 this.ShowMsg("请输入内容！", false);
             }
-            SF.BLL.sf_website bll = new SF.BLL.sf_website();
-            SF.Model.sf_website website = bll.GetModelByWid(wid);
+            Chenduo.BLL.sf_website bll = new Chenduo.BLL.sf_website();
+            Chenduo.Model.sf_website website = bll.GetModelByWid(wid);
 
             //this.siteSettings.OffLinePayContent = this.fkContent.Text;
             //SettingsManager.Save(this.siteSettings);

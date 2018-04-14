@@ -13,3 +13,8 @@ E:\微信\asp.net源码包\asp.net全开源微信源码\VTemplate.Engine\bin\Rel
 E:\微信\asp.net源码包\asp.net全开源微信源码\VTemplate.Engine\obj\Release\VTemplate.Engine.csprojResolveAssemblyReference.cache
 E:\微信\asp.net源码包\asp.net全开源微信源码\VTemplate.Engine\obj\Release\VTemplate.Engine.dll
 E:\微信\asp.net源码包\asp.net全开源微信源码\VTemplate.Engine\obj\Release\VTemplate.Engine.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\VTemplate.Engine\bin\Release\VTemplate.Engine.xml
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\VTemplate.Engine\bin\Release\VTemplate.Engine.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\VTemplate.Engine\bin\Release\VTemplate.Engine.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\VTemplate.Engine\obj\Release\VTemplate.Engine.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\VTemplate.Engine\obj\Release\VTemplate.Engine.pdb

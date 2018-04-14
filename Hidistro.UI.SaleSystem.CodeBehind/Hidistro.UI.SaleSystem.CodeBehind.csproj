@@ -145,6 +145,11 @@
       <Project>{9a7020d5-451b-4c0d-8aed-ab6f0e0e09df}</Project>
       <Name>ASPNET.WebControls</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Chenduo.Model\Chenduo.Model.csproj">
+      <Project>{54b39254-4239-4319-847e-fc5839c6371d}</Project>
+      <Name>Chenduo.Model</Name>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\Hidistro.ControlPanel\Hidistro.ControlPanel.csproj">
       <Project>{8c478dd2-c91e-4e34-bc61-8bc181247e31}</Project>
       <Name>Hidistro.ControlPanel</Name>

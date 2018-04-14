@@ -46,9 +46,21 @@ website.publishproj
       <Project>{9A7020D5-451B-4C0D-8AED-AB6F0E0E09DF}</Project>
       <Name>ASPNET.WebControls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hidistro.Bll\Chenduo.Bll.csproj">
+    <ProjectReference Include="..\Chenduo.Bll\Chenduo.Bll.csproj">
       <Project>{808C6CC8-4CBC-4C3E-9ACC-573819AFC2E5}</Project>
       <Name>Chenduo.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chenduo.Bll\Chenduo.Bll.csproj">
+      <Project>{808C6CC8-4CBC-4C3E-9ACC-573819AFC2E5}</Project>
+      <Name>Chenduo.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chenduo.Dal\Chenduo.Dal.csproj">
+      <Project>{804AD297-8D3F-4A41-82DF-4E353FCCBE4A}</Project>
+      <Name>Chenduo.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chenduo.Model\Chenduo.Model.csproj">
+      <Project>{54B39254-4239-4319-847E-FC5839C6371D}</Project>
+      <Name>Chenduo.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hidistro.ControlPanel\Hidistro.ControlPanel.csproj">
       <Project>{8C478DD2-C91E-4E34-BC61-8BC181247E31}</Project>
@@ -57,10 +69,6 @@ website.publishproj
     <ProjectReference Include="..\Hidistro.Core\Hidistro.Core.csproj">
       <Project>{C2F9053C-C4DD-467A-958E-28F27971F9AF}</Project>
       <Name>Hidistro.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hidistro.Dal\Chenduo.Dal.csproj">
-      <Project>{804AD297-8D3F-4A41-82DF-4E353FCCBE4A}</Project>
-      <Name>Chenduo.Dal</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hidistro.Entities\Hidistro.Entities.csproj">
       <Project>{B544C93D-C963-40F6-8702-8B75D2DDB8A7}</Project>
@@ -73,10 +81,6 @@ website.publishproj
     <ProjectReference Include="..\Hidistro.Messages\Hidistro.Messages.csproj">
       <Project>{F4C164E7-9F3B-43A2-A087-8295C6A0982A}</Project>
       <Name>Hidistro.Messages</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hidistro.Model\Chenduo.Model.csproj">
-      <Project>{54B39254-4239-4319-847E-FC5839C6371D}</Project>
-      <Name>Chenduo.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hidistro.SaleSystem.Vshop\Hidistro.SaleSystem.Vshop.csproj">
       <Project>{163A7CC3-2F91-436C-8BBB-C04D199C61F7}</Project>

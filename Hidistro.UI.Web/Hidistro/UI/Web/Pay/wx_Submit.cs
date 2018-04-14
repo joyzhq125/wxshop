@@ -57,7 +57,7 @@
                     package.OpenId = openId;
                     wid = currentMember.wid;
                     //SiteSettings masterSettings = SettingsManager.GetMasterSettings(false);
-                    SF.Model.sf_website website=new SF.BLL.sf_website().GetModelByWid(wid);
+                    Chenduo.Model.sf_website website=new Chenduo.BLL.sf_website().GetModelByWid(wid);
                     //PayRequestInfo req = new PayClient(masterSettings.WeixinAppId, masterSettings.WeixinAppSecret, masterSettings.WeixinPartnerID, masterSettings.WeixinPartnerKey, masterSettings.WeixinPaySignKey).BuildPayRequest(package);
                     PayRequestInfo req = new PayClient(wid,website.appid, website.appsecret, website.weixin_pay_account, website.account_pay_key,"").BuildPayRequest(package);
                     this.pay_json = this.ConvertPayJson(req);

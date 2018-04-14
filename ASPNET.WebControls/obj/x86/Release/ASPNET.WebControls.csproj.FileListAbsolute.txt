@@ -11,3 +11,7 @@ E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\ASPNET.WebControls
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\ASPNET.WebControls\obj\x86\Release\ASPNET.WebControls.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\ASPNET.WebControls\obj\x86\Release\ASPNET.WebControls.dll
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\ASPNET.WebControls\obj\x86\Release\ASPNET.WebControls.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\ASPNET.WebControls\bin\Release\ASPNET.WebControls.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\ASPNET.WebControls\bin\Release\ASPNET.WebControls.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\ASPNET.WebControls\obj\x86\Release\ASPNET.WebControls.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\ASPNET.WebControls\obj\x86\Release\ASPNET.WebControls.pdb

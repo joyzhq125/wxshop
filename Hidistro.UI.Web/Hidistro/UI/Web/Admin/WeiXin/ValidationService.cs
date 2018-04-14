@@ -13,8 +13,8 @@
         private string action;
         protected bool enableValidationService;
         private SiteSettings siteSettings;
-        SF.BLL.sf_website bll;
-        SF.Model.sf_website website;
+        Chenduo.BLL.sf_website bll;
+        Chenduo.Model.sf_website website;
 
         protected ValidationService() : base("m06", "wxp07")
         {
@@ -26,7 +26,7 @@
         {
             wid = GetCurWebId();
             if (string.IsNullOrEmpty(wid)) return;
-            bll = new SF.BLL.sf_website();
+            bll = new Chenduo.BLL.sf_website();
             website = bll.GetModelByWid(wid);
 
 

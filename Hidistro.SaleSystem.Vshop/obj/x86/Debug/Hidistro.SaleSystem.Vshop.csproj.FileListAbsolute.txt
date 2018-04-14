@@ -230,7 +230,6 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Sal
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hidistro.Entities.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hidistro.Messages.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hidistro.SqlDal.dll
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hidistro.Model.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hishop.Components.Validation.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hishop.Plugins.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hishop.Weixin.MP.dll
@@ -238,7 +237,6 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Sal
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hidistro.Entities.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hidistro.Messages.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hidistro.SqlDal.pdb
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hidistro.Model.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hishop.Components.Validation.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hishop.Plugins.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Hishop.Weixin.MP.pdb
@@ -246,3 +244,5 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Sal
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\obj\x86\Debug\Hidistro.SaleSystem.Vshop.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\obj\x86\Debug\Hidistro.SaleSystem.Vshop.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\log4net.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Chenduo.Model.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SaleSystem.Vshop\bin\Debug\Chenduo.Model.pdb

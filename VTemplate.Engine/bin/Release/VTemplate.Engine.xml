@@ -9,18 +9,6 @@
             元素属性
             </summary>
         </member>
-        <member name="T:VTemplate.Engine.ICloneableElement`1">
-            <summary>
-            支持元素的深度克隆的接口定义
-            </summary>
-        </member>
-        <member name="M:VTemplate.Engine.ICloneableElement`1.Clone(VTemplate.Engine.Template)">
-            <summary>
-            克隆元素
-            </summary>
-            <param name="ownerTemplate"></param>
-            <returns></returns>
-        </member>
         <member name="M:VTemplate.Engine.Attribute.#ctor(System.String,System.String)">
             <summary>
             元素属性
@@ -35,18 +23,6 @@
             <param name="ownerElement"></param>
             <param name="name"></param>
             <param name="text"></param>
-        </member>
-        <member name="M:VTemplate.Engine.Attribute.GetTextValue">
-            <summary>
-            获取文本值
-            </summary>
-        </member>
-        <member name="M:VTemplate.Engine.Attribute.Clone(VTemplate.Engine.Template)">
-            <summary>
-            
-            </summary>
-            <param name="ownerTemplate"></param>
-            <returns></returns>
         </member>
         <member name="P:VTemplate.Engine.Attribute.OwnerElement">
             <summary>
@@ -68,6 +44,18 @@
             属性的值
             </summary>
         </member>
+        <member name="M:VTemplate.Engine.Attribute.GetTextValue">
+            <summary>
+            获取文本值
+            </summary>
+        </member>
+        <member name="M:VTemplate.Engine.Attribute.Clone(VTemplate.Engine.Template)">
+            <summary>
+            
+            </summary>
+            <param name="ownerTemplate"></param>
+            <returns></returns>
+        </member>
         <member name="T:VTemplate.Engine.AttributeCollection">
             <summary>
             属性集合
@@ -86,10 +74,29 @@
             <param name="ownerElement"></param>
             <param name="capacity"></param>
         </member>
+        <member name="P:VTemplate.Engine.AttributeCollection.OwnerElement">
+            <summary>
+            宿主标签
+            </summary>
+        </member>
         <member name="F:VTemplate.Engine.AttributeCollection._Dictionary">
             <summary>
             存放容器
             </summary>
+        </member>
+        <member name="P:VTemplate.Engine.AttributeCollection.Item(System.Int32)">
+            <summary>
+            返回某个索引位置的属性元素
+            </summary>
+            <param name="index">索引值</param>
+            <returns>如果存在此索引位置属性元素,则返回其值或者返回null</returns>
+        </member>
+        <member name="P:VTemplate.Engine.AttributeCollection.Item(System.String)">
+            <summary>
+            返回某个名称的属性元素
+            </summary>
+            <param name="name">属性名称</param>
+            <returns>如果存在此属性,则返回其元素或者返回null</returns>
         </member>
         <member name="M:VTemplate.Engine.AttributeCollection.GetValue(System.String)">
             <summary>
@@ -131,51 +138,9 @@
             <param name="name">要判断的属性名称</param>
             <returns>存在则返回true否则返回false</returns>
         </member>
-        <member name="M:VTemplate.Engine.AttributeCollection.OnAdding(VTemplate.Engine.Attribute)">
-            <summary>
-            添加新属性时触发事件
-            </summary>
-            <param name="item"></param>
-        </member>
-        <member name="M:VTemplate.Engine.AttributeCollection.GetEnumerator">
-            <summary>
-            返回当前对象的迭代器
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.AttributeCollection.System#Collections#IEnumerable#GetEnumerator">
-            <summary>
-            返回当前对象的迭代器
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.AttributeCollection.OwnerElement">
-            <summary>
-            宿主标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.AttributeCollection.Item(System.Int32)">
-            <summary>
-            返回某个索引位置的属性元素
-            </summary>
-            <param name="index">索引值</param>
-            <returns>如果存在此索引位置属性元素,则返回其值或者返回null</returns>
-        </member>
-        <member name="P:VTemplate.Engine.AttributeCollection.Item(System.String)">
-            <summary>
-            返回某个名称的属性元素
-            </summary>
-            <param name="name">属性名称</param>
-            <returns>如果存在此属性,则返回其元素或者返回null</returns>
-        </member>
         <member name="P:VTemplate.Engine.AttributeCollection.Count">
             <summary>
             返回属性数目
-            </summary>
-        </member>
-        <member name="E:VTemplate.Engine.AttributeCollection.Adding">
-            <summary>
-            添加新属性时的触发事件
             </summary>
         </member>
         <member name="T:VTemplate.Engine.AttributeCollection.AttributeAddingEventArgs">
@@ -194,27 +159,44 @@
             添加添加的项目
             </summary>
         </member>
+        <member name="E:VTemplate.Engine.AttributeCollection.Adding">
+            <summary>
+            添加新属性时的触发事件
+            </summary>
+        </member>
+        <member name="M:VTemplate.Engine.AttributeCollection.OnAdding(VTemplate.Engine.Attribute)">
+            <summary>
+            添加新属性时触发事件
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:VTemplate.Engine.AttributeCollection.GetEnumerator">
+            <summary>
+            返回当前对象的迭代器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.AttributeCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            返回当前对象的迭代器
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:VTemplate.Engine.ConstantExpression">
             <summary>
             常数表达式.
             </summary>
-        </member>
-        <member name="T:VTemplate.Engine.IExpression">
-            <summary>
-            表达式接口
-            </summary>
-        </member>
-        <member name="M:VTemplate.Engine.IExpression.GetValue">
-            <summary>
-            获取表达式的值
-            </summary>
-            <returns></returns>
         </member>
         <member name="M:VTemplate.Engine.ConstantExpression.#ctor(System.Object)">
             <summary>
             
             </summary>
             <param name="value"></param>
+        </member>
+        <member name="P:VTemplate.Engine.ConstantExpression.Value">
+            <summary>
+            常数值
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.ConstantExpression.GetValue">
             <summary>
@@ -235,231 +217,9 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.ConstantExpression.Value">
-            <summary>
-            常数值
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.DataReaderTag">
             <summary>
             DataReader标签.如:&lt;vt:datareader var="members" connection="sitedb"  commandtext="select * from [member]"&gt;...&lt;/vt:foreach&gt;
-            </summary>
-        </member>
-        <member name="T:VTemplate.Engine.Tag">
-            <summary>
-            标签元素
-            </summary>
-        </member>
-        <member name="T:VTemplate.Engine.Element">
-            <summary>
-            元素
-            </summary>
-        </member>
-        <member name="M:VTemplate.Engine.Element.#ctor(VTemplate.Engine.Template)">
-            <summary>
-            
-            </summary>
-            <param name="ownerTemplate">宿主模板</param>
-        </member>
-        <member name="M:VTemplate.Engine.Element.Render(System.IO.TextWriter)">
-            <summary>
-            呈现本元素的数据
-            </summary>
-            <param name="writer"></param>
-        </member>
-        <member name="M:VTemplate.Engine.Element.Clone(VTemplate.Engine.Template)">
-            <summary>
-            克隆元素
-            </summary>
-            <param name="ownerTemplate"></param>
-            <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.Element.OwnerTemplate">
-            <summary>
-            此元素的宿主模板
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Element.OwnerDocument">
-            <summary>
-            此元素的宿主模板文档
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Element.Parent">
-            <summary>
-            此元素的父级标签
-            </summary>
-        </member>
-        <member name="T:VTemplate.Engine.IAttributesElement">
-            <summary>
-            定义可包含属性的元素
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IAttributesElement.Attributes">
-            <summary>
-            返回元素属性集合
-            </summary>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.#ctor(VTemplate.Engine.Template)">
-            <summary>
-            标签元素
-            </summary>
-            <param name="ownerTemplate">宿主模板</param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.OnAddingAttribute(System.Object,VTemplate.Engine.AttributeCollection.AttributeAddingEventArgs)">
-            <summary>
-            添加标签属性时的触发事件函数.用于设置自身的某些属性值
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
-            <summary>
-            添加标签属性时的触发函数
-            </summary>
-            <param name="name"></param>
-            <param name="item"></param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.AppendChild(VTemplate.Engine.Element)">
-            <summary>
-            添加子元素
-            </summary>
-            <param name="element"></param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.GetChildTagById(System.String)">
-            <summary>
-            根据Id获取某个子元素标签
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.GetChildTagsByName(System.String)">
-            <summary>
-            根据name获取所有同名的子元素标签
-            </summary>
-            <param name="name"></param>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.GetChildTagsByTagName(System.String)">
-            <summary>
-            根据标签名获取所有同标签名的子元素标签
-            </summary>
-            <param name="tagName"></param>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.ProcessBeginTag(VTemplate.Engine.Template,VTemplate.Engine.Tag,System.Collections.Generic.Stack{VTemplate.Engine.Tag},System.String,System.Text.RegularExpressions.Match@,System.Boolean)">
-            <summary>
-            开始解析标签数据
-            </summary>
-            <param name="ownerTemplate">宿主模板</param>
-            <param name="container">标签的容器</param>
-            <param name="tagStack">标签堆栈</param>
-            <param name="text"></param>
-            <param name="match"></param>
-            <param name="isClosedTag">是否闭合标签</param>
-            <returns>如果需要继续处理EndTag则返回true.否则请返回false</returns>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.ProcessEndTag(VTemplate.Engine.Template,VTemplate.Engine.Tag,System.Collections.Generic.Stack{VTemplate.Engine.Tag},System.String,System.Text.RegularExpressions.Match@)">
-            <summary>
-            结束标签的解析
-            </summary>
-            <param name="ownerTemplate">模板宿主</param>
-            <param name="container">元素容器</param>
-            <param name="tagStack">标签堆栈</param>
-            <param name="text"></param>
-            <param name="match"></param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.OnBeforeRender(System.ComponentModel.CancelEventArgs)">
-            <summary>
-            触发呈现元素标签数据之前的事件
-            </summary>
-            <param name="args"></param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.OnAfterRender(System.EventArgs)">
-            <summary>
-            触发呈现元素标签数据之前的事件
-            </summary>
-            <param name="args"></param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.Render(System.IO.TextWriter)">
-            <summary>
-            呈现本元素的数据
-            </summary>
-            <param name="writer"></param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.RenderTagData(System.IO.TextWriter)">
-            <summary>
-            呈现本标签元素的数据
-            </summary>
-            <param name="writer"></param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.RenderTo(System.String)">
-            <summary>
-            将本标签的呈现数据保存到文件,采用宿主模板的编码
-            </summary>
-            <param name="fileName">文件地址</param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.RenderTo(System.String,System.Text.Encoding)">
-            <summary>
-            将本标签的呈现数据保存到文件
-            </summary>
-            <param name="fileName">文件地址</param>
-            <param name="charset">文件编码</param>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.ToString">
-            <summary>
-            输出标签的原字符串数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.Tag.CopyTo(VTemplate.Engine.Tag)">
-            <summary>
-            拷贝自身数据对某个新对象上
-            </summary>
-            <param name="tag"></param>
-        </member>
-        <member name="P:VTemplate.Engine.Tag.TagName">
-            <summary>
-            返回标签的名称.如for,foreach等等
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Tag.EndTagName">
-            <summary>
-            返回标签的结束标签名称.
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Tag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签元素.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Tag.Id">
-            <summary>
-            标签的Id
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Tag.Name">
-            <summary>
-            标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Tag.InnerElements">
-            <summary>
-            此标签包含的子元素集合
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Tag.Attributes">
-            <summary>
-            此标签的属性集合
-            </summary>
-        </member>
-        <member name="E:VTemplate.Engine.Tag.BeforeRender">
-            <summary>
-            在呈现元素标签数据之前触发的事件
-            </summary>
-        </member>
-        <member name="E:VTemplate.Engine.Tag.AfterRender">
-            <summary>
-            在呈现元素标签数据之后触发的事件
             </summary>
         </member>
         <member name="M:VTemplate.Engine.DataReaderTag.#ctor(VTemplate.Engine.Template)">
@@ -467,44 +227,6 @@
             
             </summary>
             <param name="ownerTemplate"></param>
-        </member>
-        <member name="M:VTemplate.Engine.DataReaderTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
-            <summary>
-            添加标签属性时的触发函数.用于设置自身的某些属性值
-            </summary>
-            <param name="name"></param>
-            <param name="item"></param>
-        </member>
-        <member name="M:VTemplate.Engine.DataReaderTag.ProcessBeginTag(VTemplate.Engine.Template,VTemplate.Engine.Tag,System.Collections.Generic.Stack{VTemplate.Engine.Tag},System.String,System.Text.RegularExpressions.Match@,System.Boolean)">
-            <summary>
-            开始解析标签数据
-            </summary>
-            <param name="ownerTemplate">宿主模板</param>
-            <param name="container">标签的容器</param>
-            <param name="tagStack">标签堆栈</param>
-            <param name="text"></param>
-            <param name="match"></param>
-            <param name="isClosedTag">是否闭合标签</param>
-            <returns>如果需要继续处理EndTag则返回true.否则请返回false</returns>
-        </member>
-        <member name="M:VTemplate.Engine.DataReaderTag.Clone(VTemplate.Engine.Template)">
-            <summary>
-            克隆当前元素到新的宿主模板
-            </summary>
-            <param name="ownerTemplate"></param>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.DataReaderTag.RenderTagData(System.IO.TextWriter)">
-            <summary>
-            呈现本元素的数据
-            </summary>
-            <param name="writer"></param>
-        </member>
-        <member name="M:VTemplate.Engine.DataReaderTag.GetDataSource">
-            <summary>
-            获取数据源
-            </summary>
-            <returns></returns>
         </member>
         <member name="P:VTemplate.Engine.DataReaderTag.TagName">
             <summary>
@@ -552,6 +274,83 @@
             查询命令中使用的变量参数列表,各参数在查询命令语句中则用参数名代替.如"@p0","@p1"之类的参数名
             </summary>
         </member>
+        <member name="M:VTemplate.Engine.DataReaderTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
+            <summary>
+            添加标签属性时的触发函数.用于设置自身的某些属性值
+            </summary>
+            <param name="name"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:VTemplate.Engine.DataReaderTag.ProcessBeginTag(VTemplate.Engine.Template,VTemplate.Engine.Tag,System.Collections.Generic.Stack{VTemplate.Engine.Tag},System.String,System.Text.RegularExpressions.Match@,System.Boolean)">
+            <summary>
+            开始解析标签数据
+            </summary>
+            <param name="ownerTemplate">宿主模板</param>
+            <param name="container">标签的容器</param>
+            <param name="tagStack">标签堆栈</param>
+            <param name="text"></param>
+            <param name="match"></param>
+            <param name="isClosedTag">是否闭合标签</param>
+            <returns>如果需要继续处理EndTag则返回true.否则请返回false</returns>
+        </member>
+        <member name="M:VTemplate.Engine.DataReaderTag.Clone(VTemplate.Engine.Template)">
+            <summary>
+            克隆当前元素到新的宿主模板
+            </summary>
+            <param name="ownerTemplate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.DataReaderTag.RenderTagData(System.IO.TextWriter)">
+            <summary>
+            呈现本元素的数据
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:VTemplate.Engine.DataReaderTag.GetDataSource">
+            <summary>
+            获取数据源
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:VTemplate.Engine.Element">
+            <summary>
+            元素
+            </summary>
+        </member>
+        <member name="M:VTemplate.Engine.Element.#ctor(VTemplate.Engine.Template)">
+            <summary>
+            
+            </summary>
+            <param name="ownerTemplate">宿主模板</param>
+        </member>
+        <member name="P:VTemplate.Engine.Element.OwnerTemplate">
+            <summary>
+            此元素的宿主模板
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Element.OwnerDocument">
+            <summary>
+            此元素的宿主模板文档
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Element.Parent">
+            <summary>
+            此元素的父级标签
+            </summary>
+        </member>
+        <member name="M:VTemplate.Engine.Element.Render(System.IO.TextWriter)">
+            <summary>
+            呈现本元素的数据
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:VTemplate.Engine.Element.Clone(VTemplate.Engine.Template)">
+            <summary>
+            克隆元素
+            </summary>
+            <param name="ownerTemplate"></param>
+            <returns></returns>
+        </member>
         <member name="T:VTemplate.Engine.ElementCollection`1">
             <summary>
             元素集合
@@ -580,6 +379,13 @@
             </summary>
             <param name="collection">要复制的集合列表</param>
         </member>
+        <member name="P:VTemplate.Engine.ElementCollection`1.Item(System.Int32)">
+            <summary>
+            返回某个索引位置的数据
+            </summary>
+            <param name="index">索引位置</param>
+            <returns></returns>
+        </member>
         <member name="M:VTemplate.Engine.ElementCollection`1.GetEnumerator">
             <summary>
             返回当前对象的迭代器
@@ -604,21 +410,14 @@
             </summary>
             <param name="collection">集合数据,不可以为null</param>
         </member>
-        <member name="M:VTemplate.Engine.ElementCollection`1.Clear">
-            <summary>
-            清空数据
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ElementCollection`1.Item(System.Int32)">
-            <summary>
-            返回某个索引位置的数据
-            </summary>
-            <param name="index">索引位置</param>
-            <returns></returns>
-        </member>
         <member name="P:VTemplate.Engine.ElementCollection`1.Count">
             <summary>
             返回当前拥有的数目
+            </summary>
+        </member>
+        <member name="M:VTemplate.Engine.ElementCollection`1.Clear">
+            <summary>
+            清空数据
             </summary>
         </member>
         <member name="T:VTemplate.Engine.ElseTag">
@@ -626,96 +425,31 @@
             Else标签..只适用于if标签内.如&lt;vt:if var="member.age" value="20" compare="&lt;="&gt;..&lt;vt:else&gt;..&lt;/vt:if&gt;
             </summary>
         </member>
-        <member name="T:VTemplate.Engine.IfConditionTag">
-            <summary>
-            If条件标签.
-            </summary>
-        </member>
-        <member name="M:VTemplate.Engine.IfConditionTag.#ctor(VTemplate.Engine.Template)">
-            <summary>
-            
-            </summary>
-            <param name="ownerTemplate"></param>
-        </member>
-        <member name="M:VTemplate.Engine.IfConditionTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
-            <summary>
-            添加标签属性时的触发函数.用于设置自身的某些属性值
-            </summary>
-            <param name="name"></param>
-            <param name="item"></param>
-        </member>
-        <member name="M:VTemplate.Engine.IfConditionTag.IsTestSuccess">
-            <summary>
-            判断测试条件是否成功
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.IfConditionTag.ProcessBeginTag(VTemplate.Engine.Template,VTemplate.Engine.Tag,System.Collections.Generic.Stack{VTemplate.Engine.Tag},System.String,System.Text.RegularExpressions.Match@,System.Boolean)">
-            <summary>
-            开始解析标签数据
-            </summary>
-            <param name="ownerTemplate">宿主模板</param>
-            <param name="container">标签的容器</param>
-            <param name="tagStack">标签堆栈</param>
-            <param name="text"></param>
-            <param name="match"></param>
-            <param name="isClosedTag">是否闭合标签</param>
-            <returns>如果需要继续处理EndTag则返回true.否则请返回false</returns>
-        </member>
-        <member name="M:VTemplate.Engine.IfConditionTag.CopyTo(VTemplate.Engine.IfConditionTag)">
-            <summary>
-            
-            </summary>
-            <param name="tag"></param>
-        </member>
-        <member name="M:VTemplate.Engine.IfConditionTag.Clone(VTemplate.Engine.Template)">
-            <summary>
-            克隆当前元素到新的宿主模板
-            </summary>
-            <param name="ownerTemplate"></param>
-            <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.IfConditionTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IfConditionTag.EndTagName">
-            <summary>
-            返回标签的结束标签名称.
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IfConditionTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IfConditionTag.VarExpression">
-            <summary>
-            条件变量
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IfConditionTag.Values">
-            <summary>
-            比较值列表
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IfConditionTag.Compare">
-            <summary>
-            比较类型
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IfConditionTag.Expression">
-            <summary>
-            表达式.
-            </summary>
-            <remarks>表达式中可用"{0}"标记符表示条件变量的值</remarks>
-        </member>
         <member name="M:VTemplate.Engine.ElseTag.#ctor(VTemplate.Engine.Template)">
             <summary>
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.ElseTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ElseTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ElseTag.Values">
+            <summary>
+            else节点不支持比较值
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ElseTag.VarExpression">
+            <summary>
+            else节点不支持条件变量
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.ElseTag.IsTestSuccess">
             <summary>
@@ -741,26 +475,6 @@
             </summary>
             <param name="ownerTemplate"></param>
             <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.ElseTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ElseTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ElseTag.Values">
-            <summary>
-            else节点不支持比较值
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ElseTag.VarExpression">
-            <summary>
-            else节点不支持条件变量
-            </summary>
         </member>
         <member name="T:VTemplate.Engine.Evaluator.ExpressionEvaluator">
             <summary>
@@ -848,6 +562,31 @@
             </summary>
             <param name="value">操作数或运算符</param>
         </member>
+        <member name="P:VTemplate.Engine.Evaluator.ExpressionNode.Value">
+            <summary>
+            返回当前节点的操作数
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Evaluator.ExpressionNode.Type">
+            <summary>
+            返回当前节点的类型
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Evaluator.ExpressionNode.PRI">
+            <summary>
+            返回当前节点的优先级
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Evaluator.ExpressionNode.Numeric">
+            <summary>
+            返回此节点的数值
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Evaluator.ExpressionNode.UnitaryNode">
+            <summary>
+            设置或返回与当前节点相关联的一元操作符节点
+            </summary>
+        </member>
         <member name="M:VTemplate.Engine.Evaluator.ExpressionNode.ParseNodeType(System.String)">
             <summary>
             解析节点类型
@@ -901,31 +640,6 @@
         <member name="F:VTemplate.Engine.Evaluator.ExpressionNode.Numerics">
             <summary>
             操作数的正则表达式
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Evaluator.ExpressionNode.Value">
-            <summary>
-            返回当前节点的操作数
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Evaluator.ExpressionNode.Type">
-            <summary>
-            返回当前节点的类型
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Evaluator.ExpressionNode.PRI">
-            <summary>
-            返回当前节点的优先级
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Evaluator.ExpressionNode.Numeric">
-            <summary>
-            返回此节点的数值
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Evaluator.ExpressionNode.UnitaryNode">
-            <summary>
-            设置或返回与当前节点相关联的一元操作符节点
             </summary>
         </member>
         <member name="T:VTemplate.Engine.Evaluator.ExpressionNodeType">
@@ -1064,9 +778,19 @@
             当前分析的表达式
             </summary>
         </member>
+        <member name="P:VTemplate.Engine.Evaluator.ExpressionParser.Expression">
+            <summary>
+            返回当前分析的表达式
+            </summary>
+        </member>
         <member name="F:VTemplate.Engine.Evaluator.ExpressionParser._Position">
             <summary>
             当前读取的位置
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Evaluator.ExpressionParser.Position">
+            <summary>
+            返回当前读取的位置
             </summary>
         </member>
         <member name="M:VTemplate.Engine.Evaluator.ExpressionParser.ReadNode">
@@ -1074,16 +798,6 @@
             读取下一个表达式节点,如果读取失败则返回null
             </summary>
             <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.Evaluator.ExpressionParser.Expression">
-            <summary>
-            返回当前分析的表达式
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Evaluator.ExpressionParser.Position">
-            <summary>
-            返回当前读取的位置
-            </summary>
         </member>
         <member name="T:VTemplate.Engine.ExpressionTag">
             <summary>
@@ -1095,6 +809,37 @@
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.ExpressionTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ExpressionTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ExpressionTag.ExpArgs">
+            <summary>
+            参与表达式运算的变量参数列表
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ExpressionTag.Expression">
+            <summary>
+            表达式.
+            </summary>
+            <remarks>表达式中可用"{0}","{1}"..之类的标记符表示变量参数的值</remarks>
+        </member>
+        <member name="P:VTemplate.Engine.ExpressionTag.Variable">
+            <summary>
+            存储表达式结果的变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ExpressionTag.Output">
+            <summary>
+            是否输出此标签的结果值
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.ExpressionTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
             <summary>
@@ -1128,37 +873,6 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.ExpressionTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ExpressionTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ExpressionTag.ExpArgs">
-            <summary>
-            参与表达式运算的变量参数列表
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ExpressionTag.Expression">
-            <summary>
-            表达式.
-            </summary>
-            <remarks>表达式中可用"{0}","{1}"..之类的标记符表示变量参数的值</remarks>
-        </member>
-        <member name="P:VTemplate.Engine.ExpressionTag.Variable">
-            <summary>
-            存储表达式结果的变量
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ExpressionTag.Output">
-            <summary>
-            是否输出此标签的结果值
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.ForEachElseTag">
             <summary>
             ForEachElse标签.如:&lt;vt:foreachelse&gt;...&lt;/vt:foreach&gt;
@@ -1169,6 +883,21 @@
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.ForEachElseTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForEachElseTag.EndTagName">
+            <summary>
+            返回标签的结束标签名称.
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForEachElseTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.ForEachElseTag.ProcessBeginTag(VTemplate.Engine.Template,VTemplate.Engine.Tag,System.Collections.Generic.Stack{VTemplate.Engine.Tag},System.String,System.Text.RegularExpressions.Match@,System.Boolean)">
             <summary>
@@ -1189,21 +918,6 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.ForEachElseTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForEachElseTag.EndTagName">
-            <summary>
-            返回标签的结束标签名称.
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForEachElseTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.ForEachTag">
             <summary>
             ForEach标签.如:&lt;vt:foreach from="collection" item="variable"  index="i"&gt;...&lt;/vt:foreach&gt;
@@ -1214,6 +928,16 @@
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.ForEachTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForEachTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.ForEachTag.GetChildTagById(System.String)">
             <summary>
@@ -1236,7 +960,32 @@
             <param name="tagName"></param>
             <returns></returns>
         </member>
+        <member name="P:VTemplate.Engine.ForEachTag.From">
+            <summary>
+            来源数据的变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForEachTag.Item">
+            <summary>
+            当前项变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForEachTag.Index">
+            <summary>
+            索引变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForEachTag.GroupSize">
+            <summary>
+            分组大小
+            </summary>
+        </member>
         <member name="F:VTemplate.Engine.ForEachTag._Else">
+            <summary>
+            ForEachElse节点
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForEachTag.Else">
             <summary>
             ForEachElse节点
             </summary>
@@ -1273,41 +1022,6 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.ForEachTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForEachTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForEachTag.From">
-            <summary>
-            来源数据的变量
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForEachTag.Item">
-            <summary>
-            当前项变量
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForEachTag.Index">
-            <summary>
-            索引变量
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForEachTag.GroupSize">
-            <summary>
-            分组大小
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForEachTag.Else">
-            <summary>
-            ForEachElse节点
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.ForTag">
             <summary>
             For标签.如:&lt;vt:for from="1" to="100" step="1" index="i"&gt;...&lt;/vt:for&gt;
@@ -1318,6 +1032,36 @@
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.ForTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForTag.From">
+            <summary>
+            起始值
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForTag.To">
+            <summary>
+            结束值
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForTag.Step">
+            <summary>
+            步长
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ForTag.Index">
+            <summary>
+            索引变量
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.ForTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
             <summary>
@@ -1351,36 +1095,6 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.ForTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForTag.From">
-            <summary>
-            起始值
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForTag.To">
-            <summary>
-            结束值
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForTag.Step">
-            <summary>
-            步长
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ForTag.Index">
-            <summary>
-            索引变量
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.FunctionTag">
             <summary>
             函数调用标签.如: &lt;vt:function var="MaxAge" method="Max" type="System.Math" args="$user1.age" args="$user2.age" /&gt;
@@ -1391,6 +1105,41 @@
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.FunctionTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.FunctionTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.FunctionTag.FunctionArgs">
+            <summary>
+            参与函数运算的参数列表
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.FunctionTag.Method">
+            <summary>
+            调用的方法
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.FunctionTag.Type">
+            <summary>
+            包含方法的类型
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.FunctionTag.Variable">
+            <summary>
+            存储表达式结果的变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.FunctionTag.Output">
+            <summary>
+            是否输出此标签的结果值
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.FunctionTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
             <summary>
@@ -1430,40 +1179,38 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.FunctionTag.TagName">
+        <member name="T:VTemplate.Engine.IAttributesElement">
             <summary>
-            返回标签的名称
+            定义可包含属性的元素
             </summary>
         </member>
-        <member name="P:VTemplate.Engine.FunctionTag.IsSingleTag">
+        <member name="P:VTemplate.Engine.IAttributesElement.Attributes">
             <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
+            返回元素属性集合
             </summary>
         </member>
-        <member name="P:VTemplate.Engine.FunctionTag.FunctionArgs">
+        <member name="T:VTemplate.Engine.ICloneableElement`1">
             <summary>
-            参与函数运算的参数列表
+            支持元素的深度克隆的接口定义
             </summary>
         </member>
-        <member name="P:VTemplate.Engine.FunctionTag.Method">
+        <member name="M:VTemplate.Engine.ICloneableElement`1.Clone(VTemplate.Engine.Template)">
             <summary>
-            调用的方法
+            克隆元素
+            </summary>
+            <param name="ownerTemplate"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VTemplate.Engine.IExpression">
+            <summary>
+            表达式接口
             </summary>
         </member>
-        <member name="P:VTemplate.Engine.FunctionTag.Type">
+        <member name="M:VTemplate.Engine.IExpression.GetValue">
             <summary>
-            包含方法的类型
+            获取表达式的值
             </summary>
-        </member>
-        <member name="P:VTemplate.Engine.FunctionTag.Variable">
-            <summary>
-            存储表达式结果的变量
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.FunctionTag.Output">
-            <summary>
-            是否输出此标签的结果值
-            </summary>
+            <returns></returns>
         </member>
         <member name="T:VTemplate.Engine.IfConditionCompareType">
             <summary>
@@ -1515,6 +1262,91 @@
             是否包含某些值"*="
             </summary>
         </member>
+        <member name="T:VTemplate.Engine.IfConditionTag">
+            <summary>
+            If条件标签.
+            </summary>
+        </member>
+        <member name="M:VTemplate.Engine.IfConditionTag.#ctor(VTemplate.Engine.Template)">
+            <summary>
+            
+            </summary>
+            <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.IfConditionTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IfConditionTag.EndTagName">
+            <summary>
+            返回标签的结束标签名称.
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IfConditionTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IfConditionTag.VarExpression">
+            <summary>
+            条件变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IfConditionTag.Values">
+            <summary>
+            比较值列表
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IfConditionTag.Compare">
+            <summary>
+            比较类型
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IfConditionTag.Expression">
+            <summary>
+            表达式.
+            </summary>
+            <remarks>表达式中可用"{0}"标记符表示条件变量的值</remarks>
+        </member>
+        <member name="M:VTemplate.Engine.IfConditionTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
+            <summary>
+            添加标签属性时的触发函数.用于设置自身的某些属性值
+            </summary>
+            <param name="name"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:VTemplate.Engine.IfConditionTag.IsTestSuccess">
+            <summary>
+            判断测试条件是否成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.IfConditionTag.ProcessBeginTag(VTemplate.Engine.Template,VTemplate.Engine.Tag,System.Collections.Generic.Stack{VTemplate.Engine.Tag},System.String,System.Text.RegularExpressions.Match@,System.Boolean)">
+            <summary>
+            开始解析标签数据
+            </summary>
+            <param name="ownerTemplate">宿主模板</param>
+            <param name="container">标签的容器</param>
+            <param name="tagStack">标签堆栈</param>
+            <param name="text"></param>
+            <param name="match"></param>
+            <param name="isClosedTag">是否闭合标签</param>
+            <returns>如果需要继续处理EndTag则返回true.否则请返回false</returns>
+        </member>
+        <member name="M:VTemplate.Engine.IfConditionTag.CopyTo(VTemplate.Engine.IfConditionTag)">
+            <summary>
+            
+            </summary>
+            <param name="tag"></param>
+        </member>
+        <member name="M:VTemplate.Engine.IfConditionTag.Clone(VTemplate.Engine.Template)">
+            <summary>
+            克隆当前元素到新的宿主模板
+            </summary>
+            <param name="ownerTemplate"></param>
+            <returns></returns>
+        </member>
         <member name="T:VTemplate.Engine.IfTag">
             <summary>
             If条件标签,如: &lt;vt:if var="member.age" value="20" compare="&lt;="&gt;..&lt;vt:elseif value="30"&gt;..&lt;/vt:if&gt;
@@ -1526,7 +1358,17 @@
             </summary>
             <param name="ownerTemplate"></param>
         </member>
+        <member name="P:VTemplate.Engine.IfTag.ElseIfs">
+            <summary>
+            ElseIf节点列表
+            </summary>
+        </member>
         <member name="F:VTemplate.Engine.IfTag._Else">
+            <summary>
+            Else节点
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IfTag.Else">
             <summary>
             Else节点
             </summary>
@@ -1536,6 +1378,16 @@
             添加条件
             </summary>
             <param name="conditionTag"></param>
+        </member>
+        <member name="P:VTemplate.Engine.IfTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IfTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.IfTag.GetChildTagById(System.String)">
             <summary>
@@ -1583,26 +1435,6 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.IfTag.ElseIfs">
-            <summary>
-            ElseIf节点列表
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IfTag.Else">
-            <summary>
-            Else节点
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IfTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IfTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.IncludeTag">
             <summary>
             文件包含标签.如: &lt;vt:include file="include.html" charset="utf-8" /&gt;
@@ -1613,6 +1445,26 @@
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.IncludeTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IncludeTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IncludeTag.File">
+            <summary>
+            引用的文件
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.IncludeTag.Charset">
+            <summary>
+            文件编码
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.IncludeTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
             <summary>
@@ -1639,26 +1491,6 @@
             </summary>
             <param name="ownerTemplate"></param>
             <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.IncludeTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IncludeTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IncludeTag.File">
-            <summary>
-            引用的文件
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.IncludeTag.Charset">
-            <summary>
-            文件编码
-            </summary>
         </member>
         <member name="T:VTemplate.Engine.ITemplateRender">
             <summary>
@@ -1696,6 +1528,26 @@
             
             </summary>
             <param name="value"></param>
+        </member>
+        <member name="P:VTemplate.Engine.LoopIndex.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.LoopIndex.IsFirst">
+            <summary>
+            是否是第一个索引值
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.LoopIndex.IsLast">
+            <summary>
+            是否是最后一个索引值
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.LoopIndex.IsEven">
+            <summary>
+            是否是偶数索引值
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.LoopIndex.ToString">
             <summary>
@@ -1829,26 +1681,6 @@
             <param name="obj"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.LoopIndex.Value">
-            <summary>
-            值
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.LoopIndex.IsFirst">
-            <summary>
-            是否是第一个索引值
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.LoopIndex.IsLast">
-            <summary>
-            是否是最后一个索引值
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.LoopIndex.IsEven">
-            <summary>
-            是否是偶数索引值
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.PanelTag">
             <summary>
             面板数据标签,如: &lt;vt:panel id="header" /&gt;或者 &lt;vt:panel container="header"&gt;&lt;/vt:panel&gt;
@@ -1859,6 +1691,26 @@
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.PanelTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.PanelTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.PanelTag.Container">
+            <summary>
+            面板所在的容器标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.PanelTag.Panels">
+            <summary>
+            此容器下所拥有的面板标签
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.PanelTag.Render(System.IO.TextWriter)">
             <summary>
@@ -1903,26 +1755,6 @@
             </summary>
             <param name="ownerTemplate"></param>
             <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.PanelTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.PanelTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.PanelTag.Container">
-            <summary>
-            面板所在的容器标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.PanelTag.Panels">
-            <summary>
-            此容器下所拥有的面板标签
-            </summary>
         </member>
         <member name="T:VTemplate.Engine.ParserException">
             <summary>
@@ -2183,6 +2015,36 @@
             </summary>
             <param name="ownerTemplate"></param>
         </member>
+        <member name="P:VTemplate.Engine.PropertyTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.PropertyTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.PropertyTag.Field">
+            <summary>
+            调用的属性或字段
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.PropertyTag.Type">
+            <summary>
+            包含属性或字段的类型
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.PropertyTag.Variable">
+            <summary>
+            存储表达式结果的变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.PropertyTag.Output">
+            <summary>
+            是否输出此标签的结果值
+            </summary>
+        </member>
         <member name="M:VTemplate.Engine.PropertyTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
             <summary>
             添加标签属性时的触发函数.用于设置自身的某些属性值
@@ -2215,36 +2077,6 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.PropertyTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.PropertyTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.PropertyTag.Field">
-            <summary>
-            调用的属性或字段
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.PropertyTag.Type">
-            <summary>
-            包含属性或字段的类型
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.PropertyTag.Variable">
-            <summary>
-            存储表达式结果的变量
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.PropertyTag.Output">
-            <summary>
-            是否输出此标签的结果值
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.OutputTag">
             <summary>
             数据输出标签,可输出某个标签的数据,或直接输出文件数据.如: &lt;vt:output tagid="list" /&gt; 或 &lt;vt:output file="output.html" charset="utf-8" /&gt;
@@ -2256,9 +2088,39 @@
             </summary>
             <param name="ownerTemplate"></param>
         </member>
+        <member name="P:VTemplate.Engine.OutputTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.OutputTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
         <member name="F:VTemplate.Engine.OutputTag.outputTarget">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.OutputTag.OutputTarget">
+            <summary>
+            需要输出数据的标签id
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.OutputTag.TagId">
+            <summary>
+            需要输出数据的标签的Id
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.OutputTag.File">
+            <summary>
+            需要输出数据的文件
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.OutputTag.Charset">
+            <summary>
+            文件编码
             </summary>
         </member>
         <member name="M:VTemplate.Engine.OutputTag.RenderTagData(System.IO.TextWriter)">
@@ -2285,36 +2147,6 @@
             </summary>
             <param name="ownerTemplate"></param>
             <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.OutputTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.OutputTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.OutputTag.OutputTarget">
-            <summary>
-            需要输出数据的标签id
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.OutputTag.TagId">
-            <summary>
-            需要输出数据的标签的Id
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.OutputTag.File">
-            <summary>
-            需要输出数据的文件
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.OutputTag.Charset">
-            <summary>
-            文件编码
-            </summary>
         </member>
         <member name="T:VTemplate.Engine.ServerDataType">
             <summary>
@@ -2411,6 +2243,37 @@
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.ServerDataTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ServerDataTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ServerDataTag.Type">
+            <summary>
+            数据类型.
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="P:VTemplate.Engine.ServerDataTag.Variable">
+            <summary>
+            存储表达式结果的变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ServerDataTag.Item">
+            <summary>
+            数据值
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ServerDataTag.Output">
+            <summary>
+            是否输出此标签的结果值
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.ServerDataTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
             <summary>
@@ -2516,37 +2379,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.ServerDataTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ServerDataTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ServerDataTag.Type">
-            <summary>
-            数据类型.
-            </summary>
-            <remarks></remarks>
-        </member>
-        <member name="P:VTemplate.Engine.ServerDataTag.Variable">
-            <summary>
-            存储表达式结果的变量
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ServerDataTag.Item">
-            <summary>
-            数据值
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ServerDataTag.Output">
-            <summary>
-            是否输出此标签的结果值
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.SetTag">
             <summary>
             变量赋值标签, 如:&lt;vt:set var="page" value="1" /&gt;
@@ -2557,6 +2389,36 @@
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.SetTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.SetTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.SetTag.Values">
+            <summary>
+            变量的值
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.SetTag.Variable">
+            <summary>
+            要对其赋值的变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.SetTag.Format">
+            <summary>
+            格式化
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.SetTag.Output">
+            <summary>
+            是否输出此标签的结果值
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.SetTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
             <summary>
@@ -2590,35 +2452,173 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.SetTag.TagName">
+        <member name="T:VTemplate.Engine.Tag">
             <summary>
-            返回标签的名称
+            标签元素
             </summary>
         </member>
-        <member name="P:VTemplate.Engine.SetTag.IsSingleTag">
+        <member name="M:VTemplate.Engine.Tag.#ctor(VTemplate.Engine.Template)">
             <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
+            标签元素
+            </summary>
+            <param name="ownerTemplate">宿主模板</param>
+        </member>
+        <member name="P:VTemplate.Engine.Tag.TagName">
+            <summary>
+            返回标签的名称.如for,foreach等等
             </summary>
         </member>
-        <member name="P:VTemplate.Engine.SetTag.Values">
+        <member name="P:VTemplate.Engine.Tag.EndTagName">
             <summary>
-            变量的值
+            返回标签的结束标签名称.
             </summary>
         </member>
-        <member name="P:VTemplate.Engine.SetTag.Variable">
+        <member name="P:VTemplate.Engine.Tag.IsSingleTag">
             <summary>
-            要对其赋值的变量
+            返回此标签是否是单一标签元素.即是不需要配对的结束标签
             </summary>
         </member>
-        <member name="P:VTemplate.Engine.SetTag.Format">
+        <member name="P:VTemplate.Engine.Tag.Id">
             <summary>
-            格式化
+            标签的Id
             </summary>
         </member>
-        <member name="P:VTemplate.Engine.SetTag.Output">
+        <member name="P:VTemplate.Engine.Tag.Name">
             <summary>
-            是否输出此标签的结果值
+            标签的名称
             </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Tag.InnerElements">
+            <summary>
+            此标签包含的子元素集合
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Tag.Attributes">
+            <summary>
+            此标签的属性集合
+            </summary>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.OnAddingAttribute(System.Object,VTemplate.Engine.AttributeCollection.AttributeAddingEventArgs)">
+            <summary>
+            添加标签属性时的触发事件函数.用于设置自身的某些属性值
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
+            <summary>
+            添加标签属性时的触发函数
+            </summary>
+            <param name="name"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.AppendChild(VTemplate.Engine.Element)">
+            <summary>
+            添加子元素
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.GetChildTagById(System.String)">
+            <summary>
+            根据Id获取某个子元素标签
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.GetChildTagsByName(System.String)">
+            <summary>
+            根据name获取所有同名的子元素标签
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.GetChildTagsByTagName(System.String)">
+            <summary>
+            根据标签名获取所有同标签名的子元素标签
+            </summary>
+            <param name="tagName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.ProcessBeginTag(VTemplate.Engine.Template,VTemplate.Engine.Tag,System.Collections.Generic.Stack{VTemplate.Engine.Tag},System.String,System.Text.RegularExpressions.Match@,System.Boolean)">
+            <summary>
+            开始解析标签数据
+            </summary>
+            <param name="ownerTemplate">宿主模板</param>
+            <param name="container">标签的容器</param>
+            <param name="tagStack">标签堆栈</param>
+            <param name="text"></param>
+            <param name="match"></param>
+            <param name="isClosedTag">是否闭合标签</param>
+            <returns>如果需要继续处理EndTag则返回true.否则请返回false</returns>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.ProcessEndTag(VTemplate.Engine.Template,VTemplate.Engine.Tag,System.Collections.Generic.Stack{VTemplate.Engine.Tag},System.String,System.Text.RegularExpressions.Match@)">
+            <summary>
+            结束标签的解析
+            </summary>
+            <param name="ownerTemplate">模板宿主</param>
+            <param name="container">元素容器</param>
+            <param name="tagStack">标签堆栈</param>
+            <param name="text"></param>
+            <param name="match"></param>
+        </member>
+        <member name="E:VTemplate.Engine.Tag.BeforeRender">
+            <summary>
+            在呈现元素标签数据之前触发的事件
+            </summary>
+        </member>
+        <member name="E:VTemplate.Engine.Tag.AfterRender">
+            <summary>
+            在呈现元素标签数据之后触发的事件
+            </summary>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.OnBeforeRender(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            触发呈现元素标签数据之前的事件
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.OnAfterRender(System.EventArgs)">
+            <summary>
+            触发呈现元素标签数据之前的事件
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.Render(System.IO.TextWriter)">
+            <summary>
+            呈现本元素的数据
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.RenderTagData(System.IO.TextWriter)">
+            <summary>
+            呈现本标签元素的数据
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.RenderTo(System.String)">
+            <summary>
+            将本标签的呈现数据保存到文件,采用宿主模板的编码
+            </summary>
+            <param name="fileName">文件地址</param>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.RenderTo(System.String,System.Text.Encoding)">
+            <summary>
+            将本标签的呈现数据保存到文件
+            </summary>
+            <param name="fileName">文件地址</param>
+            <param name="charset">文件编码</param>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.ToString">
+            <summary>
+            输出标签的原字符串数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.Tag.CopyTo(VTemplate.Engine.Tag)">
+            <summary>
+            拷贝自身数据对某个新对象上
+            </summary>
+            <param name="tag"></param>
         </member>
         <member name="T:VTemplate.Engine.TagFactory">
             <summary>
@@ -2649,9 +2649,69 @@
             </summary>
             <param name="ownerTemplate"></param>
         </member>
+        <member name="P:VTemplate.Engine.Template.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.File">
+            <summary>
+            模板的关联文件
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.Charset">
+            <summary>
+            模板数据采用的编码
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.Visible">
+            <summary>
+            设置或返回此模板是否可见
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.Variables">
+            <summary>
+            返回此模板下的变量集合
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.UserDefinedFunctions">
+            <summary>
+            自定义函数集合
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.ChildTemplates">
+            <summary>
+            返回此模板下的子模板元素
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.TagContainer">
+            <summary>
+            标签容器
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.RenderInstance">
+            <summary>
+            返回处理模板数据的实例
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.RenderMethod">
+            <summary>
+            返回处理模板数据的特性方法
+            </summary>
+        </member>
         <member name="F:VTemplate.Engine.Template.fileDependencies">
             <summary>
             模板的依赖文件列表
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Template.FileDependencies">
+            <summary>
+            返回模板的依赖文件
             </summary>
         </member>
         <member name="M:VTemplate.Engine.Template.AddFileDependency(System.String)">
@@ -2726,66 +2786,6 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.Template.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.File">
-            <summary>
-            模板的关联文件
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.Charset">
-            <summary>
-            模板数据采用的编码
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.Visible">
-            <summary>
-            设置或返回此模板是否可见
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.Variables">
-            <summary>
-            返回此模板下的变量集合
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.UserDefinedFunctions">
-            <summary>
-            自定义函数集合
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.ChildTemplates">
-            <summary>
-            返回此模板下的子模板元素
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.TagContainer">
-            <summary>
-            标签容器
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.RenderInstance">
-            <summary>
-            返回处理模板数据的实例
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.RenderMethod">
-            <summary>
-            返回处理模板数据的特性方法
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Template.FileDependencies">
-            <summary>
-            返回模板的依赖文件
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.TemplateDocument">
             <summary>
             模板文档
@@ -2854,14 +2854,39 @@
             <param name="text"></param>
             <param name="documentConfig"></param>
         </member>
+        <member name="P:VTemplate.Engine.TemplateDocument.DocumentElement">
+            <summary>
+            根文档模板
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.TemplateDocument.OwnerDocument">
+            <summary>
+            返回此模板块的宿主模板文档
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.TemplateDocument.DocumentConfig">
+            <summary>
+            模板文档的配置参数
+            </summary>
+        </member>
         <member name="F:VTemplate.Engine.TemplateDocument._CurrentRenderingTag">
             <summary>
             
             </summary>
         </member>
+        <member name="P:VTemplate.Engine.TemplateDocument.CurrentRenderingTag">
+            <summary>
+            返回当前正在呈现数据的标签
+            </summary>
+        </member>
         <member name="F:VTemplate.Engine.TemplateDocument._CurrentRenderingDocument">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.TemplateDocument.CurrentRenderingDocument">
+            <summary>
+            当前正在呈现数据的文档
             </summary>
         </member>
         <member name="M:VTemplate.Engine.TemplateDocument.GetRenderText">
@@ -2925,31 +2950,6 @@
             </summary>
             <param name="ownerTemplate"></param>
             <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.TemplateDocument.DocumentElement">
-            <summary>
-            根文档模板
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.TemplateDocument.OwnerDocument">
-            <summary>
-            返回此模板块的宿主模板文档
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.TemplateDocument.DocumentConfig">
-            <summary>
-            模板文档的配置参数
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.TemplateDocument.CurrentRenderingTag">
-            <summary>
-            返回当前正在呈现数据的标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.TemplateDocument.CurrentRenderingDocument">
-            <summary>
-            当前正在呈现数据的文档
-            </summary>
         </member>
         <member name="T:VTemplate.Engine.TagOpenMode">
             <summary>
@@ -3053,6 +3053,11 @@
             <param name="ownerTemplate"></param>
             <param name="text"></param>
         </member>
+        <member name="P:VTemplate.Engine.TextNode.Text">
+            <summary>
+            此节点的文本数据
+            </summary>
+        </member>
         <member name="M:VTemplate.Engine.TextNode.Render(System.IO.TextWriter)">
             <summary>
             呈现本元素的数据
@@ -3072,11 +3077,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.TextNode.Text">
-            <summary>
-            此节点的文本数据
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.ImportTag">
             <summary>
             类型导入标签, 如:&lt;vt:import var="math" type="System.Math" /&gt;
@@ -3087,6 +3087,31 @@
             
             </summary>
             <param name="ownerTemplate"></param>
+        </member>
+        <member name="P:VTemplate.Engine.ImportTag.TagName">
+            <summary>
+            返回标签的名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ImportTag.IsSingleTag">
+            <summary>
+            返回此标签是否是单一标签.即是不需要配对的结束标签
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ImportTag.Variable">
+            <summary>
+            要对其赋值的变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ImportTag.Type">
+            <summary>
+            要导入的类型名称
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.ImportTag.Assembly">
+            <summary>
+            类型所在的程序集
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.ImportTag.OnAddingAttribute(System.String,VTemplate.Engine.Attribute)">
             <summary>
@@ -3119,31 +3144,6 @@
             </summary>
             <param name="ownerTemplate"></param>
             <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.ImportTag.TagName">
-            <summary>
-            返回标签的名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ImportTag.IsSingleTag">
-            <summary>
-            返回此标签是否是单一标签.即是不需要配对的结束标签
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ImportTag.Variable">
-            <summary>
-            要对其赋值的变量
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ImportTag.Type">
-            <summary>
-            要导入的类型名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.ImportTag.Assembly">
-            <summary>
-            类型所在的程序集
-            </summary>
         </member>
         <member name="T:VTemplate.Engine.UserDefinedFunction">
             <summary>
@@ -3449,9 +3449,24 @@
             <param name="ownerTemplate"></param>
             <param name="name"></param>
         </member>
+        <member name="P:VTemplate.Engine.Variable.OwnerTemplate">
+            <summary>
+            变量的宿主模板
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Variable.Name">
+            <summary>
+            变量名称
+            </summary>
+        </member>
         <member name="F:VTemplate.Engine.Variable._Value">
             <summary>
             变量的值
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.Variable.Value">
+            <summary>
+            此变量的值
             </summary>
         </member>
         <member name="F:VTemplate.Engine.Variable.cacheExpItems">
@@ -3498,21 +3513,6 @@
             <param name="ownerTemplate"></param>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.Variable.OwnerTemplate">
-            <summary>
-            变量的宿主模板
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Variable.Name">
-            <summary>
-            变量名称
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.Variable.Value">
-            <summary>
-            此变量的值
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.VariableCollection">
             <summary>
             变量集合
@@ -3534,6 +3534,20 @@
             存放容器
             </summary>
         </member>
+        <member name="P:VTemplate.Engine.VariableCollection.Item(System.Int32)">
+            <summary>
+            返回某个索引位置的变量
+            </summary>
+            <param name="index">索引值</param>
+            <returns>如果存在此索引位置值,则返回其变量值否则返回null</returns>
+        </member>
+        <member name="P:VTemplate.Engine.VariableCollection.Item(System.String)">
+            <summary>
+            返回某个名称的量
+            </summary>
+            <param name="name">量名称</param>
+            <returns>如果存在此量,则返回其量否则返回null</returns>
+        </member>
         <member name="M:VTemplate.Engine.VariableCollection.Add(VTemplate.Engine.Variable)">
             <summary>
             添加某个变量
@@ -3551,6 +3565,11 @@
             </summary>
             <param name="name">要判断的变量名称</param>
             <returns>存在则返回true否则返回false</returns>
+        </member>
+        <member name="P:VTemplate.Engine.VariableCollection.Count">
+            <summary>
+            返回属性数目
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.VariableCollection.SetValue(System.String,System.Object)">
             <summary>
@@ -3573,25 +3592,6 @@
             返回当前对象的迭代器
             </summary>
             <returns></returns>
-        </member>
-        <member name="P:VTemplate.Engine.VariableCollection.Item(System.Int32)">
-            <summary>
-            返回某个索引位置的变量
-            </summary>
-            <param name="index">索引值</param>
-            <returns>如果存在此索引位置值,则返回其变量值否则返回null</returns>
-        </member>
-        <member name="P:VTemplate.Engine.VariableCollection.Item(System.String)">
-            <summary>
-            返回某个名称的量
-            </summary>
-            <param name="name">量名称</param>
-            <returns>如果存在此量,则返回其量否则返回null</returns>
-        </member>
-        <member name="P:VTemplate.Engine.VariableCollection.Count">
-            <summary>
-            返回属性数目
-            </summary>
         </member>
         <member name="T:VTemplate.Engine.VariableExpression">
             <summary>
@@ -3621,32 +3621,6 @@
             <param name="parentExp"></param>
             <param name="fieldName"></param>
             <param name="isMethod"></param>
-        </member>
-        <member name="M:VTemplate.Engine.VariableExpression.GetValue">
-            <summary>
-            取得此变量字段的值
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.VariableExpression.GetValue(System.Object)">
-            <summary>
-            获取数据
-            </summary>
-            <param name="data"></param>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.VariableExpression.ToString">
-            <summary>
-            输出表达式的原字符串数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.VariableExpression.Clone(VTemplate.Engine.Template)">
-            <summary>
-            克隆表达式
-            </summary>
-            <param name="ownerTemplate"></param>
-            <returns></returns>
         </member>
         <member name="P:VTemplate.Engine.VariableExpression.VariableId">
             <summary>
@@ -3679,6 +3653,32 @@
             取得下一个表达式
             </summary>
         </member>
+        <member name="M:VTemplate.Engine.VariableExpression.GetValue">
+            <summary>
+            取得此变量字段的值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.VariableExpression.GetValue(System.Object)">
+            <summary>
+            获取数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.VariableExpression.ToString">
+            <summary>
+            输出表达式的原字符串数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.VariableExpression.Clone(VTemplate.Engine.Template)">
+            <summary>
+            克隆表达式
+            </summary>
+            <param name="ownerTemplate"></param>
+            <returns></returns>
+        </member>
         <member name="T:VTemplate.Engine.VariableIdentity">
             <summary>
             变量标识:变量标识由两部分组成,变量前缀(以#号开头)与变量名.如"#.member"或"#user.member".其中变量前缀是可以省略.如"member"
@@ -3691,6 +3691,26 @@
             <param name="ownerTemplate"></param>
             <param name="variable"></param>
             <param name="prefix"></param>
+        </member>
+        <member name="P:VTemplate.Engine.VariableIdentity.OwnerTemplate">
+            <summary>
+            宿主模板
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.VariableIdentity.Variable">
+            <summary>
+            变量
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.VariableIdentity.Prefix">
+            <summary>
+            变量前缀.
+            </summary>
+        </member>
+        <member name="P:VTemplate.Engine.VariableIdentity.Value">
+            <summary>
+            设置或返回变量的值
+            </summary>
         </member>
         <member name="M:VTemplate.Engine.VariableIdentity.SetExpValue(System.String,System.Object)">
             <summary>
@@ -3717,26 +3737,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="P:VTemplate.Engine.VariableIdentity.OwnerTemplate">
-            <summary>
-            宿主模板
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.VariableIdentity.Variable">
-            <summary>
-            变量
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.VariableIdentity.Prefix">
-            <summary>
-            变量前缀.
-            </summary>
-        </member>
-        <member name="P:VTemplate.Engine.VariableIdentity.Value">
-            <summary>
-            设置或返回变量的值
-            </summary>
-        </member>
         <member name="T:VTemplate.Engine.VariableTag">
             <summary>
             变量元素.如变量: {$:member.name} 或带前缀与属性的变量: {$:#.member.name htmlencode='true'}
@@ -3748,32 +3748,6 @@
             </summary>
             <param name="ownerTemplate"></param>
             <param name="varExp"></param>
-        </member>
-        <member name="M:VTemplate.Engine.VariableTag.OnAddingAttribute(System.Object,VTemplate.Engine.AttributeCollection.AttributeAddingEventArgs)">
-            <summary>
-            添加标签属性时的触发事件函数.用于设置自身的某些属性值
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:VTemplate.Engine.VariableTag.Render(System.IO.TextWriter)">
-            <summary>
-            呈现本元素的数据
-            </summary>
-            <param name="writer"></param>
-        </member>
-        <member name="M:VTemplate.Engine.VariableTag.ToString">
-            <summary>
-            输出变量元素的原字符串数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:VTemplate.Engine.VariableTag.Clone(VTemplate.Engine.Template)">
-            <summary>
-            克隆当前元素到新的宿主模板
-            </summary>
-            <param name="ownerTemplate"></param>
-            <returns></returns>
         </member>
         <member name="P:VTemplate.Engine.VariableTag.Attributes">
             <summary>
@@ -3844,6 +3818,32 @@
             <summary>
             要调用的函数列表
             </summary>
+        </member>
+        <member name="M:VTemplate.Engine.VariableTag.OnAddingAttribute(System.Object,VTemplate.Engine.AttributeCollection.AttributeAddingEventArgs)">
+            <summary>
+            添加标签属性时的触发事件函数.用于设置自身的某些属性值
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:VTemplate.Engine.VariableTag.Render(System.IO.TextWriter)">
+            <summary>
+            呈现本元素的数据
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:VTemplate.Engine.VariableTag.ToString">
+            <summary>
+            输出变量元素的原字符串数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VTemplate.Engine.VariableTag.Clone(VTemplate.Engine.Template)">
+            <summary>
+            克隆当前元素到新的宿主模板
+            </summary>
+            <param name="ownerTemplate"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>

@@ -139,11 +139,12 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Ent
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\Hidistro.Core.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\Hishop.Components.Validation.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\Hidistro.Model.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\Hidistro.Core.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\Hishop.Components.Validation.pdb
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\Hidistro.Model.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\obj\x86\Debug\Hidistro.Entities.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\obj\x86\Debug\Hidistro.Entities.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\obj\x86\Debug\Hidistro.Entities.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\log4net.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\Chenduo.Model.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\Newtonsoft.Json.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Entities\bin\Debug\Chenduo.Model.pdb

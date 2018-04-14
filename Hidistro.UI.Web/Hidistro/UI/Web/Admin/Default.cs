@@ -89,8 +89,8 @@
                 //this.lbShopName.Text = masterSettings.SiteName;
                 //this.imgLogo.Src = masterSettings.DistributorLogoPic;
 
-                SF.BLL.sf_website bll = new SF.BLL.sf_website();
-                SF.Model.sf_website website = bll.GetModelByWid(wid);
+                Chenduo.BLL.sf_website bll = new Chenduo.BLL.sf_website();
+                Chenduo.Model.sf_website website = bll.GetModelByWid(wid);
                 this.lbShopName.Text = website.sitename;
                 this.imgLogo.Src = website.logo;
                 if (!File.Exists(base.Server.MapPath(website.logo/*masterSettings.DistributorLogoPic*/)))

@@ -25,9 +25,9 @@
 
         protected void btnSave_Click(object sender, EventArgs e)
         {
-            SF.BLL.sf_website bll;
-            SF.Model.sf_website website;
-            bll =  new SF.BLL.sf_website();
+            Chenduo.BLL.sf_website bll;
+            Chenduo.Model.sf_website website;
+            bll =  new Chenduo.BLL.sf_website();
             website = bll.GetModelByWid(wid);
 
             SiteSettings masterSettings = SettingsManager.GetMasterSettings(false,wid);

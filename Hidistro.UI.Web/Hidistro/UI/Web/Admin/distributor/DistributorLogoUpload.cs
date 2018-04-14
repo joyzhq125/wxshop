@@ -34,8 +34,8 @@
                 if (num < 1)
                 {
                     if (string.IsNullOrEmpty(wid)) return;
-                    SF.BLL.sf_website bll = new SF.BLL.sf_website();
-                    SF.Model.sf_website website = bll.GetModelByWid(wid);
+                    Chenduo.BLL.sf_website bll = new Chenduo.BLL.sf_website();
+                    Chenduo.Model.sf_website website = bll.GetModelByWid(wid);
                     if (website == null) return;
 
                     HttpPostedFile file = base.Request.Files["Filedata"];

@@ -13,8 +13,8 @@
         private string action;
         protected bool enableManyService;
         private SiteSettings siteSettings;
-        SF.BLL.sf_website bll;
-        SF.Model.sf_website website;
+        Chenduo.BLL.sf_website bll;
+        Chenduo.Model.sf_website website;
         protected ManyService() : base("m06", "wxp05")
         {
             this.siteSettings = SettingsManager.GetMasterSettings(false,wid);
@@ -25,7 +25,7 @@
         {
             wid = GetCurWebId();
             if (string.IsNullOrEmpty(wid)) return;
-            bll = new SF.BLL.sf_website();
+            bll = new Chenduo.BLL.sf_website();
             website = bll.GetModelByWid(wid);
 
             if (!base.IsPostBack && (this.action == "setenable"))

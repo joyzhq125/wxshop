@@ -21,8 +21,8 @@
         protected TextBox txtShopTel;
         protected TextBox txtSiteName;
         protected string wid;
-        protected SF.BLL.sf_website bll;
-        protected SF.Model.sf_website website;
+        protected Chenduo.BLL.sf_website bll;
+        protected Chenduo.Model.sf_website website;
 
         protected Config() : base("m01", "dpp02")
         {
@@ -87,7 +87,7 @@
             wid = GetCurWebId();
             if (string.IsNullOrEmpty(wid)) return;
             /*SF.BLL.sf_website*/
-            bll = new SF.BLL.sf_website();
+            bll = new Chenduo.BLL.sf_website();
             /*SF.Model.sf_website*/
             website = bll.GetModelByWid(wid);
             if (website == null) return;

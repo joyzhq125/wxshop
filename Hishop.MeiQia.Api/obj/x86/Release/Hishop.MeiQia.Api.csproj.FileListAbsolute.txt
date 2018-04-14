@@ -13,3 +13,8 @@ E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.MeiQia.Api\
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.MeiQia.Api\obj\x86\Release\Hishop.MeiQia.Api.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.MeiQia.Api\obj\x86\Release\Hishop.MeiQia.Api.dll
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.MeiQia.Api\obj\x86\Release\Hishop.MeiQia.Api.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.MeiQia.Api\bin\Release\Hishop.MeiQia.Api.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.MeiQia.Api\bin\Release\Hishop.MeiQia.Api.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.MeiQia.Api\obj\x86\Release\Hishop.MeiQia.Api.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.MeiQia.Api\obj\x86\Release\Hishop.MeiQia.Api.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.MeiQia.Api\obj\x86\Release\Hishop.MeiQia.Api.csprojResolveAssemblyReference.cache

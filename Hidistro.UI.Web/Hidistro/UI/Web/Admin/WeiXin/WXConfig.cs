@@ -22,8 +22,8 @@
         protected TextBox txtAppSecret;
         protected Literal txtToken;
         protected Literal txtUrl;
-        SF.BLL.sf_website bll;
-        SF.Model.sf_website website;
+        Chenduo.BLL.sf_website bll;
+        Chenduo.Model.sf_website website;
         //string wid;
         protected WXConfig() : base("m06", "wxp01")
         {
@@ -69,7 +69,7 @@
         {
             wid = GetCurWebId();
             if (string.IsNullOrEmpty(wid)) return;
-            bll = new SF.BLL.sf_website();
+            bll = new Chenduo.BLL.sf_website();
             website = bll.GetModelByWid(wid);
             if (website == null) return;
 

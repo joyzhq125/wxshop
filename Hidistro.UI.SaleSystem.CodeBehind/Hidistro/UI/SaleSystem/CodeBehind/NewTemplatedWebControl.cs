@@ -120,7 +120,7 @@
                 }
                 else
                 { 
-                    SF.Model.sf_website website = Globals.GetModelByWid(this.wid);
+                    Chenduo.Model.sf_website website = Globals.GetModelByWid(this.wid);
                     if (website == null) return "";
                     string vTheme = website.templatesNum;
                     if (string.IsNullOrEmpty(vTheme)) return "";

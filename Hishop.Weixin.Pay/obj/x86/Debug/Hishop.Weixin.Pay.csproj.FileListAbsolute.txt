@@ -48,6 +48,6 @@ E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.Pay\
 E:\XM\PRJ\xl\xl_demo\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.Pay\obj\x86\Debug\Hishop.Weixin.Pay.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.Pay\bin\Debug\Hishop.Weixin.Pay.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.Pay\bin\Debug\Hishop.Weixin.Pay.pdb
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.Pay\obj\x86\Debug\Hishop.Weixin.Pay.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.Pay\obj\x86\Debug\Hishop.Weixin.Pay.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.Pay\obj\x86\Debug\Hishop.Weixin.Pay.pdb
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hishop.Weixin.Pay\obj\x86\Debug\Hishop.Weixin.Pay.csprojResolveAssemblyReference.cache

@@ -20,8 +20,8 @@
             {
                 string str = context.Request["type"].ToString();
                 //SiteSettings masterSettings = SettingsManager.GetMasterSettings(false);
-                SF.BLL.sf_website bll = new SF.BLL.sf_website();
-                SF.Model.sf_website website = bll.GetModelByWid(wid);
+                Chenduo.BLL.sf_website bll = new Chenduo.BLL.sf_website();
+                Chenduo.Model.sf_website website = bll.GetModelByWid(wid);
                 switch (str)
                 {
                     case "0":

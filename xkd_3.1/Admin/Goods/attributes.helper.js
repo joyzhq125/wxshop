@@ -372,6 +372,7 @@ function prepareSkus() {
     for (cellIndex = 0; cellIndex < cellFields.length; cellIndex++) {
         var skuId = cellFields[cellIndex];
         var skuItem = htSkuFields.get(skuId);
+        //console.log(skuItem.Name);
         var fieldCell = createFieldCell(skuId, skuItem.Name);
         tableHeader.append(fieldCell);
         var skuBox = $(String.format("<div style=\"display: none; position: absolute; z-index: 999;\" id=\"skuBox_{0}\" class=\"target_box\"><\/div>", skuId));

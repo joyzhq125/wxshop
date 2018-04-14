@@ -150,13 +150,14 @@ E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.Sql
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Hidistro.SqlDal.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Hidistro.Core.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Hidistro.Entities.dll
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Hidistro.Model.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Hishop.Components.Validation.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Hidistro.Core.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Hidistro.Entities.pdb
-E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Hidistro.Model.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Hishop.Components.Validation.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\obj\x86\Debug\Hidistro.SqlDal.csprojResolveAssemblyReference.cache
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\obj\x86\Debug\Hidistro.SqlDal.dll
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\obj\x86\Debug\Hidistro.SqlDal.pdb
 E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\log4net.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Chenduo.Model.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Newtonsoft.Json.dll
+E:\XM\PRJ\微信\云分销\ZUCK最新移动云分销2.4完整源码\Hidistro.SqlDal\bin\Debug\Chenduo.Model.pdb

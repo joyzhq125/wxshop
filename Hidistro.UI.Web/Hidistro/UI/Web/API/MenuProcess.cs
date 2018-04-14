@@ -209,8 +209,8 @@
         public void setenable(HttpContext context)
         {
             string s = "{\"status\":\"1\"}";
-            SF.BLL.sf_website bll = new SF.BLL.sf_website();
-            SF.Model.sf_website website = bll.GetModelByWid(wid);
+            Chenduo.BLL.sf_website bll = new Chenduo.BLL.sf_website();
+            Chenduo.Model.sf_website website = bll.GetModelByWid(wid);
 
             //SiteSettings masterSettings = SettingsManager.GetMasterSettings(false,wid);
             //masterSettings.EnableShopMenu = bool.Parse(context.Request["enable"]);

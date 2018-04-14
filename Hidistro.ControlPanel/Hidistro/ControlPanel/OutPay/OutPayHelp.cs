@@ -31,7 +31,7 @@
         public static List<WeiPayResult> BatchWeiPay(List<OutPayWeiInfo> BatchUserList,string wid)
         {
             SiteSettings masterSettings = SettingsManager.GetMasterSettings(true,wid);
-            SF.Model.sf_website website = new SF.BLL.sf_website().GetModelByWid(wid);
+            Chenduo.Model.sf_website website = new Chenduo.BLL.sf_website().GetModelByWid(wid);
             WeiXinMchid = website.weixin_pay_account; //masterSettings.WeixinPartnerID;
             WeiXinAppid = website.appid;//masterSettings.WeixinAppId;
             WeiXinKey = website.account_pay_key;//masterSettings.WeixinPartnerKey;
@@ -187,7 +187,7 @@
         public static WeiPayResult SingleWeiPay(int amount, string desc, string useropenid, string realname, string tradeno, int UserId,string wid)
         {
             SiteSettings masterSettings = SettingsManager.GetMasterSettings(true,wid);
-            SF.Model.sf_website website = new SF.BLL.sf_website().GetModelByWid(wid);
+            Chenduo.Model.sf_website website = new Chenduo.BLL.sf_website().GetModelByWid(wid);
             WeiXinMchid = website.weixin_pay_account; //masterSettings.WeixinPartnerID;
             WeiXinAppid = website.appid;//masterSettings.WeixinAppId;
             WeiXinKey = website.account_pay_key;//masterSettings.WeixinPartnerKey;

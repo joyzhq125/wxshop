@@ -19,8 +19,8 @@
         protected TextBox txt_appsecret;
         protected TextBox txt_key;
         protected TextBox txt_mch_id;
-        SF.BLL.sf_website bll;
-        SF.Model.sf_website website;
+        Chenduo.BLL.sf_website bll;
+        Chenduo.Model.sf_website website;
         protected WeixinPay() : base("m06", "wxp08")
         {
             //this.siteSettings = SettingsManager.GetMasterSettings(false);
@@ -31,7 +31,7 @@
         {
             wid = GetCurWebId();
             if (string.IsNullOrEmpty(wid)) return;
-            bll = new SF.BLL.sf_website();
+            bll = new Chenduo.BLL.sf_website();
             website = bll.GetModelByWid(wid);
             if (website == null) return;
 

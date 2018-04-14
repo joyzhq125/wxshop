@@ -44,8 +44,8 @@
 
         private void saveData()
         {
-            SF.BLL.sf_website bll = new SF.BLL.sf_website();
-            SF.Model.sf_website website = bll.GetModelByWid(wid);
+            Chenduo.BLL.sf_website bll = new Chenduo.BLL.sf_website();
+            Chenduo.Model.sf_website website = bll.GetModelByWid(wid);
 
             if (string.IsNullOrEmpty(this.txt_mid.Text))
             {
